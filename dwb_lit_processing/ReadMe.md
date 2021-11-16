@@ -43,8 +43,8 @@ Here below each step of the procedure is shortly described.
 
 ### Processing Elevation
 1. GEBCO 2020 map is reclassed as follows:
-> < 2000 m. a.s.l. = 10
-> \> 2000 m. a.s.l. = 20
+> < 2000 m. a.s.l. = 10  
+> \> 2000 m. a.s.l. = 20  
 2. Reclassed map is resampled to AGB resolution (3.2 arcseconds, approximately 100m at the equator) using Nearest Neighbor algorithm.
 
 ### Processing Global Ecological Zones
