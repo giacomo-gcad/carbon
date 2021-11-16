@@ -4,4 +4,4 @@ This repository provides workflows for computation of the varioous pools of carb
 Presently the following carbon pools are included
 
 1. Below Ground Carbon pool (TBD)
-2. [Dead Wood and Litter pools](/dwb_lit_processing/ReadMe.md)
+2. [Dead Wood and Litter pools](/dwb_lit_processing)
