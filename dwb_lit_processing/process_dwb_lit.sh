@@ -147,8 +147,8 @@ chmod u+x compute_dwb_lit.sh
 grass ${CARBON_MAPSET_PATH} --exec ./compute_dwb_lit.sh
 
 wait
-grass ${CARBON_MAPSET_PATH} --exec r.support map=test_dwb_100m title="Dead Wood Carbon map" units="Mg/ha" description="Derived from AGB map"
-grass ${CARBON_MAPSET_PATH} --exec r.support map=test_lit_100m title="Litter Carbon map" units="Mg/ha" description="Derived from AGB map"
+grass ${CARBON_MAPSET_PATH} --exec r.support map=dwb_100m title="Dead Wood Carbon map" units="Mg/ha" description="Derived from AGB map"
+grass ${CARBON_MAPSET_PATH} --exec r.support map=lit_100m title="Litter Carbon map" units="Mg/ha" description="Derived from AGB map"
 
 end5=`date +%s`
 runtime=$(((end5-end4)))

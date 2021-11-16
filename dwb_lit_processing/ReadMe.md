@@ -5,7 +5,8 @@ The script described here below is used to derive from Above Ground Biomass two 
 * **Dead Wood  Biomass**
 * **Litter**
 
-The procedure is based on the methodology proposed by Harris, N.L., Gibbs, D.A., Baccini, A. _et al._ Global maps of twenty-first century forest carbon fluxes. _Nat. Clim. Chang._ **11,** 234–240 (2021). https://doi.org/10.1038/s41558-020-00976-6
+The procedure is based on the methodology proposed by  
+Harris, N.L., Gibbs, D.A., Baccini, A. _et al._ Global maps of twenty-first century forest carbon fluxes. _Nat. Clim. Chang._ **11,** 234–240 (2021). https://doi.org/10.1038/s41558-020-00976-6  
 In short, three datasets are reclassed and combined. For each unique combination of classes, the Dead Wood Biomass (DWB) and Litter (LIT)  coefficients provided in table S4 of the mentioned article are assigned to each pixel and the two resulting maps are multiplied by AGB map in order to derive DWB and LIT datasets.
 
 ## Input data
@@ -27,15 +28,17 @@ Prerequisites:
 3. GEZ map reclassified and resampled to AGB resolution for computation of [Below Ground Biomass - TBD](https://github.com/giacomo-gcad/bgb_procesing) must already exist in the GRASS DB.
 
 ## Workflow
-Here below each step of the procedure is shortly described
+Here below each step of the procedure is shortly described.
 
 ### Processing Rainfall
-1. Annual rainfall is obtained by sum up of the 12 monthly rainfall maps
+1. Annual rainfall is derived as the sum  of the 12 monthly rainfall maps
 2. Annual rainfall map is grown by 300 km radius in order to fill eventual gaps on coastal areas due to different coastlines and resolutions with respect to the other input datasets.
 3. Annual rainfall is reclassed as follows:
-< 1000 mm/yr = 1
-1000 - 1600	mm/yr = 2
-\> 1600 mm/yr = 3
+
+< 1000 mm/yr = 1  
+1000 - 1600	mm/yr = 2  
+\> 1600 mm/yr = 3  
+
 4. Reclassed map is resampled to AGB resolution (3.2 arcseconds, approximately 100m at the equator) using Nearest Neighbor algorithm.
 
 ### Processing Elevation
@@ -45,30 +48,29 @@ Here below each step of the procedure is shortly described
 2. Reclassed map is resampled to AGB resolution (3.2 arcseconds, approximately 100m at the equator) using Nearest Neighbor algorithm.
 
 ### Processing Global Ecological Zones
-1. GEZ 2010 is reclassed as follows:
-Tropical rainforest = 100
-Tropical moist forest = 100
-Tropical dry forest = 100
-Subtropical humid forest = 100
-Subtropical dry forest = 100
-Subtropical steppe = 100
-Temperate oceanic forest = 200
-Temperate continental forest = 200
-Temperate mountain system = 200
-Boreal coniferous forest = 200
-Boreal tundra woodland = 200
-Boreal mountain system = 200
+1. GEZ 2010 is reclassed as follows:  
+Tropical rainforest = 100  
+Tropical moist forest = 100  
+Tropical dry forest = 100  
+Subtropical humid forest = 100  
+Subtropical dry forest = 100  
+Subtropical steppe = 100  
+Temperate oceanic forest = 200  
+Temperate continental forest = 200  
+Temperate mountain system = 200  
+Boreal coniferous forest = 200  
+Boreal tundra woodland = 200  
+Boreal mountain system = 200  
 
 
 ### Crossing input maps
-Each of the output maps obtained from each of the steps above described is reclassed using a different order of magnitude (units, tens and hundreds for rainfall, elevation and Ecological zone, respectively). 
+Each of the output maps obtained from each of the steps above described is reclassed using a different order of magnitude (units, tens and hundreds for Rainfall, Elevation and Ecological zone, respectively). 
 Therefore, they can be summed up without risks of mixing classes. The resulting value of each pixel will be an unique numeric code where 
 - the first digit represents the Ecological zone class;
 - the second digit  represents the Elevation class;
 - the third digit  represents the Annual Rainfall class.
 
-For example, code **213** will correspond to Temperate/Boreal (**200**), <2000 m a.s.l. (**10**) and >1600 mm/yr (**3**)
-
+For example, the combination  Temperate/Boreal (**200**), Elevation < 2000 m a.s.l. (**10**) and Rainfall > 1600 mm/yr (**3**) will result in code **213**  
 
 ### Getting Dead Wood Biomass and Litter datasets
 1. The map with unique codes obtained at previous step are reclassed twice, once for DWB and once for LIT, assigning the coefficients below (see table S4 of the mentioned article)
