@@ -35,32 +35,32 @@ Here below each step of the procedure is shortly described.
 2. Annual rainfall map is grown by 300 km radius in order to fill eventual gaps on coastal areas due to different coastlines and resolutions with respect to the other input datasets.
 3. Annual rainfall is reclassed as follows:
 
-< 1000 mm/yr = 1  
-1000 - 1600	mm/yr = 2  
-\> 1600 mm/yr = 3  
+> < 1000 mm/yr = 1  
+> 1000 - 1600	mm/yr = 2  
+> \> 1600 mm/yr = 3  
 
 4. Reclassed map is resampled to AGB resolution (3.2 arcseconds, approximately 100m at the equator) using Nearest Neighbor algorithm.
 
 ### Processing Elevation
 1. GEBCO 2020 map is reclassed as follows:
-< 2000 m. a.s.l. = 10
-\> 2000 m. a.s.l. = 20
+> < 2000 m. a.s.l. = 10
+> \> 2000 m. a.s.l. = 20
 2. Reclassed map is resampled to AGB resolution (3.2 arcseconds, approximately 100m at the equator) using Nearest Neighbor algorithm.
 
 ### Processing Global Ecological Zones
 1. GEZ 2010 is reclassed as follows:  
-Tropical rainforest = 100  
-Tropical moist forest = 100  
-Tropical dry forest = 100  
-Subtropical humid forest = 100  
-Subtropical dry forest = 100  
-Subtropical steppe = 100  
-Temperate oceanic forest = 200  
-Temperate continental forest = 200  
-Temperate mountain system = 200  
-Boreal coniferous forest = 200  
-Boreal tundra woodland = 200  
-Boreal mountain system = 200  
+> Tropical rainforest = 100  
+> Tropical moist forest = 100  
+> Tropical dry forest = 100  
+> Subtropical humid forest = 100  
+> Subtropical dry forest = 100  
+> Subtropical steppe = 100  
+> Temperate oceanic forest = 200  
+> Temperate continental forest = 200  
+> Temperate mountain system = 200  
+> Boreal coniferous forest = 200  
+> Boreal tundra woodland = 200  
+> Boreal mountain system = 200  
 
 
 ### Crossing input maps
