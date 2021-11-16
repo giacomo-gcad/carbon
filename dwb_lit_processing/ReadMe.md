@@ -73,7 +73,7 @@ Therefore, they can be summed up without risks of mixing classes. The resulting 
 For example, the combination  Temperate/Boreal (**200**), Elevation < 2000 m a.s.l. (**10**) and Rainfall > 1600 mm/yr (**3**) will result in code **213**  
 
 ### Getting Dead Wood Biomass and Litter datasets
-1. The map with unique codes obtained at previous step are reclassed twice, once for DWB and once for LIT, assigning the coefficients below (see table S4 of the mentioned article)
+1. The map with unique codes obtained at previous step is reclassed twice, once for DWB and once for LIT, assigning the coefficients below (as from table S4 of the mentioned article)
 
 | Climate  (GEZ)   | Elevation (m) | Rainfall  (mm/yr) | Dead Wood fraction of AGB | Litter fraction of AGB |
 | ---------------- | :-----------: | :---------------: | :-----------------------: | :--------------------: |
