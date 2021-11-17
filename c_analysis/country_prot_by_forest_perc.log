@@ -1,0 +1,48 @@
+DEFINED PARAMETERS ARE = 
+--GENERAL---------------
+V_COUNTRY IS =  gaul_eez_dissolved_201912
+V_ECOREGION IS =  ecoregions_2020_atts
+V_WDPA IS =  wdpa_202101
+V_CEP IS =  cep_202101
+V_RCEP_IN IS =  results_202101_cep_in
+V_RCEP_OUT IS =  results_202101_cep_out
+V_R_NON_CEP IS =  results_202101_non_cep
+V_TARGET IS =  0.17
+psql:./sql/country_prot_by_forest_perc.sql:5: NOTICE:  table "stoca" does not exist, skipping
+DROP TABLE
+SELECT 727902
+psql:./sql/country_prot_by_forest_perc.sql:10: NOTICE:  table "stoca2" does not exist, skipping
+DROP TABLE
+SELECT 92945
+psql:./sql/country_prot_by_forest_perc.sql:17: NOTICE:  table "pas_tree_over10" does not exist, skipping
+DROP TABLE
+SELECT 464916
+psql:./sql/country_prot_by_forest_perc.sql:21: NOTICE:  table "pas_tree_over50" does not exist, skipping
+DROP TABLE
+SELECT 286728
+psql:./sql/country_prot_by_forest_perc.sql:25: NOTICE:  table "pas_tree_over90" does not exist, skipping
+DROP TABLE
+SELECT 122696
+psql:./sql/country_prot_by_forest_perc.sql:29: NOTICE:  table "t_country_tot" does not exist, skipping
+DROP TABLE
+SELECT 300
+psql:./sql/country_prot_by_forest_perc.sql:32: NOTICE:  table "t_country_land" does not exist, skipping
+DROP TABLE
+SELECT 277
+psql:./sql/country_prot_by_forest_perc.sql:35: NOTICE:  table "t_country_land_prot_o10" does not exist, skipping
+DROP TABLE
+SELECT 203
+psql:./sql/country_prot_by_forest_perc.sql:39: NOTICE:  table "t_country_land_prot_o50" does not exist, skipping
+DROP TABLE
+SELECT 182
+psql:./sql/country_prot_by_forest_perc.sql:43: NOTICE:  table "t_country_land_prot_o90" does not exist, skipping
+DROP TABLE
+SELECT 158
+psql:./sql/country_prot_by_forest_perc.sql:50: NOTICE:  table "output_country" does not exist, skipping
+DROP TABLE
+SELECT 300
+psql:./sql/country_prot_by_forest_perc.sql:70: NOTICE:  table "country_prot_by_forest_perc" does not exist, skipping
+DROP TABLE
+SELECT 300
+analysis done
+TOTAL SCRIPT TIME: 9

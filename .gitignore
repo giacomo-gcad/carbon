@@ -1,2 +1,7 @@
-bgb_processing/
-c_analysis/
+bgb_processing/Continents/output_data
+bgb_processing/GEZ_2010/output_data
+bgb_processing/Plantation/input_data
+bgb_processing/Plantation/output_data
+bgb_processing/Quercus/input_data
+bgb_processing/z_old_stuff
+workflow_commented_GD_20211028.xlsx

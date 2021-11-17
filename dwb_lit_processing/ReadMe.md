@@ -25,7 +25,7 @@ Environment variables of the bash script are set in [dwb_lit.conf](./dwb_lit.con
 Prerequisites:
 1. The GRASS DB must already contain, in the working mapset defined by  the configuration file,  a map for AGB and a reclass version of AGB (used here as mask to get null values where AGB has No data).
 2. GEBCO 2020 and Worldclim maps must already exist in the GRASS DB.
-3. GEZ map reclassified and resampled to AGB resolution for computation of [Below Ground Biomass - TBD](https://github.com/giacomo-gcad/bgb_procesing) must already exist in the GRASS DB.
+3. GEZ map reclassified and resampled to AGB resolution for computation of [Below Ground Biomass - To Be Done](https://github.com/giacomo-gcad/bgb_procesing) must already exist in the GRASS DB.
 
 ## Workflow
 Here below each step of the procedure is shortly described.
@@ -62,7 +62,7 @@ Here below each step of the procedure is shortly described.
 > Boreal tundra woodland = 200  
 > Boreal mountain system = 200  
 
-The input dataset has already te same extent and resolution of AGB, therefore no resampling is needed.  
+The input dataset has already the same extent and resolution of AGB, therefore no resampling is needed.  
 
 ### Crossing input maps
 Each of the output maps obtained from each of the steps above described is reclassed using a different order of magnitude (units, tens and hundreds for Rainfall, Elevation and Ecological zone, respectively). 

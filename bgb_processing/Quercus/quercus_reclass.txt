@@ -1,0 +1,5 @@
+1 thru 12 = 0 not quercus
+14 thru 18 = 0 
+20 thru 255 = 0
+13 19 = 10 quercus
+* = 0
