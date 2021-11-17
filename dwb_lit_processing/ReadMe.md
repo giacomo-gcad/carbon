@@ -2,7 +2,7 @@
 # Dead wood and Litter pools computation
 
 The script described here below is used to derive from Above Ground Biomass two additional  carbon pools:
-* **Dead Wood  Biomass**
+* **Dead Wood Biomass**
 * **Litter**
 
 The procedure is based on the methodology proposed by  
