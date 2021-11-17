@@ -1,4 +1,4 @@
-# Carbon stocks in Protected areas
+# Carbon Stocks in Protected Areas
 
 This repository provides workflows for 
 -  computation of the various pools of carbon at global level. 
@@ -12,3 +12,5 @@ Total Carbon Stock is composed by 5 different 'pools'
 5. [Litter Carbon (LIT)](/dwb_lit_processing)
 
 Global spatial datasets area already available for Soil Carbon and Above Ground Carbon, while the three remaining pools need to be estimated as fractions of Above Ground Carbon.
+
+[...]
