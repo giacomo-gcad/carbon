@@ -11,8 +11,8 @@ In short, three datasets are reclassed and combined. For each unique combination
 
 ## Input data
 
-- **Above ground Biomass** v. 3 (2018) 
-[https://catalogue.ceda.ac.uk/uuid/5f331c418e9f4935b8eb1b836f8a91b8](https://catalogue.ceda.ac.uk/uuid/5f331c418e9f4935b8eb1b836f8a91b8)
+- **Above ground Biomass** v. 2 (2018) (as soon as it will be published, it will be replaced by v. 3)
+[https://catalogue.ceda.ac.uk/uuid/84403d09cef3485883158f4df2989b0c](https://catalogue.ceda.ac.uk/uuid/84403d09cef3485883158f4df2989b0c)
 - **FAO Global Ecological Zones (GEZ 2010, second edition)**
 [http://www.fao.org/geonetwork/srv/en/metadata.show?currTab=simple&id=47105](http://www.fao.org/geonetwork/srv/en/metadata.show?currTab=simple&id=47105)
 - **GEBCO 2020** Digital Bathymetry  Model
