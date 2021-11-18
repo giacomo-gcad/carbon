@@ -38,19 +38,19 @@ Here below the list of IPCC parameters and corresponding spatial datasets used:
 
 ### [Continents](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/Continents)  
 
-### [Land cover]()  
+### [Land cover](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/LandCover)  
 
-### [Origin]()  
+### [Origin](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/Plantation)  
 
-### [Quercus]()  
+### [Quercus](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/Quercus)  
 
 ## BGB computation   
 [...]  
 (to be developed)
 
-### [Crossing input maps]()  
+### [Crossing input maps](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/rcl_cross)  
 
-### [Getting Below Ground Biomass]()  
+### [Getting Below Ground Biomass](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/BGB)  
 
 [...]  
 
