@@ -13,8 +13,8 @@ RLZ=${WORKING_DIR}"/Continents/reclass_continents.rcl"
 # # IMPORT THE GEZ LAYER PRODUCED BY EDUARDO IN GRASS DB
 # grass ${CARBON_MAPSET_PATH} --exec r.external --overwrite input=${INCON} output=${OUTCON}
 
-# # reclassify GEZ to values suitable for final cross (algternative method to r.cross)
-grass ${CARBON_MAPSET_PATH} --exec r.reclass --overwrite input=${OUTCON} output=${CON_RCL} rules=${RLZ} # reclassify continents
+# # reclassify continents
+grass ${CARBON_MAPSET_PATH} --exec r.reclass --overwrite input=${OUTCON} output=${CON_RCL} rules=${RLZ}
 
 end=`date +%s`
 runtime=$(((end-start1) / 60))

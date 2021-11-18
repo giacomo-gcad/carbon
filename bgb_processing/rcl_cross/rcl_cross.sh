@@ -9,7 +9,7 @@ mkdir -p  ${DIR}"/output_data"
 
 GEZ="gez_2010_rcl"
 CON="continents_rcl"
-ESA="esalc_2018_100m_rcl"
+ESA="esalc_2018_rcl_100m"
 QUE="quercus_100m_rcl"
 PLF="tree_plantations_rcl"
 AGB="agb2018_100m_rcl"
