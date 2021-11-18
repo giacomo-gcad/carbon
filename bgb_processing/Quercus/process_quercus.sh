@@ -8,7 +8,7 @@ source ${DIR}/bgb_parameters.conf
 INFILE="quercus_brus_2012_wgs84"
 TEMPFILE="quercus"
 OUTFILE=${TEMPFILE}_100m
-RLZ=${DIR}"/Quercus/quercus_reclass.txt"
+RLZ=${DIR}"/Quercus/reclass_quercus.rcl"
 AGB="agb2018_100m"
 
 # IMPORT FILE AND REMOVE NULL VALUE

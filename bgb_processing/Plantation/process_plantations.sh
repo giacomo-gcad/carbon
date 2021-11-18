@@ -7,7 +7,7 @@ source ${DIR}/bgb_parameters.conf
 
 INC=${DIR}"/Plantation/input_data"
 OUTC=${DIR}"/Plantation/output_data"
-RLZ=${DIR}"/Plantation/reclass_plantations.txt"
+RLZ=${DIR}"/Plantation/reclass_plantations.rcl"
 
 # # Convert GeoDatabase file format to Geopackage file format
 ogr2ogr -f GPKG -spat -180 -90 180 90 -nln tree_plantations -nlt PROMOTE_TO_MULTI -dim XY ${INC}/plantations_v1_3_dl.gpkg ${INC}/plantations_v1_3_dl.gdb #started 9.40

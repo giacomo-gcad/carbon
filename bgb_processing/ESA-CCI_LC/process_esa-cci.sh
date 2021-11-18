@@ -7,7 +7,7 @@ source ${DIR}/bgb_parameters.conf
 
 INFILE="esalc_2018"
 OUTFILE="esalc_2018_100m_rcl"
-RLZ=${DIR}"/ESA-CCI_LC/landcover_reclass_3classes.txt"
+RLZ=${DIR}"/ESA-CCI_LC/reclass_lc.rcl"
 AGB="agb2018_100m"
 
 # RESAMPLE TO 100 m RESOLUTION

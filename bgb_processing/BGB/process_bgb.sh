@@ -6,7 +6,7 @@ DIR="/globes/USERS/GIACOMO/c_stock/bgb_processing"
 source ${DIR}/bgb_parameters.conf
 	
 AGB="agb2018_100m"
-RCOEFF=${DIR}"/BGB/rcoeffs.txt"
+RCOEFF=${DIR}"/BGB/assign_r_coeffs.rcl"
 IPCC_COEFFS="ipcc2019_coeffs"
 OUTBGB="bgb_2018_100m"
 
