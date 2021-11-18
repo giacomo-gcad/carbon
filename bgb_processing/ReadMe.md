@@ -32,21 +32,21 @@ Here below the list of IPCC parameters and corresponding spatial datasets used:
 [...]  
 (to be developed)
 
-### [Above Ground Biomass}(https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/AGB)  
+### [Above Ground Biomass](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/AGB)  
 
-### {Global Ecological Zones](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/GEZ_2010)  
+### [Global Ecological Zones](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/GEZ_2010)  
 
-### {Continents](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/Continents)  
+### [Continents](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/Continents)  
 
-### {Land cover]()  
+### [Land cover]()  
 
-### {Origin]()  
+### [Origin]()  
 
-### {Quercus]()  
+### [Quercus]()  
 
-### {Crossing input maps]()  
+### [Crossing input maps]()  
 
-### {Getting Below Ground Biomass]()  
+### [Getting Below Ground Biomass]()  
 
 [...]  
 
