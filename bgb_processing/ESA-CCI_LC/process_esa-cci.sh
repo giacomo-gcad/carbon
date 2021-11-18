@@ -3,7 +3,7 @@ date
 start1=`date +%s`
 
 DIR="/globes/USERS/GIACOMO/c_stock/bgb_processing"
-source ${DIR}/environment_params_gd.txt
+source ${DIR}/bgb_parameters.conf
 
 INFILE="esalc_2018"
 OUTFILE="esalc_2018_100m_rcl"

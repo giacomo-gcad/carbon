@@ -3,7 +3,7 @@ date
 start1=`date +%s`
 
 DIR="/globes/USERS/GIACOMO/c_stock/bgb_processing"
-source ${DIR}/environment_params_gd.txt
+source ${DIR}/bgb_parameters.conf
 
 INCON="/globes/USERS/GIACOMO/c_stock/bgb_processing/Continents/output_data/continents.vrt"
 OUTCON="continents"

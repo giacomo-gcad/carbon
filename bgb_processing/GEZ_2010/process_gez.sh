@@ -3,7 +3,7 @@ date
 start1=`date +%s`
 
 DIR="/globes/USERS/GIACOMO/c_stock/bgb_processing"
-source ${DIR}/environment_params_gd.txt
+source ${DIR}/bgb_parameters.conf
 
 INGEZ="/globesUSERS?GIACOMO?c_stock/bgb_processing/GEZX_2010/output_data/gez_2010.vrt"
 OUTGEZ="gez_2010@CATRASTERS"
