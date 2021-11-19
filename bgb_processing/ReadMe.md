@@ -31,8 +31,8 @@ Here below the list of IPCC parameters and corresponding spatial datasets used:
 [...]  
 (to be developed)
 
-Each input layer is resampled (if needed) to the same extent and resolution of AGB and reclassed. For reclass, **a different order of magnitude** is used for each layer, so taht in the and they can be summed up to deriva a synthesis layere where each value is a numeric code that can be translated into the correspnding sequence of classes. In this way it is possible to build a consistent Look Up Table to be used later in order to replace each numeric code qith the corresponding R (BGB/AGB ratio) coefficient.  
-This method is alternative to the use of the GRASS function r.cross, where layers are combined and a random value is assigned to each unique combination of classes. The grass function diadavantage is that there is no guarantee over time that the same pixel value will correspond to the same combination of classes, forcing to manually build up a new Look Up Table after each run.  
+Each input layer is resampled (if needed) to the same extent and resolution of AGB and reclassed. For reclass, **a different order of magnitude** is used for each layer, so that in the and they can be summed up to derive a synthesis layer where each value is a numeric code that can be translated into the corresponding sequence of classes. In this way it is possible to build a consistent Look Up Table to be used later in order to replace each numeric code with the corresponding R (BGB/AGB ratio) coefficient.  
+This method is alternative to the use of the GRASS function **r.cross**, where layers are combined and a random value is assigned to each unique combination of classes. The grass function diadavantage is that there is no guarantee over time that the same pixel value will correspond to the same combination of classes, forcing to manually build up a new Look Up Table after each run.  
 In the last step, the final layer with R coefficients is multiplied by the AGB layer to get the BGB.  
 
 ### [Above Ground Biomass](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/AGB)  
@@ -43,7 +43,7 @@ The original dataset is imported in grass DB as external link and reclassed as f
 > No Data = 3  
 
 ### [Global Ecological Zones](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/GEZ_2010)  
-Here we used a modified version (**procedure to be described**) of Global Ecological Zones modified, where polygons along coastlines are 
+Here we used a modified version (**procedure to be described**) of Global Ecological Zones, where polygons along coastlines are 
 - made to grow 300 km outward in order to avoid null values in areas with valid AGB values  
 - resampled to AGB extent and resolution.  
 This modified version, already imported in grass DB, is reclassed as follows:  
@@ -74,10 +74,11 @@ This modified version, already imported in grass DB, is reclassed as follows:
 
 
 ### [Continents](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/Continents)  
-As for Global Ecological ZOnes, here we used a modified version (**procedure to be described**) of Global Ecological Zones modified, where:  
+As for Global Ecological Zones, here we used a modified version (**procedure to be described**) of the GAUL and EEZ datasets, where:  
+- GAUL and EZZ layers are merged ad dissolved first by iso3, then by continent  
 - Europe and Asia continents have been manually splitted using the line from the [ESRI Continents dataset](https://www.arcgis.com/home/item.html?id=a3cb207855b348a297ab85261743351d)  
-- polygons along coastlines are made to grow 300 km outward in order to avoid null values in areas with valid AGB values  
-- the layers resampled to AGB extent and resolution.  
+- the resulting vector is rasterized at the same resolution of AGB
+- polygons along coastlines are made to grow 300 km outward in order to avoid null values in areas with valid AGB values    
 
 ### [Land cover](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/LandCover)  
 
