@@ -19,7 +19,7 @@ Here below the list of IPCC parameters and corresponding spatial datasets used:
 |--------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
 | Above Ground Biomass           | [Above Ground Biomass  v. 2 (2018)](https://catalogue.ceda.ac.uk/uuid/84403d09cef3485883158f4df2989b0c)                            |
 | Ecological Zones               | [FAO Global Ecological Zoning](http://www.fao.org/geonetwork/srv/en/main.home)                                                     |
-| Continents (terrestrial)       | [ESRI World Continents dataset](https://www.arcgis.com/home/item.html?id=a3cb207855b348a297ab85261743351d)                 |
+| Continents (terrestrial)       | [ESRI World Continents dataset](https://www.arcgis.com/home/item.html?id=a3cb207855b348a297ab85261743351d) and [Global Administrative Unit Layers (GAUL), rev. 2015](http://www.fao.org/geonetwork/srv/en/metadata.show?id=12691)                 |
 | Continents (marine)            | [Exclusive Economic Zones (EEZ) v9](http://www.marineregions.org/downloads.php)                                                    |
 | Origin (Natural/Planted)       | [Spatial Database of Planted Trees v. 1, 2019](http://data.globalforestwatch.org/datasets/224e00192f6d408fa5147bbfc13b62dd)        |
 | Land Cover (Broadleaf/Conifer) | [Land Cover CCI, 2017](http://maps.elie.ucl.ac.be/CCI/viewer/index.html)                                                           |
