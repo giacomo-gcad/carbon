@@ -75,10 +75,9 @@ This modified version, already imported in grass DB, is reclassed as follows:
 
 ### [Continents](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/Continents)  
 As for Global Ecological Zones, here we used a modified version (**procedure to be described**) of the GAUL and EEZ datasets, where:  
-- GAUL and EZZ layers are merged ad dissolved first by iso3, then by continent  
-- Europe and Asia continents have been manually splitted using the line from the [ESRI Continents dataset](https://www.arcgis.com/home/item.html?id=a3cb207855b348a297ab85261743351d)  
-- the resulting vector is rasterized at the same resolution of AGB
-- polygons along coastlines are made to grow 300 km outward in order to avoid null values in areas with valid AGB values    
+- GAUL and EEZ layers (dissolved) are merged with the [ESRI Continents dataset](https://www.arcgis.com/home/item.html?id=a3cb207855b348a297ab85261743351d) in order to avoid null values in areas with valid AGB values  
+- Marine part of Europe and Asia continents has been manually splitted by extending northward the boundary of terrestrial part  
+- the resulting vector is rasterized at the same resolution of AGB.  
 
 ### [Land cover](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/LandCover)  
 
