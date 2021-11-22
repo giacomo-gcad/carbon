@@ -28,9 +28,6 @@ Here below the list of IPCC parameters and corresponding spatial datasets used:
 (*) data for Quercus are available only for Europe.
 
 ## Data Processing   
-[...]  
-(to be developed)
-
 Each input layer is resampled (if needed) to the same extent and resolution of AGB and reclassed. For reclass, **a different order of magnitude** is used for each layer, so that in the and they can be summed up to derive a synthesis layer where each value is a numeric code that can be translated into the corresponding sequence of classes. In this way it is possible to build a consistent Look Up Table to be used later in order to replace each numeric code with the corresponding R (BGB/AGB ratio) coefficient.  
 This method is alternative to the use of the GRASS function **r.cross**, where layers are combined and a random value is assigned to each unique combination of classes. The grass function diadavantage is that there is no guarantee over time that the same pixel value will correspond to the same combination of classes, forcing to manually build up a new Look Up Table after each run.  
 In the last step, the final layer with R coefficients is multiplied by the AGB layer to get the BGB.  
@@ -48,29 +45,29 @@ Here we used a modified version (**procedure to be described**) of Global Ecolog
 - resampled to AGB extent and resolution (3.2 arcseconds, approximately 100m at the equator) using Nearest Neighbor algorithm.  
 This modified version, already imported in grass DB, is reclassed as follows:  
 
-| code | GEZ class                    | New class                    | New code |
-|------|------------------------------|------------------------------|----------|
-| 11   | Tropical rainforest          | Tropical rainforest          | 11       |
-| 12   | Tropical moist forest        | Tropical moist forest        | 12       |
-| 13   | Tropical dry forest          | Tropical dry forest          | 13       |
-| 14   | Tropical shrubland           | Tropical dry forest          | 13       |
-| 15   | Tropical desert              | Tropical shrubland           | 13       |
-| 16   | Tropical mountain system     | Tropical moist forest        | 12       |
-| 21   | Subtropical humid forest     | Subtropical humid forest     | 21       |
-| 22   | Subtropical dry forest       | Subtropical dry forest       | 22       |
-| 23   | Subtropical steppe           | Subtropical steppe           | 23       |
-| 24   | Subtropical desert           | Subtropical steppe           | 23       |
-| 25   | Subtropical mountain system  | Subtropical dry forest       | 22       |
-| 31   | Temperate oceanic forest     | Temperate oceanic forest     | 31       |
-| 32   | Temperate continental forest | Temperate continental forest | 32       |
-| 33   | Temperate steppe             | Temperate continental forest | 32       |
-| 34   | Temperate desert             | Temperate continental forest | 32       |
-| 35   | Temperate mountain system    | Temperate mountain system    | 35       |
-| 41   | Boreal coniferous forest     | Boreal                       | 40       |
-| 42   | Boreal tundra woodland       | Boreal                       | 40       |
-| 43   | Boreal mountain system       | Boreal                       | 40       |
-| 50   | Polar                        | Boreal                       | 40       |
-| 90   | Water                        | Removed                      | -        |
+| code | GEZ class                    | New class                    | New code      |
+|------|------------------------------|------------------------------|---------------|
+| 11   | Tropical rainforest          | Tropical rainforest          | 1100000       |
+| 12   | Tropical moist forest        | Tropical moist forest        | 1200000       |
+| 13   | Tropical dry forest          | Tropical dry forest          | 1300000       |
+| 14   | Tropical shrubland           | Tropical shrubland           | 1300000       |
+| 15   | Tropical desert              | Tropical shrubland           | 1300000       |
+| 16   | Tropical mountain system     | Tropical moist forest        | 1200000       |
+| 21   | Subtropical humid forest     | Subtropical humid forest     | 2100000       |
+| 22   | Subtropical dry forest       | Subtropical dry forest       | 2200000       |
+| 23   | Subtropical steppe           | Subtropical steppe           | 2300000       |
+| 24   | Subtropical desert           | Subtropical steppe           | 2300000       |
+| 25   | Subtropical mountain system  | Subtropical dry forest       | 2200000       |
+| 31   | Temperate oceanic forest     | Temperate oceanic forest     | 3100000       |
+| 32   | Temperate continental forest | Temperate continental forest | 3200000       |
+| 33   | Temperate steppe             | Temperate continental forest | 3200000       |
+| 34   | Temperate desert             | Temperate continental forest | 3200000       |
+| 35   | Temperate mountain system    | Temperate mountain system    | 3500000       |
+| 41   | Boreal coniferous forest     | Boreal                       | 4000000       |
+| 42   | Boreal tundra woodland       | Boreal                       | 4000000       |
+| 43   | Boreal mountain system       | Boreal                       | 4000000       |
+| 50   | Polar                        | Boreal                       | 4000000       |
+| 90   | Water                        | Removed                      | -             |
 
 
 ### [Continents](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/Continents)  
@@ -144,6 +141,8 @@ This dataset is distributed as ESRI File Geodatabase. Processing includes the fo
 > Natural (1) = 100  
 > Planted (2) = 200  
 
+The reclassed layer is then resampled at the extent and resolution of AGB dataset (3.2 arcseconds, approximately 100m at the equator) using Nearest Neighbor algorithm.  
+  
 **TBD**: remove input data from within bgb_processing folder and replace gdal functions with grass functions  
 
 
@@ -153,10 +152,24 @@ This datset is distributed as TIFF raster layer. It is phisically imported in GR
 > 1 - 12 = not quercus (0)  
 > 14 - 18 = not quercus (0)  
 > 20 - 255 = not quercus (0)  
-> 13 and 19 = quercus (19)  
+> 13 and 19 = quercus (10)  
+
+The reclassed layer is then resampled at the extent and resolution of AGB dataset (3.2 arcseconds, approximately 100m at the equator) using Nearest Neighbor algorithm.  
+  
+**TBD**: remove input data from within bgb_processing folder and replace gdal functions with grass functions.  
 
 
-## BGB computation   
+## BGB computation  
+Each of the output maps obtained from each of the steps above described has been reclassed using a different order of magnitude (from units up to millions).   
+Therefore, the six layers can be summed up without risks of mixing classes. The resulting value of each pixel will be an unique numeric code where each digit refers to a class of the corresponding dataset.  
+For example, value **1123102** ccan be decoded as:  
+Tropical rainforest (**1100000**), Americas (**20000**), Needleleaf (**3000**), Natural (**100**), without Quercus (**0**), with AGB values in range 75-125 (**2**).
+
+Statistics on the resulting output are calculated with r.stats in order to get the full list of effectively existing combinations of classes. A csv (pipe delimited) file with statistics is written in output.
+
+
+
+
 [...]  
 (to be developed)
 
