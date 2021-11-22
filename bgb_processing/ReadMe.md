@@ -150,10 +150,10 @@ This dataset is distributed as ESRI File Geodatabase. Processing includes the fo
 ### [Quercus](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/Quercus)  
 This datset is distributed as TIFF raster layer. It is phisically imported in GRASS DB, then zero value is assigned to NULL. The resulting layer is reclassed as follows:  
 
-> 1 - 12 = not quercus (0)
-> 14 - 18 = not quercus (0) 
-> 20 - 255 = not quercus (0)
-> 13 and 19 = quercus (19)
+> 1 - 12 = not quercus (0)  
+> 14 - 18 = not quercus (0)  
+> 20 - 255 = not quercus (0)  
+> 13 and 19 = quercus (19)  
 
 
 ## BGB computation   
