@@ -80,63 +80,75 @@ As for Global Ecological Zones, here we used a modified version (**procedure to 
 - the resulting vector is rasterized at the same resolution of AGB (3.2 arcseconds, approximately 100m at the equator) using Nearest Neighbor algorithm.  
 
 The resulting continents raster layer is reclassed as follows:  
-> Africa = 10000
-> Americas = 20000
-> Asia = 30000
-> Europe = 40000
-> Oceania = 50000
-> Antartica = 60000
+> Africa = 10000  
+> Americas = 20000  
+> Asia = 30000  
+> Europe = 40000  
+> Oceania = 50000  
+> Antartica = 60000  
 
 The reclassed layer is then resampled at the extent and resolution of AGB dataset (3.2 arcseconds, approximately 100m at the equator) using Nearest Neighbor algorithm.  
 
 ### [Land cover](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/LandCover)  
-Presently, the 300m resolution ESA-CCI Land Cover is used to clasify land cover in three classes: broadleaf, needleleaf and mosaic.  
-The ESA-CCI land cover layer for 2018 is  reclassed as follows:  
+Presently, the 300m resolution ESA-CCI Land Cover is used to classify land cover in three classes: broadleaf, needleleaf and mosaic.  
+The ESA-CCI land cover layer for 2018 is reclassed as follows:  
 
-> No data = mosaic
-> Cropland, rainfed = mosaic  
-> Herbaceous cover = mosaic  
-> Tree or shrub cover = mosaic  
-> Cropland, irrigated or post-flooding = mosaic  
-> Mosaic cropland (>50%) / natural vegetation (tree, shrub, herbaceous cover) (<50%) = mosaic  
-> Mosaic natural vegetation (tree, shrub, herbaceous cover) (>50%) / cropland (<50%)  = mosaic  
-> Tree cover, broadleaved, evergreen, closed to open (>15%) = broadleaf  
-> Tree cover, broadleaved, deciduous, closed to open (>15%) = broadleaf  
-> Tree cover, broadleaved, deciduous, closed (>40%) = broadleaf  
-> Tree cover, broadleaved, deciduous, open (15-40%) = broadleaf  
-> Tree cover, needleleaved, evergreen, closed to open (>15%) = needleleaf  
-> Tree cover, needleleaved, evergreen, closed (>40%) = needleleaf  
-> Tree cover, needleleaved, evergreen, open (15-40%) = needleleaf  
-> Tree cover, needleleaved, deciduous, closed to open (>15%) = needleleaf  
-> Tree cover, needleleaved, deciduous, closed (>40%) = needleleaf  
-> Tree cover, needleleaved, deciduous, open (15-40%) = needleleaf  
-> Tree cover, mixed leaf type (broadleaved and needleleaved) = mosaic  
-> Mosaic tree and shrub (>50%) / herbaceous cover (<50%) = mosaic  
-> Mosaic herbaceous cover (>50%) / tree and shrub (<50%) = mosaic  
-> Shrubland = mosaic  
-> Shrubland evergreen = mosaic  
-> Shrubland deciduous = mosaic  
-> Grassland = mosaic  
-> Lichens and mosses = mosaic  
-> Sparse vegetation (tree, shrub, herbaceous cover) (<15%) = mosaic  
-> Sparse tree (<15%) = mosaic  
-> Sparse shrub (<15%) = mosaic  
-> Sparse herbaceous cover (<15%) = mosaic  
-> Tree cover, flooded, fresh or brakish water = mosaic  
-> Tree cover, flooded, saline water = mosaic  
-> Shrub or herbaceous cover, flooded, fresh/saline/brakish water = mosaic  
-> Urban areas = mosaic  
-> Bare areas = mosaic  
-> Consolidated bare areas = mosaic  
-> Unconsolidated bare areas = mosaic  
-> Water bodies = mosaic  
-> Permanent snow and ice = mosaic  
+> No data = mosaic (1000)
+> Cropland, rainfed = mosaic (1000)  
+> Herbaceous cover = mosaic (1000)  
+> Tree or shrub cover = mosaic (1000)  
+> Cropland, irrigated or post-flooding = mosaic (1000)  
+> Mosaic cropland (>50%) / natural vegetation (tree, shrub, herbaceous cover) (<50%) = mosaic (1000)  
+> Mosaic natural vegetation (tree, shrub, herbaceous cover) (>50%) / cropland (<50%)  = mosaic (1000)  
+> Tree cover, broadleaved, evergreen, closed to open (>15%) = broadleaf (2000)  
+> Tree cover, broadleaved, deciduous, closed to open (>15%) = broadleaf (2000)  
+> Tree cover, broadleaved, deciduous, closed (>40%) = broadleaf (2000)  
+> Tree cover, broadleaved, deciduous, open (15-40%) = broadleaf (2000)  
+> Tree cover, needleleaved, evergreen, closed to open (>15%) = needleleaf (3000)  
+> Tree cover, needleleaved, evergreen, closed (>40%) = needleleaf (3000)  
+> Tree cover, needleleaved, evergreen, open (15-40%) = needleleaf (3000)  
+> Tree cover, needleleaved, deciduous, closed to open (>15%) = needleleaf (3000)  
+> Tree cover, needleleaved, deciduous, closed (>40%) = needleleaf (3000)  
+> Tree cover, needleleaved, deciduous, open (15-40%) = needleleaf (3000)  
+> Tree cover, mixed leaf type (broadleaved and needleleaved) = mosaic (1000)  
+> Mosaic tree and shrub (>50%) / herbaceous cover (<50%) = mosaic (1000)  
+> Mosaic herbaceous cover (>50%) / tree and shrub (<50%) = mosaic (1000)  
+> Shrubland = mosaic (1000)  
+> Shrubland evergreen = mosaic (1000)  
+> Shrubland deciduous = mosaic (1000)  
+> Grassland = mosaic (1000)  
+> Lichens and mosses = mosaic (1000)  
+> Sparse vegetation (tree, shrub, herbaceous cover) (<15%) = mosaic (1000)  
+> Sparse tree (<15%) = mosaic (1000)  
+> Sparse shrub (<15%) = mosaic (1000)  
+> Sparse herbaceous cover (<15%) = mosaic (1000)  
+> Tree cover, flooded, fresh or brakish water = mosaic (1000)  
+> Tree cover, flooded, saline water = mosaic (1000)  
+> Shrub or herbaceous cover, flooded, fresh/saline/brakish water = mosaic (1000)  
+> Urban areas = mosaic (1000)  
+> Bare areas = mosaic (1000)  
+> Consolidated bare areas = mosaic (1000)  
+> Unconsolidated bare areas = mosaic (1000)  
+> Water bodies = mosaic (1000)  
+> Permanent snow and ice = mosaic (1000)  
 
 The reclassed layer is then resampled at the extent and resolution of AGB dataset (3.2 arcseconds, approximately 100m at the equator) using Nearest Neighbor algorithm.  
 
 ### [Origin](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/Plantation)  
+This dataset is distributed as ESRI File Geodatabase. Processing includes the followings:
+
+- All feature classes included in the GDB are imported and merged into a single Geopackage layer using GDAL libraries (ogr2ogr)  
+- The resulting layer is rasterized at the AGB resolution using GDAL libraries (gdal_rasterize)  
+- THe raster layer is imported as external link in GRASS and reclassed as follows:
+
+> Natural (1) = 100
+> Planted (2) = 200  
+
 
 ### [Quercus](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/Quercus)  
+
+
+
 
 ## BGB computation   
 [...]  
