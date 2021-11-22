@@ -93,7 +93,7 @@ The reclassed layer is then resampled at the extent and resolution of AGB datase
 Presently, the 300m resolution ESA-CCI Land Cover is used to classify land cover in three classes: broadleaf, needleleaf and mosaic.  
 The ESA-CCI land cover layer for 2018 is reclassed as follows:  
 
-> No data = mosaic (1000)
+> No data = mosaic (1000)  
 > Cropland, rainfed = mosaic (1000)  
 > Herbaceous cover = mosaic (1000)  
 > Tree or shrub cover = mosaic (1000)  
@@ -141,13 +141,19 @@ This dataset is distributed as ESRI File Geodatabase. Processing includes the fo
 - The resulting layer is rasterized at the AGB resolution using GDAL libraries (gdal_rasterize)  
 - THe raster layer is imported as external link in GRASS and reclassed as follows:
 
-> Natural (1) = 100
+> Natural (1) = 100  
 > Planted (2) = 200  
+
+**TBD**: remove input data from within bgb_processing folder and replace gdal functions with grass functions  
 
 
 ### [Quercus](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/Quercus)  
+This datset is distributed as TIFF raster layer. It is phisically imported in GRASS DB, then zero value is assigned to NULL. The resulting layer is reclassed as follows:  
 
-
+> 1 - 12 = not quercus (0)
+> 14 - 18 = not quercus (0) 
+> 20 - 255 = not quercus (0)
+> 13 and 19 = quercus (19)
 
 
 ## BGB computation   
