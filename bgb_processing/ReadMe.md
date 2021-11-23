@@ -161,10 +161,6 @@ The reclassed layer is then resampled at the extent and resolution of AGB datase
 
 ## BGB computation  
 
-
-
-
-
 [...]  
 (to be developed)
 
@@ -173,14 +169,19 @@ The reclassed layer is then resampled at the extent and resolution of AGB datase
 Each of the output maps obtained from each of the steps above described has been reclassed using a different order of magnitude (from units up to millions).   
 Therefore, the six layers can be summed up without risks of mixing classes. The resulting value of each pixel will be an unique numeric code where each digit refers to a class of the corresponding dataset.  
 For example, value **1123102** ccan be decoded as:  
-Tropical rainforest (**1100000**), Americas (**20000**), Needleleaf (**3000**), Natural (**100**), without Quercus (**0**), with AGB values in range 75-125 (**2**).
+Tropical rainforest (**1100000**), Americas (**20000**), Needleleaf (**3000**), Natural (**100**), without Quercus (**0**), with AGB values in range 75-125 (**2**).  
 
-Statistics on the resulting output are calculated with r.stats in order to get the full list of effectively existing combinations of classes. 
-The csv  file with statistics is written in output and used as input in the template spreadsheet **[lut_rcoeffs.ods](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/rcl_cross)**.
+[Statistics](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/rcl_cross/output_data/rcl_cross_stats.csv) on the resulting output are calculated with r.stats in order to get the full list of effectively existing combinations of classes.  
+The csv  file with statistics is written in output and used as input in the template spreadsheet **[lut_rcoeffs.ods](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/rcl_cross)**. The following steps have to be manually done:  
 
-
+- Paste data from [Statistics](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/rcl_cross/output_data/rcl_cross_stats.csv) file into sheet rcl_cross_stats (columns A and B) of the template spreadsheet
+- The VLOOKUP formula in column C assigns the R coefficient to each code, using as source the full list of 820 combinations in sheet 'r_coefficients'. Manually check this column to verify the absence of errors or of  missing data.   
+The formula is provided for a total of 730 combinations (those actually existing when run on AGB v.2 (2018) dataset. It could be necessary to copy the formula in missing cells if more combinations are obtained.  
+- Export as text file the content of column A in sheet 'recode_file'. It will be used as reclass file in the successive step.  
 
 ### [Getting Below Ground Biomass]()  
+
+
 
 [...]  
 
