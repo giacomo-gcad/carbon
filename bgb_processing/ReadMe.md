@@ -176,7 +176,7 @@ For example, value **1123102** ccan be decoded as:
 Tropical rainforest (**1100000**), Americas (**20000**), Needleleaf (**3000**), Natural (**100**), without Quercus (**0**), with AGB values in range 75-125 (**2**).
 
 Statistics on the resulting output are calculated with r.stats in order to get the full list of effectively existing combinations of classes. 
-The csv  file with statistics is written in output and used as input in the template spreadsheet **[lut_rcoeffs.ods](/rcl_cross/)**.
+The csv  file with statistics is written in output and used as input in the template spreadsheet **[lut_rcoeffs.ods](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/rcl_cross)**.
 
 
 
