@@ -161,8 +161,6 @@ The reclassed layer is then resampled at the extent and resolution of AGB datase
 
 ## BGB computation  
 
-[...]  
-(to be developed)
 
 ### [Crossing input maps and preparing R coefficients layer ](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/rcl_cross)  
 
@@ -176,7 +174,7 @@ The csv  file with statistics is written in output and used as input in the temp
 
 - Paste data from [Statistics](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/rcl_cross/output_data/rcl_cross_stats.csv) file into sheet rcl_cross_stats (columns A and B) of the template spreadsheet
 - The VLOOKUP formula in column C assigns the R coefficient to each code, using as source the full list of 820 combinations in sheet 'r_coefficients'. Manually check this column to verify the absence of errors or of  missing data.   
-The formula is provided for a total of 730 combinations (those actually existing when run on AGB v.2 (2018) dataset. It could be necessary to copy the formula in missing cells if more combinations are obtained.  
+The formula is provided for a total of 730 combinations (those actually existing when run on AGB v.2, 2018 dataset). It could be necessary to copy the formula in missing cells if more combinations are obtained.  
 - Export as text file the content of column A in sheet 'recode_file'. It will be used as reclass file in the successive step.  
 
 ### [Getting Below Ground Biomass]()  
