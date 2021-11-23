@@ -160,12 +160,7 @@ The reclassed layer is then resampled at the extent and resolution of AGB datase
 
 
 ## BGB computation  
-Each of the output maps obtained from each of the steps above described has been reclassed using a different order of magnitude (from units up to millions).   
-Therefore, the six layers can be summed up without risks of mixing classes. The resulting value of each pixel will be an unique numeric code where each digit refers to a class of the corresponding dataset.  
-For example, value **1123102** ccan be decoded as:  
-Tropical rainforest (**1100000**), Americas (**20000**), Needleleaf (**3000**), Natural (**100**), without Quercus (**0**), with AGB values in range 75-125 (**2**).
 
-Statistics on the resulting output are calculated with r.stats in order to get the full list of effectively existing combinations of classes. A csv (pipe delimited) file with statistics is written in output.
 
 
 
@@ -173,10 +168,21 @@ Statistics on the resulting output are calculated with r.stats in order to get t
 [...]  
 (to be developed)
 
-### [Crossing input maps](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/rcl_cross)  
+### [Crossing input maps and preparing R coefficients layer ](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/rcl_cross)  
+
+Each of the output maps obtained from each of the steps above described has been reclassed using a different order of magnitude (from units up to millions).   
+Therefore, the six layers can be summed up without risks of mixing classes. The resulting value of each pixel will be an unique numeric code where each digit refers to a class of the corresponding dataset.  
+For example, value **1123102** ccan be decoded as:  
+Tropical rainforest (**1100000**), Americas (**20000**), Needleleaf (**3000**), Natural (**100**), without Quercus (**0**), with AGB values in range 75-125 (**2**).
+
+Statistics on the resulting output are calculated with r.stats in order to get the full list of effectively existing combinations of classes. 
+The csv  file with statistics is written in output and used as input in the template spreadsheet **[lut_rcoeffs.ods](/rcl_cross/lut_rcoeffs.ods)**.
+
+
 
 ### [Getting Below Ground Biomass]()  
 
 [...]  
+
 
 
