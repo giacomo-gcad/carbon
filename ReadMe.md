@@ -11,6 +11,16 @@ Total Carbon Stock is composed by 5 different 'pools'
 4. [Dead Wood Carbon (DWB)](/dwb_lit_processing)
 5. [Litter Carbon (LIT)](/dwb_lit_processing)
 
-Global spatial datasets area already available for Soil Carbon and Above Ground Carbon, while the three remaining pools need to be estimated as fractions of Above Ground Carbon.
+Global spatial datasets area already available for Soil Carbon and Above Ground Carbon, while the three remaining pools need to be estimated as fractions of Above Ground Carbon.  
+
+Once each carbon pool has been processed, the five carbon pools are summed upto get the Total Carbon dataset.
+For each layer (Except GSOC):
+- the biomass density (Mg/ha) is converted to biomass amount, multiplying each pixel value for the area of that pixel: Output units are Mg  
+- the layer is downscaled to the same resolution of GSOC (approximately 1 km at the equator). When resampling, pixlììel values are summed up. The output represents the amount of biomass (in Mg) in each 1 km2 pixel.  
+- Biomass is converted to carbon by dividig by 2.
+
+For GSOC, only the conversion from carbon density to carbon amount is done.
+
+The script [compute_total_carbon.sh](./compute_total_carbon.sh) (TO BE PREPARED) executes all the operations described above.
 
 [...]
