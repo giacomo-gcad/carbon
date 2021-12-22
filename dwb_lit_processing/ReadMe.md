@@ -85,5 +85,4 @@ For example, the combination  Temperate/Boreal (**200**), Elevation < 2000 m a.s
 | Temperate/Boreal | All           | All               |     0.08                  |    0.04                |
 
 2. The two maps with coefficients are multiplied by AGB map to get Dead Wood Biomass and Litter maps. Measurement units are the same of AGB (Mg/ha). 
-3. The two output maps are divided by 2 in order to convert Biomass values to Carbon values. Output measurement units are still Mg/ha.
 
