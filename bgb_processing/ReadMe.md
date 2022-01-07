@@ -175,13 +175,12 @@ The csv  file with statistics is written in output and used as input in the temp
 - Paste data from [Statistics](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/rcl_cross/output_data/rcl_cross_stats.csv) file into sheet rcl_cross_stats (columns A and B) of the template spreadsheet
 - The VLOOKUP formula in column C assigns the R coefficient to each code, using as source the full list of 820 combinations in sheet 'r_coefficients'. Manually check this column to verify the absence of errors or of  missing data.   
 The formula is provided for a total of 730 combinations (those actually existing when run on AGB v.2, 2018 dataset). It could be necessary to copy the formula in missing cells if more combinations are obtained.  
-- Export as text file the content of column A in sheet 'recode_file'. It will be used as reclass file in the successive step.  
+- Export as text file the content of column A in sheet 'recode_file'. It will be used as [reclass file](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/BGB/assign_r_coeffs.rcl)  in the successive step.  
 
-### [Getting Below Ground Biomass]()  
-
-
+### [Getting Below Ground Biomass]((https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/BGB)  
+The reclass file exported in the previous step provides the look up table needed to convert the unique numeric codes to IPCC R coefficients. This is done with the GRASS module `r.recode`
+The raster layer with R coefficients is then multiplied by the Above Ground Biomass layer to get the final **Below Ground Biomass layer**.  
+ 
 
 [...]  
-
-
 

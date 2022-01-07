@@ -1,0 +1,23 @@
+Wed Dec 22 16:09:06 CET 2021
+Starting GRASS GIS...
+Cleaning up temporary files...
+Executing <g.mapset CARBON -p> ...
+CARBON
+Execution of <g.mapset CARBON -p> finished.
+Cleaning up temporary files...
+AGB resampled
+BGB resampled
+DWB resampled
+LIT resampled
+GSOC converted
+ 
+----------------------------------------------------
+Resampling carbon pools completed in 171 minutes
+----------------------------------------------------
+----------------------------------------------------
+Sum up of carbon pools completed in 2 minutes
+----------------------------------------------------
+ 
+----------------------------------------------------
+Total Carbon Layer computed in 174 minutes
+----------------------------------------------------
