@@ -177,7 +177,8 @@ The csv  file with statistics is written in output and used as input in the temp
 The formula is provided for a total of 730 combinations (those actually existing when run on AGB v.2, 2018 dataset). It could be necessary to copy the formula in missing cells if more combinations are obtained.  
 - Export as text file the content of column A in sheet 'recode_file'. It will be used as [reclass file](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/BGB/assign_r_coeffs.rcl)  in the successive step.  
 
-### [Getting Below Ground Biomass]((https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/BGB)  
+
+### [Getting Below Ground Biomass](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/BGB)  
 The reclass file exported in the previous step provides the look up table needed to convert the unique numeric codes to IPCC R coefficients. This is done with the GRASS module `r.recode`
 The raster layer with R coefficients is then multiplied by the Above Ground Biomass layer to get the final **Below Ground Biomass layer**.  
  
