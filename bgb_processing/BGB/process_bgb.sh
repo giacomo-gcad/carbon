@@ -16,7 +16,7 @@ wait
 date
 echo "rcl_cross recoded with R coeffs"
 
-grass ${CARBON_MAPSET_PATH} --exec r.mapcalc --q --o expression="${OUTBGB} = round( ${AGB} * ${IPCC_COEFFS} )"
+grass ${CARBON_MAPSET_PATH} --exec r.mapcalc --q --o expression="${OUTBGB} = ${AGB} * ${IPCC_COEFFS} "
 wait
 echo "Below Ground Biomass computed."
 

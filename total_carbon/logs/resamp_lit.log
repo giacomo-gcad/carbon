@@ -1,6 +1,14 @@
 Starting GRASS GIS...
 Cleaning up temporary files...
 Executing <./resamp_lit.sh> ...
+360 degree EW extent is exceeded by 0.999827 cells
+360 degree EW extent is exceeded by 0.999827 cells
+360 degree EW extent is exceeded by 0.999827 cells
+360 degree EW extent is exceeded by 0.999827 cells
+360 degree EW extent is exceeded by 10 cells
+360 degree EW extent is exceeded by 0.999827 cells
+360 degree EW extent is exceeded by 0.999827 cells
    0%   5%  10%  15%  20%  25%  30%  35%  40%  45%  50%  55%  60%  65%  70%  75%  80%  85%  90%  95% 100%
+360 degree EW extent is exceeded by 0.999827 cells
 Execution of <./resamp_lit.sh> finished.
 Cleaning up temporary files...

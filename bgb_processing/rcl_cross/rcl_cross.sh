@@ -17,7 +17,7 @@ OUT="rcl_cross"
 OUT_TABLE=${DIR}"/rcl_cross/output_data/rcl_cross_stats.csv" 
 
 grass ${CARBON_MAPSET_PATH} --exec g.region raster=${AGB}
-grass ${CARBON_MAPSET_PATH} --exec r.mapcalc "${OUT} = ${GEZ} + ${CON} + ${ESA} + ${PLF} + ${QUE} + ${AGB}" --o --q
+grass ${CARBON_MAPSET_PATH} --exec r.mapcalc "${OUT} = int( ${GEZ} + ${CON} + ${ESA} + ${PLF} + ${QUE} + ${AGB} )" --o --q
 grass ${CARBON_MAPSET_PATH} --exec r.stats -a input=${OUT} output=${OUT_TABLE} separator=pipe null_value=0 --o --q
 
 echo "re-classed layers cross performed and stats computed"

@@ -18,14 +18,12 @@ Global spatial datasets area already available for Soil Carbon and Above Ground 
 Once each carbon pool has been processed, the five carbon pools are summed upto get the Total Carbon dataset.
 For each layer (Except GSOC):
 - the biomass density (Mg/ha) is converted to biomass amount, multiplying each pixel value for the area of that pixel: output units are Mg.  
-- the layer is downscaled to the same resolution of GSOC (approximately 1 km at the equator). When resampling, pixlììel values are summed up. The output represents the amount of biomass (in Mg) in each 1 km2 pixel.  
 - Biomass is converted to carbon by dividig by 2.
+- the layer is downscaled to the same resolution of GSOC (approximately 1 km at the equator). When resampling, pixel values are summed up. The output represents the amount of biomass (in Mg) in each 30 arc-seconds pixel.  
 
 For GSOC, only the conversion from carbon density to carbon amount is done.
 
-The script [compute_total_carbon.sh](./compute_total_carbon.sh) (TO BE PREPARED) executes all the operations described above.
-
-[...]
+The script [compute_total_carbon.sh](./compute_total_carbon.sh) executes all the operations described above.  
 
 
 ## Analysis of Carbon pools in Protected Areas

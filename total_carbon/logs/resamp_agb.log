@@ -1,32 +1,13 @@
 Starting GRASS GIS...
 Cleaning up temporary files...
 Executing <./resamp_agb.sh> ...
-projection: 3 (Latitude-Longitude)
-zone:       0
-datum:      wgs84
-ellipsoid:  wgs84
-north:      80N
-south:      59:59:59.999995S
-west:       180W
-east:       179:59:59.999987E
-nsres:      0:00:03.2
-ewres:      0:00:03.2
-rows:       157500
-cols:       405000
-cells:      63787500000
-projection: 3 (Latitude-Longitude)
-zone:       0
-datum:      wgs84
-ellipsoid:  wgs84
-north:      80N
-south:      59:59:59.999995S
-west:       180W
-east:       179:59:59.999987E
-nsres:      0:00:30
-ewres:      0:00:30
-rows:       16800
-cols:       43200
-cells:      725760000
+360 degree EW extent is exceeded by 0.999827 cells
+360 degree EW extent is exceeded by 0.999827 cells
+360 degree EW extent is exceeded by 0.999827 cells
+360 degree EW extent is exceeded by 10 cells
+360 degree EW extent is exceeded by 0.999827 cells
+360 degree EW extent is exceeded by 0.999827 cells
    0%   5%  10%  15%  20%  25%  30%  35%  40%  45%  50%  55%  60%  65%  70%  75%  80%  85%  90%  95% 100%
+360 degree EW extent is exceeded by 0.999827 cells
 Execution of <./resamp_agb.sh> finished.
 Cleaning up temporary files...
