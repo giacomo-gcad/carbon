@@ -21,10 +21,11 @@ For each layer (Except GSOC):
 - Biomass is converted to carbon by dividig by 2.
 - the layer is downscaled to the same resolution of GSOC (approximately 1 km at the equator). When resampling, pixel values are summed up. The output represents the amount of biomass (in Mg) in each 30 arc-seconds pixel.  
 
-For GSOC, only the conversion from carbon density to carbon amount is done.
+The GSOC dataset is first resampled to the same resolution of the other carbon pools (3.2 arcseconds), then is converted from carbon density to carbon amount.
 
 The script [compute_total_carbon.sh](./compute_total_carbon.sh) executes all the operations described above.  
 
+In the last step, the five carbon pools are summed up to derive the Total Carbon layer, expressed as amount of Carbon within each pixel (in Mg).  
 
 ## Analysis of Carbon pools in Protected Areas
 
