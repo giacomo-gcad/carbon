@@ -4,7 +4,11 @@ Here using the same procedure of DOPA workflow for the [analysis of continuous r
 
 Two main steps:  
 
-## 1. Computation of basic statistics in grass: one script foe each carbon pool:  
+### 1. Computation of basic statistics in grass  
+
+The grass funcion r.univar is iteratively run in parallel over each qid of CEP (see details [here](https://andreamandrici.github.io/dopa_workflow/flattening/).  
+One script for each carbon pool:  
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[exec_cep_agc_stats.sh](./c_analysis/exec_cep_agc_stats.sh)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[exec_cep_bgc_stats.sh](./c_analysis/exec_cep_bgc_stats.sh)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[exec_cep_dw_stats.sh](./c_analysis/exec_cep_dw_stats.sh)  
@@ -12,10 +16,10 @@ Two main steps:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[exec_cep_gsoc_stats.sh](./c_analysis/exec_cep_gsoc_stats.sh)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[exec_cep_tot_carbon_stats.sh](./c_analysis/exec_cep_tot_carbon_stats.sh)  
 
-Each scripts produce as aoutput a csv file with basic stats for each elementary object of CEP  
+Each scripts produce as output a csv file with basic stats for each elementary object of CEP.  
 
 
-## 2. Data aggregation (to be completed)  
+### 2. Data aggregation (to be completed)  
 
 [...]
 
