@@ -1,0 +1,287 @@
+DEFINED PARAMETERS ARE = 
+--GENERAL---------------
+V_COUNTRY IS =  gaul_eez_dissolved_201912
+V_ECOREGION IS =  ecoregions_2020_atts
+V_WDPA IS =  wdpa_202101
+V_CEP IS =  cep_202101
+V_RCEP_IN IS =  ind_carbon
+V_RCEP_OUT IS =  ind_carbon
+-- CARBON ---------------
+V_THEME_301 - CARBON ABOVE GROUND IS =  r_univar_cep_agc2018_100m_202101
+V_THEME_302 - CARBON BELOW GROUND IS =  r_univar_cep_bgc2018_100m_202101
+V_THEME_303 - CARBON SOIL ORGANIC IS =  r_univar_cep_gsoc_15_100m_202101
+V_THEME_304 - CARBON TOTAL IS =  r_univar_cep_total_carbon_202101
+V_THEME_305 - DEAD WOOD CARBON IS =  r_univar_cep_dw_carbon_100m_202101
+V_THEME_306 - LITTER CARBON IS =  r_univar_cep_lit_carbon_100m_202101
+psql:./sql/301_cep_carbon_above_ground_aggregations.sql:3: NOTICE:  table "theme" does not exist, skipping
+DROP TABLE
+SELECT 3497
+psql:./sql/301_cep_carbon_above_ground_aggregations.sql:5: NOTICE:  table "grid_index" does not exist, skipping
+DROP TABLE
+SELECT 64800
+psql:./sql/301_cep_carbon_above_ground_aggregations.sql:7: NOTICE:  table "area_index" does not exist, skipping
+DROP TABLE
+SELECT 458826
+psql:./sql/301_cep_carbon_above_ground_aggregations.sql:9: NOTICE:  table "country_index" does not exist, skipping
+DROP TABLE
+SELECT 623750
+psql:./sql/301_cep_carbon_above_ground_aggregations.sql:10: NOTICE:  table "ecoregion_index" does not exist, skipping
+DROP TABLE
+SELECT 623750
+psql:./sql/301_cep_carbon_above_ground_aggregations.sql:11: NOTICE:  table "pa_index" does not exist, skipping
+DROP TABLE
+SELECT 965465
+psql:./sql/301_cep_carbon_above_ground_aggregations.sql:15: NOTICE:  table "country_land" does not exist, skipping
+DROP TABLE
+SELECT 9
+psql:./sql/301_cep_carbon_above_ground_aggregations.sql:22: NOTICE:  table "country_land_prot" does not exist, skipping
+DROP TABLE
+SELECT 9
+psql:./sql/301_cep_carbon_above_ground_aggregations.sql:29: NOTICE:  table "country_land_unprot" does not exist, skipping
+DROP TABLE
+SELECT 9
+psql:./sql/301_cep_carbon_above_ground_aggregations.sql:38: NOTICE:  table "eco_land" does not exist, skipping
+DROP TABLE
+SELECT 21
+psql:./sql/301_cep_carbon_above_ground_aggregations.sql:45: NOTICE:  table "eco_land_prot" does not exist, skipping
+DROP TABLE
+SELECT 20
+psql:./sql/301_cep_carbon_above_ground_aggregations.sql:52: NOTICE:  table "eco_land_unprot" does not exist, skipping
+DROP TABLE
+SELECT 21
+psql:./sql/301_cep_carbon_above_ground_aggregations.sql:61: NOTICE:  table "pa_land" does not exist, skipping
+DROP TABLE
+SELECT 1019
+DROP TABLE
+SELECT 9
+DROP TABLE
+SELECT 21
+DROP TABLE
+SELECT 1019
+psql:./sql/302_cep_carbon_below_ground_aggregations.sql:3: NOTICE:  table "theme" does not exist, skipping
+DROP TABLE
+SELECT 3497
+psql:./sql/302_cep_carbon_below_ground_aggregations.sql:5: NOTICE:  table "grid_index" does not exist, skipping
+DROP TABLE
+SELECT 64800
+psql:./sql/302_cep_carbon_below_ground_aggregations.sql:7: NOTICE:  table "area_index" does not exist, skipping
+DROP TABLE
+SELECT 458826
+psql:./sql/302_cep_carbon_below_ground_aggregations.sql:9: NOTICE:  table "country_index" does not exist, skipping
+DROP TABLE
+SELECT 623750
+psql:./sql/302_cep_carbon_below_ground_aggregations.sql:10: NOTICE:  table "ecoregion_index" does not exist, skipping
+DROP TABLE
+SELECT 623750
+psql:./sql/302_cep_carbon_below_ground_aggregations.sql:11: NOTICE:  table "pa_index" does not exist, skipping
+DROP TABLE
+SELECT 965465
+psql:./sql/302_cep_carbon_below_ground_aggregations.sql:16: NOTICE:  table "country_land" does not exist, skipping
+DROP TABLE
+SELECT 9
+psql:./sql/302_cep_carbon_below_ground_aggregations.sql:23: NOTICE:  table "country_land_prot" does not exist, skipping
+DROP TABLE
+SELECT 9
+psql:./sql/302_cep_carbon_below_ground_aggregations.sql:30: NOTICE:  table "country_land_unprot" does not exist, skipping
+DROP TABLE
+SELECT 9
+psql:./sql/302_cep_carbon_below_ground_aggregations.sql:39: NOTICE:  table "eco_land" does not exist, skipping
+DROP TABLE
+SELECT 21
+psql:./sql/302_cep_carbon_below_ground_aggregations.sql:46: NOTICE:  table "eco_land_prot" does not exist, skipping
+DROP TABLE
+SELECT 20
+psql:./sql/302_cep_carbon_below_ground_aggregations.sql:53: NOTICE:  table "eco_land_unprot" does not exist, skipping
+DROP TABLE
+SELECT 21
+psql:./sql/302_cep_carbon_below_ground_aggregations.sql:62: NOTICE:  table "pa_land" does not exist, skipping
+DROP TABLE
+SELECT 1019
+DROP TABLE
+SELECT 9
+DROP TABLE
+SELECT 21
+DROP TABLE
+SELECT 1019
+psql:./sql/303_cep_carbon_soil_organic_aggregations.sql:3: NOTICE:  table "theme" does not exist, skipping
+DROP TABLE
+SELECT 3497
+psql:./sql/303_cep_carbon_soil_organic_aggregations.sql:5: NOTICE:  table "grid_index" does not exist, skipping
+DROP TABLE
+SELECT 64800
+psql:./sql/303_cep_carbon_soil_organic_aggregations.sql:7: NOTICE:  table "area_index" does not exist, skipping
+DROP TABLE
+SELECT 458826
+psql:./sql/303_cep_carbon_soil_organic_aggregations.sql:9: NOTICE:  table "country_index" does not exist, skipping
+DROP TABLE
+SELECT 623750
+psql:./sql/303_cep_carbon_soil_organic_aggregations.sql:10: NOTICE:  table "ecoregion_index" does not exist, skipping
+DROP TABLE
+SELECT 623750
+psql:./sql/303_cep_carbon_soil_organic_aggregations.sql:11: NOTICE:  table "pa_index" does not exist, skipping
+DROP TABLE
+SELECT 965465
+psql:./sql/303_cep_carbon_soil_organic_aggregations.sql:15: NOTICE:  table "country_land" does not exist, skipping
+DROP TABLE
+SELECT 9
+psql:./sql/303_cep_carbon_soil_organic_aggregations.sql:22: NOTICE:  table "country_land_prot" does not exist, skipping
+DROP TABLE
+SELECT 9
+psql:./sql/303_cep_carbon_soil_organic_aggregations.sql:29: NOTICE:  table "country_land_unprot" does not exist, skipping
+DROP TABLE
+SELECT 9
+psql:./sql/303_cep_carbon_soil_organic_aggregations.sql:38: NOTICE:  table "eco_land" does not exist, skipping
+DROP TABLE
+SELECT 21
+psql:./sql/303_cep_carbon_soil_organic_aggregations.sql:45: NOTICE:  table "eco_land_prot" does not exist, skipping
+DROP TABLE
+SELECT 20
+psql:./sql/303_cep_carbon_soil_organic_aggregations.sql:52: NOTICE:  table "eco_land_unprot" does not exist, skipping
+DROP TABLE
+SELECT 21
+psql:./sql/303_cep_carbon_soil_organic_aggregations.sql:61: NOTICE:  table "pa_land" does not exist, skipping
+DROP TABLE
+SELECT 1019
+DROP TABLE
+SELECT 9
+DROP TABLE
+SELECT 21
+DROP TABLE
+SELECT 1019
+psql:./sql/304_cep_carbon_total_aggregations.sql:3: NOTICE:  table "theme" does not exist, skipping
+DROP TABLE
+SELECT 3497
+psql:./sql/304_cep_carbon_total_aggregations.sql:5: NOTICE:  table "grid_index" does not exist, skipping
+DROP TABLE
+SELECT 64800
+psql:./sql/304_cep_carbon_total_aggregations.sql:7: NOTICE:  table "area_index" does not exist, skipping
+DROP TABLE
+SELECT 458826
+psql:./sql/304_cep_carbon_total_aggregations.sql:9: NOTICE:  table "country_index" does not exist, skipping
+DROP TABLE
+SELECT 623750
+psql:./sql/304_cep_carbon_total_aggregations.sql:10: NOTICE:  table "ecoregion_index" does not exist, skipping
+DROP TABLE
+SELECT 623750
+psql:./sql/304_cep_carbon_total_aggregations.sql:11: NOTICE:  table "pa_index" does not exist, skipping
+DROP TABLE
+SELECT 965465
+psql:./sql/304_cep_carbon_total_aggregations.sql:15: NOTICE:  table "country_land" does not exist, skipping
+DROP TABLE
+SELECT 9
+psql:./sql/304_cep_carbon_total_aggregations.sql:22: NOTICE:  table "country_land_prot" does not exist, skipping
+DROP TABLE
+SELECT 9
+psql:./sql/304_cep_carbon_total_aggregations.sql:29: NOTICE:  table "country_land_unprot" does not exist, skipping
+DROP TABLE
+SELECT 9
+psql:./sql/304_cep_carbon_total_aggregations.sql:38: NOTICE:  table "eco_land" does not exist, skipping
+DROP TABLE
+SELECT 21
+psql:./sql/304_cep_carbon_total_aggregations.sql:45: NOTICE:  table "eco_land_prot" does not exist, skipping
+DROP TABLE
+SELECT 20
+psql:./sql/304_cep_carbon_total_aggregations.sql:52: NOTICE:  table "eco_land_unprot" does not exist, skipping
+DROP TABLE
+SELECT 21
+psql:./sql/304_cep_carbon_total_aggregations.sql:61: NOTICE:  table "pa_land" does not exist, skipping
+DROP TABLE
+SELECT 1019
+DROP TABLE
+SELECT 9
+DROP TABLE
+SELECT 21
+DROP TABLE
+SELECT 1019
+psql:./sql/305_cep_dw_carbon_aggregations.sql:3: NOTICE:  table "theme" does not exist, skipping
+DROP TABLE
+SELECT 3497
+psql:./sql/305_cep_dw_carbon_aggregations.sql:5: NOTICE:  table "grid_index" does not exist, skipping
+DROP TABLE
+SELECT 64800
+psql:./sql/305_cep_dw_carbon_aggregations.sql:7: NOTICE:  table "area_index" does not exist, skipping
+DROP TABLE
+SELECT 458826
+psql:./sql/305_cep_dw_carbon_aggregations.sql:9: NOTICE:  table "country_index" does not exist, skipping
+DROP TABLE
+SELECT 623750
+psql:./sql/305_cep_dw_carbon_aggregations.sql:10: NOTICE:  table "ecoregion_index" does not exist, skipping
+DROP TABLE
+SELECT 623750
+psql:./sql/305_cep_dw_carbon_aggregations.sql:11: NOTICE:  table "pa_index" does not exist, skipping
+DROP TABLE
+SELECT 965465
+psql:./sql/305_cep_dw_carbon_aggregations.sql:15: NOTICE:  table "country_land" does not exist, skipping
+DROP TABLE
+SELECT 9
+psql:./sql/305_cep_dw_carbon_aggregations.sql:22: NOTICE:  table "country_land_prot" does not exist, skipping
+DROP TABLE
+SELECT 9
+psql:./sql/305_cep_dw_carbon_aggregations.sql:29: NOTICE:  table "country_land_unprot" does not exist, skipping
+DROP TABLE
+SELECT 9
+psql:./sql/305_cep_dw_carbon_aggregations.sql:38: NOTICE:  table "eco_land" does not exist, skipping
+DROP TABLE
+SELECT 21
+psql:./sql/305_cep_dw_carbon_aggregations.sql:45: NOTICE:  table "eco_land_prot" does not exist, skipping
+DROP TABLE
+SELECT 20
+psql:./sql/305_cep_dw_carbon_aggregations.sql:52: NOTICE:  table "eco_land_unprot" does not exist, skipping
+DROP TABLE
+SELECT 21
+psql:./sql/305_cep_dw_carbon_aggregations.sql:61: NOTICE:  table "pa_land" does not exist, skipping
+DROP TABLE
+SELECT 1019
+DROP TABLE
+SELECT 9
+DROP TABLE
+SELECT 21
+DROP TABLE
+SELECT 1019
+psql:./sql/306_cep_lit_carbon_aggregations.sql:3: NOTICE:  table "theme" does not exist, skipping
+DROP TABLE
+SELECT 3497
+psql:./sql/306_cep_lit_carbon_aggregations.sql:5: NOTICE:  table "grid_index" does not exist, skipping
+DROP TABLE
+SELECT 64800
+psql:./sql/306_cep_lit_carbon_aggregations.sql:7: NOTICE:  table "area_index" does not exist, skipping
+DROP TABLE
+SELECT 458826
+psql:./sql/306_cep_lit_carbon_aggregations.sql:9: NOTICE:  table "country_index" does not exist, skipping
+DROP TABLE
+SELECT 623750
+psql:./sql/306_cep_lit_carbon_aggregations.sql:10: NOTICE:  table "ecoregion_index" does not exist, skipping
+DROP TABLE
+SELECT 623750
+psql:./sql/306_cep_lit_carbon_aggregations.sql:11: NOTICE:  table "pa_index" does not exist, skipping
+DROP TABLE
+SELECT 965465
+psql:./sql/306_cep_lit_carbon_aggregations.sql:15: NOTICE:  table "country_land" does not exist, skipping
+DROP TABLE
+SELECT 9
+psql:./sql/306_cep_lit_carbon_aggregations.sql:22: NOTICE:  table "country_land_prot" does not exist, skipping
+DROP TABLE
+SELECT 9
+psql:./sql/306_cep_lit_carbon_aggregations.sql:29: NOTICE:  table "country_land_unprot" does not exist, skipping
+DROP TABLE
+SELECT 9
+psql:./sql/306_cep_lit_carbon_aggregations.sql:38: NOTICE:  table "eco_land" does not exist, skipping
+DROP TABLE
+SELECT 21
+psql:./sql/306_cep_lit_carbon_aggregations.sql:45: NOTICE:  table "eco_land_prot" does not exist, skipping
+DROP TABLE
+SELECT 20
+psql:./sql/306_cep_lit_carbon_aggregations.sql:52: NOTICE:  table "eco_land_unprot" does not exist, skipping
+DROP TABLE
+SELECT 21
+psql:./sql/306_cep_lit_carbon_aggregations.sql:61: NOTICE:  table "pa_land" does not exist, skipping
+DROP TABLE
+SELECT 1019
+DROP TABLE
+SELECT 9
+DROP TABLE
+SELECT 21
+DROP TABLE
+SELECT 1019
+analysis done
+TOTAL SCRIPT TIME: 99
