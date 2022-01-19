@@ -6,7 +6,7 @@ Two main steps:
 
 ### 1. Computation of basic statistics in grass  
 
-The grass funcion r.univar is iteratively run in parallel over each qid of CEP (see details [here](https://andreamandrici.github.io/dopa_workflow/flattening/).  
+The grass funcion r.univar is iteratively run in parallel over each qid of CEP (see details on CEP [here](https://andreamandrici.github.io/dopa_workflow/flattening/)).  
 One script for each carbon pool:  
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[exec_cep_agc_stats.sh](./c_analysis/exec_cep_agc_stats.sh)  
@@ -16,7 +16,7 @@ One script for each carbon pool:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[exec_cep_gsoc_stats.sh](./c_analysis/exec_cep_gsoc_stats.sh)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[exec_cep_tot_carbon_stats.sh](./c_analysis/exec_cep_tot_carbon_stats.sh)  
 
-Each scripts produce as output a csv file with basic stats for each elementary object of CEP.  
+Each scripts produce as output a csv file with basic stats for each elementary object (cid) of CEP.  
 
 
 ### 2. Data aggregation (to be completed)  
