@@ -5,12 +5,12 @@ Here using the same procedure of DOPA workflow for the [analysis of continuous r
 Two main steps:  
 
 ## 1. Computation of basic statistics in grass: one script foe each carbon pool:  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[exec_cep_agc_stats.sh](./c_analysis/exec_cep_agc_stats.sh)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[exec_cep_bgc_stats.sh](./c_analysis/exec_cep_bgc_stats.sh)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[exec_cep_dw_stats.sh](./c_analysis/exec_cep_dw_stats.sh)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[exec_cep_lit_stats.sh](./c_analysis/exec_cep_lit_stats.sh)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[exec_cep_gsoc_stats.sh](./c_analysis/exec_cep_gsoc_stats.sh)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[exec_cep_tot_carbon_stats.sh](./c_analysis/exec_cep_tot_carbon_stats.sh)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[exec_cep_agc_stats.sh](./c_analysis/exec_cep_agc_stats.sh)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[exec_cep_bgc_stats.sh](./c_analysis/exec_cep_bgc_stats.sh)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[exec_cep_dw_stats.sh](./c_analysis/exec_cep_dw_stats.sh)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[exec_cep_lit_stats.sh](./c_analysis/exec_cep_lit_stats.sh)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[exec_cep_gsoc_stats.sh](./c_analysis/exec_cep_gsoc_stats.sh)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[exec_cep_tot_carbon_stats.sh](./c_analysis/exec_cep_tot_carbon_stats.sh)  
 
 Each scripts produce as aoutput a csv file with basic stats for each elementary object of CEP  
 
