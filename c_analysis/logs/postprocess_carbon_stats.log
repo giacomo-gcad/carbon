@@ -15,7 +15,7 @@ V_THEME_305 - DEAD WOOD CARBON IS =  r_univar_cep_dw_carbon_100m_202101
 V_THEME_306 - LITTER CARBON IS =  r_univar_cep_lit_carbon_100m_202101
 psql:./sql/301_cep_carbon_above_ground_aggregations.sql:3: NOTICE:  table "theme" does not exist, skipping
 DROP TABLE
-SELECT 3497
+SELECT 561292
 psql:./sql/301_cep_carbon_above_ground_aggregations.sql:5: NOTICE:  table "grid_index" does not exist, skipping
 DROP TABLE
 SELECT 64800
@@ -33,34 +33,34 @@ DROP TABLE
 SELECT 965465
 psql:./sql/301_cep_carbon_above_ground_aggregations.sql:15: NOTICE:  table "country_land" does not exist, skipping
 DROP TABLE
-SELECT 9
+SELECT 277
 psql:./sql/301_cep_carbon_above_ground_aggregations.sql:22: NOTICE:  table "country_land_prot" does not exist, skipping
 DROP TABLE
-SELECT 9
+SELECT 259
 psql:./sql/301_cep_carbon_above_ground_aggregations.sql:29: NOTICE:  table "country_land_unprot" does not exist, skipping
 DROP TABLE
-SELECT 9
+SELECT 269
 psql:./sql/301_cep_carbon_above_ground_aggregations.sql:38: NOTICE:  table "eco_land" does not exist, skipping
 DROP TABLE
-SELECT 21
+SELECT 828
 psql:./sql/301_cep_carbon_above_ground_aggregations.sql:45: NOTICE:  table "eco_land_prot" does not exist, skipping
 DROP TABLE
-SELECT 20
+SELECT 808
 psql:./sql/301_cep_carbon_above_ground_aggregations.sql:52: NOTICE:  table "eco_land_unprot" does not exist, skipping
 DROP TABLE
-SELECT 21
+SELECT 813
 psql:./sql/301_cep_carbon_above_ground_aggregations.sql:61: NOTICE:  table "pa_land" does not exist, skipping
 DROP TABLE
-SELECT 1019
+SELECT 234413
 DROP TABLE
-SELECT 9
+SELECT 277
 DROP TABLE
-SELECT 21
+SELECT 828
 DROP TABLE
-SELECT 1019
+SELECT 234413
 psql:./sql/302_cep_carbon_below_ground_aggregations.sql:3: NOTICE:  table "theme" does not exist, skipping
 DROP TABLE
-SELECT 3497
+SELECT 561292
 psql:./sql/302_cep_carbon_below_ground_aggregations.sql:5: NOTICE:  table "grid_index" does not exist, skipping
 DROP TABLE
 SELECT 64800
@@ -78,34 +78,34 @@ DROP TABLE
 SELECT 965465
 psql:./sql/302_cep_carbon_below_ground_aggregations.sql:16: NOTICE:  table "country_land" does not exist, skipping
 DROP TABLE
-SELECT 9
+SELECT 277
 psql:./sql/302_cep_carbon_below_ground_aggregations.sql:23: NOTICE:  table "country_land_prot" does not exist, skipping
 DROP TABLE
-SELECT 9
+SELECT 259
 psql:./sql/302_cep_carbon_below_ground_aggregations.sql:30: NOTICE:  table "country_land_unprot" does not exist, skipping
 DROP TABLE
-SELECT 9
+SELECT 269
 psql:./sql/302_cep_carbon_below_ground_aggregations.sql:39: NOTICE:  table "eco_land" does not exist, skipping
 DROP TABLE
-SELECT 21
+SELECT 828
 psql:./sql/302_cep_carbon_below_ground_aggregations.sql:46: NOTICE:  table "eco_land_prot" does not exist, skipping
 DROP TABLE
-SELECT 20
+SELECT 808
 psql:./sql/302_cep_carbon_below_ground_aggregations.sql:53: NOTICE:  table "eco_land_unprot" does not exist, skipping
 DROP TABLE
-SELECT 21
+SELECT 813
 psql:./sql/302_cep_carbon_below_ground_aggregations.sql:62: NOTICE:  table "pa_land" does not exist, skipping
 DROP TABLE
-SELECT 1019
+SELECT 234413
 DROP TABLE
-SELECT 9
+SELECT 277
 DROP TABLE
-SELECT 21
+SELECT 828
 DROP TABLE
-SELECT 1019
+SELECT 234413
 psql:./sql/303_cep_carbon_soil_organic_aggregations.sql:3: NOTICE:  table "theme" does not exist, skipping
 DROP TABLE
-SELECT 3497
+SELECT 561287
 psql:./sql/303_cep_carbon_soil_organic_aggregations.sql:5: NOTICE:  table "grid_index" does not exist, skipping
 DROP TABLE
 SELECT 64800
@@ -123,34 +123,34 @@ DROP TABLE
 SELECT 965465
 psql:./sql/303_cep_carbon_soil_organic_aggregations.sql:15: NOTICE:  table "country_land" does not exist, skipping
 DROP TABLE
-SELECT 9
+SELECT 277
 psql:./sql/303_cep_carbon_soil_organic_aggregations.sql:22: NOTICE:  table "country_land_prot" does not exist, skipping
 DROP TABLE
-SELECT 9
+SELECT 259
 psql:./sql/303_cep_carbon_soil_organic_aggregations.sql:29: NOTICE:  table "country_land_unprot" does not exist, skipping
 DROP TABLE
-SELECT 9
+SELECT 269
 psql:./sql/303_cep_carbon_soil_organic_aggregations.sql:38: NOTICE:  table "eco_land" does not exist, skipping
 DROP TABLE
-SELECT 21
+SELECT 828
 psql:./sql/303_cep_carbon_soil_organic_aggregations.sql:45: NOTICE:  table "eco_land_prot" does not exist, skipping
 DROP TABLE
-SELECT 20
+SELECT 808
 psql:./sql/303_cep_carbon_soil_organic_aggregations.sql:52: NOTICE:  table "eco_land_unprot" does not exist, skipping
 DROP TABLE
-SELECT 21
+SELECT 813
 psql:./sql/303_cep_carbon_soil_organic_aggregations.sql:61: NOTICE:  table "pa_land" does not exist, skipping
 DROP TABLE
-SELECT 1019
+SELECT 234412
 DROP TABLE
-SELECT 9
+SELECT 277
 DROP TABLE
-SELECT 21
+SELECT 828
 DROP TABLE
-SELECT 1019
+SELECT 234412
 psql:./sql/304_cep_carbon_total_aggregations.sql:3: NOTICE:  table "theme" does not exist, skipping
 DROP TABLE
-SELECT 3497
+SELECT 561292
 psql:./sql/304_cep_carbon_total_aggregations.sql:5: NOTICE:  table "grid_index" does not exist, skipping
 DROP TABLE
 SELECT 64800
@@ -168,34 +168,34 @@ DROP TABLE
 SELECT 965465
 psql:./sql/304_cep_carbon_total_aggregations.sql:15: NOTICE:  table "country_land" does not exist, skipping
 DROP TABLE
-SELECT 9
+SELECT 277
 psql:./sql/304_cep_carbon_total_aggregations.sql:22: NOTICE:  table "country_land_prot" does not exist, skipping
 DROP TABLE
-SELECT 9
+SELECT 259
 psql:./sql/304_cep_carbon_total_aggregations.sql:29: NOTICE:  table "country_land_unprot" does not exist, skipping
 DROP TABLE
-SELECT 9
+SELECT 269
 psql:./sql/304_cep_carbon_total_aggregations.sql:38: NOTICE:  table "eco_land" does not exist, skipping
 DROP TABLE
-SELECT 21
+SELECT 828
 psql:./sql/304_cep_carbon_total_aggregations.sql:45: NOTICE:  table "eco_land_prot" does not exist, skipping
 DROP TABLE
-SELECT 20
+SELECT 808
 psql:./sql/304_cep_carbon_total_aggregations.sql:52: NOTICE:  table "eco_land_unprot" does not exist, skipping
 DROP TABLE
-SELECT 21
+SELECT 813
 psql:./sql/304_cep_carbon_total_aggregations.sql:61: NOTICE:  table "pa_land" does not exist, skipping
 DROP TABLE
-SELECT 1019
+SELECT 234413
 DROP TABLE
-SELECT 9
+SELECT 277
 DROP TABLE
-SELECT 21
+SELECT 828
 DROP TABLE
-SELECT 1019
+SELECT 234413
 psql:./sql/305_cep_dw_carbon_aggregations.sql:3: NOTICE:  table "theme" does not exist, skipping
 DROP TABLE
-SELECT 3497
+SELECT 561292
 psql:./sql/305_cep_dw_carbon_aggregations.sql:5: NOTICE:  table "grid_index" does not exist, skipping
 DROP TABLE
 SELECT 64800
@@ -213,34 +213,34 @@ DROP TABLE
 SELECT 965465
 psql:./sql/305_cep_dw_carbon_aggregations.sql:15: NOTICE:  table "country_land" does not exist, skipping
 DROP TABLE
-SELECT 9
+SELECT 277
 psql:./sql/305_cep_dw_carbon_aggregations.sql:22: NOTICE:  table "country_land_prot" does not exist, skipping
 DROP TABLE
-SELECT 9
+SELECT 259
 psql:./sql/305_cep_dw_carbon_aggregations.sql:29: NOTICE:  table "country_land_unprot" does not exist, skipping
 DROP TABLE
-SELECT 9
+SELECT 269
 psql:./sql/305_cep_dw_carbon_aggregations.sql:38: NOTICE:  table "eco_land" does not exist, skipping
 DROP TABLE
-SELECT 21
+SELECT 828
 psql:./sql/305_cep_dw_carbon_aggregations.sql:45: NOTICE:  table "eco_land_prot" does not exist, skipping
 DROP TABLE
-SELECT 20
+SELECT 808
 psql:./sql/305_cep_dw_carbon_aggregations.sql:52: NOTICE:  table "eco_land_unprot" does not exist, skipping
 DROP TABLE
-SELECT 21
+SELECT 813
 psql:./sql/305_cep_dw_carbon_aggregations.sql:61: NOTICE:  table "pa_land" does not exist, skipping
 DROP TABLE
-SELECT 1019
+SELECT 234413
 DROP TABLE
-SELECT 9
+SELECT 277
 DROP TABLE
-SELECT 21
+SELECT 828
 DROP TABLE
-SELECT 1019
+SELECT 234413
 psql:./sql/306_cep_lit_carbon_aggregations.sql:3: NOTICE:  table "theme" does not exist, skipping
 DROP TABLE
-SELECT 3497
+SELECT 561292
 psql:./sql/306_cep_lit_carbon_aggregations.sql:5: NOTICE:  table "grid_index" does not exist, skipping
 DROP TABLE
 SELECT 64800
@@ -258,30 +258,30 @@ DROP TABLE
 SELECT 965465
 psql:./sql/306_cep_lit_carbon_aggregations.sql:15: NOTICE:  table "country_land" does not exist, skipping
 DROP TABLE
-SELECT 9
+SELECT 277
 psql:./sql/306_cep_lit_carbon_aggregations.sql:22: NOTICE:  table "country_land_prot" does not exist, skipping
 DROP TABLE
-SELECT 9
+SELECT 259
 psql:./sql/306_cep_lit_carbon_aggregations.sql:29: NOTICE:  table "country_land_unprot" does not exist, skipping
 DROP TABLE
-SELECT 9
+SELECT 269
 psql:./sql/306_cep_lit_carbon_aggregations.sql:38: NOTICE:  table "eco_land" does not exist, skipping
 DROP TABLE
-SELECT 21
+SELECT 828
 psql:./sql/306_cep_lit_carbon_aggregations.sql:45: NOTICE:  table "eco_land_prot" does not exist, skipping
 DROP TABLE
-SELECT 20
+SELECT 808
 psql:./sql/306_cep_lit_carbon_aggregations.sql:52: NOTICE:  table "eco_land_unprot" does not exist, skipping
 DROP TABLE
-SELECT 21
+SELECT 813
 psql:./sql/306_cep_lit_carbon_aggregations.sql:61: NOTICE:  table "pa_land" does not exist, skipping
 DROP TABLE
-SELECT 1019
+SELECT 234413
 DROP TABLE
-SELECT 9
+SELECT 277
 DROP TABLE
-SELECT 21
+SELECT 828
 DROP TABLE
-SELECT 1019
+SELECT 234413
 analysis done
-TOTAL SCRIPT TIME: 99
+TOTAL SCRIPT TIME: 166

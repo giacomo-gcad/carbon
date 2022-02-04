@@ -1,0 +1,13 @@
+projection: 3 (Latitude-Longitude)
+zone:       0
+datum:      wgs84
+ellipsoid:  wgs84
+north:      80N
+south:      59:59:59.999995S
+west:       180W
+east:       179:59:59.999987E
+nsres:      0:00:03.2
+ewres:      0:00:03.2
+rows:       157500
+cols:       405000
+cells:      63787500000

@@ -16,7 +16,8 @@ One script for each carbon pool:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[exec_cep_gsoc_stats.sh](./exec_cep_gsoc_stats.sh)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[exec_cep_tot_carbon_stats.sh](./exec_cep_tot_carbon_stats.sh)  
 
-Each scripts produce as output a csv file with basic stats for each elementary object (cid) of CEP.  
+Each scripts produce as output a csv file with basic stats for each elementary object (cid) of CEP.
+Computation time (using 60 cores): about 3 hours each.  
 
 
 ### 2. Data aggregation (to be completed)  
