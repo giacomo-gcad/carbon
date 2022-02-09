@@ -1,4 +1,4 @@
-# Preparing a custon global WDPA
+# Preparing a custom global WDPA
 
 This procedure is used to prepare a custom version of WDPA including:  
 - latest version of WDPA from WCMC  
@@ -8,7 +8,7 @@ This procedure is used to prepare a custom version of WDPA including:
 1. Import and preprocess WDPA April 2018 (last WDPA version with Chinese PAs)  
 1.1 [exec_wdpa_import_chn.sh](./exec_wdpa_import_chn.sh)  
 1.2 [exec_wdpa_preprocessing_part_1_chn.sh](./exec_wdpa_preprocessing_part_1_chn.sh)  
-1.3 [fix_wdpa_geom_chn.sql](./sql/fix_wdpa_geom_chn.sql)  To be manually executed steop by step  
+1.3 [fix_wdpa_geom_chn.sql](./sql/fix_wdpa_geom_chn.sql)  To be manually executed step by step  
 1.4  [exec_wdpa_preprocessing_part_2_chn.sh](./exec_wdpa_preprocessing_part_2_chn.sh)  
 
 The output is a PostgreSQL table containig ONLY Chinese protected areas, named **protected_sites.WDPA_201804_chn**, ready to be added to a recent version of WDPA.  

@@ -15,6 +15,7 @@ echo "#!/bin/bash
 g.region --quiet raster=${AGB} -p 
 r.reclass input=${COPERNICUS_LC_2018} output=${COPERNICUS_LC_2018}_rcl rules=\"${RCL_LC}\"  --q --o 
 r.resample input=${COPERNICUS_LC_2018}_rcl output=${COPERNICUS_LC_2018}_rcl_100m --q --o
+r.null map=${COPERNICUS_LC_2018}_rcl_100m null=0
 exit
 " > ./process_lc.sh
 chmod u+x process_lc.sh
