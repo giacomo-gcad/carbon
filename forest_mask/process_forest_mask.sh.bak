@@ -38,7 +38,7 @@ echo "#!/bin/bash
 g.region --quiet raster=${AGB} -p
 r.external --o input=${MANGROVE_PATH}/${MANGROVE}.tif output=${MANGROVE}
 r.reclass input=${MANGROVE} output=delete_me rules=\"${RCLMANGR}\" --o
-r.mapcalc --overwrite expression=\" ${MANGROVE}_rcl_100m = delete_me \"
+r.mapcalc --overwrite expression=\" e${MANGROVE}_rcl_100m = delete_me \"
 r.null map=${MANGROVE}_rcl_100m null=0
 g.remove type=raster name=delete_me -f
 exit

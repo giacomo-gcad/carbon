@@ -1,6 +1,3 @@
-Starting GRASS GIS...
-Cleaning up temporary files...
-Executing <./compute_mask_100m.sh> ...
 projection: 3 (Latitude-Longitude)
 zone:       0
 datum:      wgs84
@@ -14,6 +11,3 @@ ewres:      0:00:03.2
 rows:       157500
 cols:       405000
 cells:      63787500000
-Removing raster <delete_me_100>
-Execution of <./compute_mask_100m.sh> finished.
-Cleaning up temporary files...
