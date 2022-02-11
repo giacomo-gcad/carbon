@@ -1,18 +1,4 @@
 -----------------------------------------------------------------------------------
---- Script master_stats.sh started at Tue Jan 18 16:59:10 CET 2022
+--- Script master_stats.sh started at Fri Feb 11 11:01:41 CET 2022
 -----------------------------------------------------------------------------------
-Tue Jan 18 16:59:10 CET 2022
-exec_cep_bgc_stats.sh completed
-Tue Jan 18 19:29:05 CET 2022
-exec_cep_dw_stats.sh completed
-Tue Jan 18 21:57:31 CET 2022
-exec_cep_lit_stats.sh completed
-Wed Jan 19 00:25:47 CET 2022
-exec_cep_gsoc_stats.sh completed
-Wed Jan 19 02:50:34 CET 2022
-exec_cep_tot_carbon_stats.sh completed
----------------------------------------------------------------------------------------
-Script master_stats.sh ended at Wed Jan 19 05:44:52 CET 2022
----------------------------------------------------------------------------------------
-Total time: 765 minutes 
----------------------------------------------------------------------------------------
+Fri Feb 11 11:01:41 CET 2022

@@ -7,7 +7,6 @@ RESULTSPATH=$3
 IN_RASTER=$4
 OUTCSV=$5
 CEP_MAPSET=$6
-FOREST_MASK=$7
 
 SERVICEDIR="/globes/USERS/GIACOMO/c_stock/c_analysis"
 starttime=`date +%s`
@@ -32,10 +31,8 @@ do
 	echo "#!/bin/bash
 ## SET REGION
 ${region_str}
-## ANALYZE IN_RASTER WITH R.UNIVAR USING FOREST  MASK
-r.mask raster=${FOREST_MASK} maskcats=1 --o --q
+## ANALYZE IN_RASTER WITH R.UNIVAR
 r.univar --q -t map=${IN_RASTER} zones=ceptile_${eid}@${CEP_MAPSET} output=${SUBDIR}/z_${OUTCSV}_${qid}.csv
-r.mask -r
 exit
 " > ./dyn/runivar_${eid}_${qid}.sh
 	chmod u+x ./dyn/runivar_${eid}_${qid}.sh

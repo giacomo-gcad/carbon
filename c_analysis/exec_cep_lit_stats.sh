@@ -16,7 +16,7 @@ NCORES=60
 
 ########################################################################################################
 # DEFINE CATEGORICAL RASTER (NAME OF GRASS LAYER) AND MAPSET TO BE ANALYZED WITH R.STATS
-IN_RASTER="lit_carbon_100m"
+IN_RASTER="lit_carbon_100m_fm"
 IN_RASTER_MAPSET="CARBON"
 ########################################################################################################
 
@@ -34,12 +34,12 @@ echo "now running r.univar in parallel on 648 CEP tiles and "${NCORES}" threads"
 for eid in {1..648}
 # for eid in {273,274}
 do	
-	TMP_MAPSET=lll_${eid}
+	TMP_MAPSET=ltc_${eid}
 	TMP_MAPSET_PATH=${LOCATION_LL_PATH}/${TMP_MAPSET}
 	OUTCSV=${OUTCSV_ROOT}_${eid}
 	grass ${PERMANENT_LL_MAPSET} -f --exec g.mapset --o --q -c ${TMP_MAPSET}
 	wait
-	echo "./slave_cep_conraster_stats.sh ${eid} ${TMP_MAPSET_PATH} ${RESULTSPATH} ${IN_RASTER}@${IN_RASTER_MAPSET} ${OUTCSV} ${CEP_MAPSET} ${FOREST_MASK}"
+	echo "./slave_cep_conraster_stats.sh ${eid} ${TMP_MAPSET_PATH} ${RESULTSPATH} ${IN_RASTER}@${IN_RASTER_MAPSET} ${OUTCSV} ${CEP_MAPSET}"
 done | parallel -j ${NCORES}
 
 wait
@@ -63,7 +63,7 @@ psql ${dbpar2} -t -c "\copy ind_carbon.${FINALCSV} FROM '${RESULTSPATH}/${FINALC
 wait
 
 ## PART IV : CLEAN UP (delete mapsets and intermediate files)
-rm -rf ${LOCATION_LL_PATH}/lll_*
+rm -rf ${LOCATION_LL_PATH}/ltc_*
 rm -f ${RESULTSPATH}/${OUTCSV_ROOT}_*.csv
 
 enddate=`date +%s`

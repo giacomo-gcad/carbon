@@ -1,17 +1,17 @@
-Tue Jan 11 12:31:53 CET 2022
-AGB resampled
-BGB resampled
-DWB resampled
-LIT resampled
-GSOC converted
+Thu Feb 10 16:23:37 CET 2022
+AGB converted and masked
+BGC converted and masked
+DWB converted and masked
+LIT converted and masked
+GSOC converted and masked
  
 ----------------------------------------------------
-Resampling carbon pools completed in 322 minutes
+Resampling carbon pools completed in 709 minutes
 ----------------------------------------------------
 ----------------------------------------------------
-Sum up of carbon pools completed in 2 minutes
+Sum up of carbon pools completed in 148 minutes
 ----------------------------------------------------
  
 ----------------------------------------------------
-Total Carbon Layer computed in 325 minutes
+Total Carbon Layer computed in 858 minutes
 ----------------------------------------------------

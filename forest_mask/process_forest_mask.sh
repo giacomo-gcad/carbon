@@ -81,6 +81,8 @@ echo "---------------------------------------------------"
 echo "#!/bin/bash
 g.region --quiet raster=${AGB} -p 
 r.mapcalc --overwrite expression=\"forest_mask_100m = ${COPERNICUS_LC_2018}_rcl_100m * ${OILPALM}_rcl_100m * ${MANGROVE}_rcl_100m \"
+r.null map=forest_mask_100m setnull=0
+exit
 " > ./prepare_mask.sh
 chmod u+x prepare_mask.sh
 grass ${CARBON_MAPSET_PATH} --exec ./prepare_mask.sh >${LOGPATH}/prepare_mask.log
@@ -92,6 +94,16 @@ echo "---------------------------------------------------"
 echo "final forest mask computed in ${runtime} seconds"
 echo "---------------------------------------------------"
 
+####################################################################################################
+## PART 5: APPLY FOREST MASK TO EACH CARBON POOL
+
+
+
+
+
+
+
+
 ## FINAL CLEAN UP
 rm -f ./process_lc.sh
 rm -f ./process_oilpalm.sh
@@ -99,7 +111,7 @@ rm -f ./process_mangrove.sh
 rm -f ./prepare_mask.sh
 
 date
-end7=`date +%s`
-runtime=$(((end7-start1) / 60))
+end8=`date +%s`
+runtime=$(((end8-start1) / 60))
 echo "PROCEDURE COMPLETED. Script $(basename "$0") executed in ${runtime} minutes"
 exit
