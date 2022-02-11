@@ -94,16 +94,6 @@ echo "---------------------------------------------------"
 echo "final forest mask computed in ${runtime} seconds"
 echo "---------------------------------------------------"
 
-####################################################################################################
-## PART 5: APPLY FOREST MASK TO EACH CARBON POOL
-
-
-
-
-
-
-
-
 ## FINAL CLEAN UP
 rm -f ./process_lc.sh
 rm -f ./process_oilpalm.sh
