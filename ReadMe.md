@@ -6,9 +6,11 @@ This repository provides workflows for
 
 ## Computation of carbon pools
 
-Total Carbon Stock is composed by 5 different 'pools'
-1. Soil Carbon (SOC)
-2. Above Ground Carbon (AGB)
+Total Carbon Stock is composed by 5 different 'pools'. Two of them (AGB and GSOC) are open access data, wile the remaining three are derived  *in house * from AGB:  
+
+
+1. [Global Soil Carbon (GSOC), v. 1.5](http://54.229.242.119/GSOCmap/)
+2. [Above Ground Carbon (AGB), v.3 (2018)](https://catalogue.ceda.ac.uk/uuid/5f331c418e9f4935b8eb1b836f8a91b8)
 3. [Below Ground Carbon (BGB)](/bgb_processing)
 4. [Dead Wood Carbon (DWB)](/dwb_lit_processing)
 5. [Litter Carbon (LIT)](/dwb_lit_processing)

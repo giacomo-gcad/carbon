@@ -2,7 +2,7 @@
 
 This procedure is used to set up a Forest Mask layer, used at a later stage to mask each Carbon pool to only forest areas.  
 
-Three different datasets are used to defin forest areas:  
+Three different datasets are used to define forest areas, using the following criteria:  
 
 1. [Copernicus Land Cover map (year 2018)](https://land.copernicus.eu/global/products/lc): only classes from 111 to 126 are kept.  
 

@@ -17,7 +17,7 @@ Here below the list of IPCC parameters and corresponding spatial datasets used:
 
 | Parameter                      | Dataset                                                                                                                            |
 |--------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| Above Ground Biomass           | [Above Ground Biomass  v. 2 (2018)](https://catalogue.ceda.ac.uk/uuid/84403d09cef3485883158f4df2989b0c)                            |
+| Above Ground Biomass           | [Above Ground Biomass  v. 3 (2018)](https://catalogue.ceda.ac.uk/uuid/5f331c418e9f4935b8eb1b836f8a91b8)                            |
 | Ecological Zones               | [FAO Global Ecological Zoning](http://www.fao.org/geonetwork/srv/en/main.home)                                                     |
 | Continents (terrestrial)       | [ESRI World Continents dataset](https://www.arcgis.com/home/item.html?id=a3cb207855b348a297ab85261743351d) and [Global Administrative Unit Layers (GAUL), rev. 2015](http://www.fao.org/geonetwork/srv/en/metadata.show?id=12691)                 |
 | Continents (marine)            | [Exclusive Economic Zones (EEZ) v9](http://www.marineregions.org/downloads.php)                                                    |
