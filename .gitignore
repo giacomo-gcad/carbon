@@ -8,4 +8,5 @@ bgb_processing/19R_V4_Ch04_Forest Land_advance.pdf
 bgb_processing/workflow_commented_GD_20211028.xlsx
 c_analysis/results
 c_analysis/dyn
+c_analysis/dyn/*.*
 c_analysis/logs
