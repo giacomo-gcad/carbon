@@ -1,4 +1,6 @@
-# Preparing a custom global WDPA
+# Preparing a custom global WDPA  
+  
+ ## N.B. This part is presently not implemented and it's still under development
 
 This procedure is used to prepare a custom version of WDPA including:  
 - latest version of WDPA from WCMC  
