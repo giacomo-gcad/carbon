@@ -19,10 +19,6 @@ echo "#!/bin/bash
 g.region raster=${AGB}
 ## CONVERT AGB (DENSITY) IN ABOVE GROUND CARBON AMOUNT. OUTPUT UNITS: Mg
 r.mapcalc --overwrite expression=\"${AGC}=${AGB} / 2 * area() / 10000 \" 
-# # ## SET REGION FOR AGB 1km resolution
-# # g.region raster=${AGB} align=${GSOC}
-# # ##RESAMPLE AGC to GSOC RESOLUTION (1km) WITH AGGREGATION (SUM) OUTPUT UNITS: Mg
-# # r.resamp.stats --overwrite input=${AGC} output=${AGC1km} method=sum 
 r.support map=${AGC} title=\"Above Ground Carbon map\" units=\"Mg\" description=\"Above Ground Carbon (amount in Mg)\"
 ## APPLY FOREST MASK
 r.mapcalc --overwrite expression=\" ${AGC}_fm = ${AGC} * ${FORESTMASK} \"
@@ -40,10 +36,6 @@ echo "#!/bin/bash
 g.region raster=${BGB}
 ## CONVERT BGB (DENSITY) IN BELOW GROUND CARBON AMOUNT. OUTPUT UNITS: Mg
 r.mapcalc --overwrite expression=\"${BGC}=${BGB} / 2 * area() / 10000 \"
-# # ## SET REGION FOR BGB 1km resolution
-# # g.region raster=${BGC} align=${GSOC}
-# # ## RESAMPLE BGC to GSOC RESOLUTION (1km) WITH AGGREGATION (SUM) OUTPUT UNITS: Mg
-# # r.resamp.stats --overwrite input=${BGC} output=${BGC1km} method=sum
 r.support map=${BGC} title=\"Below Ground Carbon map\" units=\"Mg\" description=\"Below Ground Carbon (amount in Mg)\"
 ## APPLY FOREST MASK
 r.mapcalc --overwrite expression=\" ${BGC}_fm = ${BGC} * ${FORESTMASK} \"
@@ -61,10 +53,6 @@ echo "#!/bin/bash
 g.region raster=${DWB}
 ## CONVERT DW_BIOMASS (DENSITY) IN DEAD WOOD CARBON AMOUNT. OUTPUT UNITS: Mg
 r.mapcalc --overwrite expression=\"${DWC}=${DWB} / 2 * area() / 10000 \"
-# # ## SET REGION FOR DW_CARBON 1km resolution
-# # g.region raster=${DWC} align=${GSOC}
-# # ## RESAMPLE DW_CARBON to GSOC RESOLUTION (1km) WITH AGGREGATION (SUM) OUTPUT UNITS: Mg
-# # r.resamp.stats --overwrite input=${DWC} output=${DWC1km} method=sum
 r.support map=${DWC} title=\"Dead Wood Carbon map\" units=\"Mg\" description=\"Dead Wood Carbon (amount in Mg)\"
 ## APPLY FOREST MASK
 r.mapcalc --overwrite expression=\" ${DWC}_fm = ${DWC} * ${FORESTMASK} \"
@@ -82,10 +70,6 @@ echo "#!/bin/bash
 g.region raster=${LITB}
 ## CONVERT lit_BIOMASS (DENSITY) IN DEAD WOOD CARBON AMOUNT. OUTPUT UNITS: Mg
 r.mapcalc --overwrite expression=\"${LITC}=${LITB} / 2 * area() / 10000 \"
-# # ## SET REGION FOR LIT_CARBON 1km resolution
-# # g.region raster=${LITC} align=${GSOC}
-# # ## RESAMPLE LIT_CARBON to GSOC RESOLUTION (1km) WITH AGGREGATION (SUM) OUTPUT UNITS: Mg
-# # r.resamp.stats --overwrite input=${LITC} output=${LITC1km} method=sum
 r.support map=${LITC} title=\"Litter Carbon map\" units=\"Mg\" description=\"Litter Carbon (amount in Mg)\"
 ## APPLY FOREST MASK
 r.mapcalc --overwrite expression=\" ${LITC}_fm = ${LITC} * ${FORESTMASK} \"
