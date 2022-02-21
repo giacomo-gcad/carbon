@@ -22,9 +22,8 @@ For each layer (except GSOC):
 
 The GSOC dataset is first resampled to the same resolution of the other carbon pools (3.2 arcseconds, no interpolation), then is converted from carbon density to carbon amount with the same method.
 
-In the last step, the five carbon pools are summed up to derive the Total Carbon layer, expressed as amount of Carbon within each pixel (in Mg).  
+In the last step, the five carbon pools are summed up to derive the [Total Carbon](/total_carbon) layer, expressed as amount of Carbon within each pixel (in Mg).  
 
-The script [compute_total_carbon.sh](./total_carbon/compute_total_carbon.sh) executes all the operations described above.  
 
 ## Analysis of Carbon pools in Protected Areas
 
