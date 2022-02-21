@@ -6,7 +6,7 @@ This repository provides workflows for
 
 ## Computation of carbon pools
 
-Total Carbon Stock is composed by 5 different 'pools'. Two of them (AGB and GSOC) are open access data, wile the remaining three are derived  *in house * from AGB:  
+Total Carbon Stock is composed by 5 different 'pools'. Two of them (AGB and GSOC) are open access data, while the remaining three are derived  *in house* from AGB:  
 
 
 1. [FAO Global Soil Carbon (GSOC), v. 1.5](http://54.229.242.119/GSOCmap/)

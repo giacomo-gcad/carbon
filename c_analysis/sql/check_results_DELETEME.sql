@@ -2,7 +2,7 @@
 -- TOT CARBON IN PAs
 DROP TABLE IF EXISTS totcarb_pa; CREATE TEMPORARY TABLE totcarb_pa AS
 SELECT 
-a.wdpaid,z.pa_name,z.iso3,z.area_geo,
+a.wdpaid,z.pa_name,z.iso3,y.country_name,z.area_geo area_tot_sqkm,
 a.agb_tot_c_mg agc_tot_mg,b.bgb_tot_c_mg bgc_tot_mg,c.dwc_tot_c_mg dwc_tot_mg,d.lit_tot_c_mg lit_tot_mg,e.gsoc_tot_c_mg  gsoc_tot_mg,f.carbon_tot_c_mg carbon_tot_mg
 --,
 --(a.agb_tot_c_mg+b.bgb_tot_c_mg+c.dwc_tot_c_mg+d.lit_tot_c_mg+e.gsoc_tot_c_mg) computed_tot_c_mg
@@ -13,6 +13,7 @@ LEFT JOIN ind_carbon.wdpa_lit_carbon d USING(wdpaid)
 LEFT JOIN ind_carbon.wdpa_carbon_soil_organic e USING(wdpaid)
 LEFT JOIN ind_carbon.wdpa_carbon_total f USING(wdpaid)
 LEFT JOIN dopa_41.att_pa z ON a.wdpaid=z.pa
+LEFT JOIN dopa_41.att_country y USING(iso3)
 WHERE f.carbon_tot_c_mg>0;
 
 -- MEAN CARBON IN PAs
