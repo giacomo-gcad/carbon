@@ -9,8 +9,8 @@ source ${DIR}/total_c.conf
 
 export GRASS_COMPRESSOR=ZLIB # added on 20201008
 
-# SET MAPSET
-# grass ${CARBON_MAPSET_PATH} --exec g.mapset CARBON
+SET MAPSET
+grass ${CARBON_MAPSET_PATH} --exec g.mapset CARBON
 
 ############### RESAMPLING CARBON POOLS ###################
 
@@ -104,23 +104,33 @@ echo "GSOC converted and masked"
 
 echo " "
 
-end1=`date +%s`
+ end1=`date +%s`
 runtime=$(((end1-start1) / 60))
 echo "----------------------------------------------------"
 echo "Resampling carbon pools completed in ${runtime} minutes"
 echo "----------------------------------------------------"
 
-############# COMPUTING TOTAL CARBON LAYER ####################
-###   AGC + BGC + GSOC + DEADWOOD_CARBON + LITTER_CARBON   ###
+############### COMPUTING TOTAL CARBON LAYER ###############
+
+###   AGC + BGC + GSOC + DEADWOOD_CARBON + LITTER_CARBON ###
 echo "#!/bin/bash
 g.region raster=${AGC}
-r.mapcalc --overwrite expression=\"${CARBONTOT}_fm = ${GSOC}_fm + ${AGC}_fm + ${BGC}_fm + ${DWC}_fm + ${LITC}_fm \"
-r.support map=${CARBONTOT}_fm title=\"Total Carbon map (only forest)\" units=\"Mg\" description=\"Sum of 5 Carbon pools (in Mg, only forest)\"
+r.mapcalc --overwrite expression=\"${CARBONTOT} = ${GSOC} + ${AGC} + ${BGC} + ${DWC} + ${LITC} \"
+r.support map=${CARBONTOT}_fm title=\"Total Carbon map \" units=\"Mg\" description=\"Sum of 5 Carbon pools (in Mg)\"
 exit
 " > ./sum_pools.sh
 chmod u+x sum_pools.sh
 grass ${CARBON_MAPSET_PATH} --exec ./sum_pools.sh >${LOGPATH}/sum_pools.log 2>&1
 
+###   AGC + BGC + GSOC + DEADWOOD_CARBON + LITTER_CARBON (only forest)  ###
+echo "#!/bin/bash
+g.region raster=${AGC}
+r.mapcalc --overwrite expression=\"${CARBONTOT}_fm = ${GSOC}_fm + ${AGC}_fm + ${BGC}_fm + ${DWC}_fm + ${LITC}_fm \"
+r.support map=${CARBONTOT}_fm title=\"Total Carbon map (only forest)\" units=\"Mg\" description=\"Sum of 5 Carbon pools (in Mg, only forest)\"
+exit
+" > ./sum_pools_fm.sh
+chmod u+x sum_pools_fm.sh
+grass ${CARBON_MAPSET_PATH} --exec ./sum_pools_fm.sh >${LOGPATH}/sum_pools_fm.log 2>&1
 wait
 
 end2=`date +%s`
@@ -145,7 +155,7 @@ grass ${CARBON_MAPSET_PATH} --exec ./delete_useless.sh >${LOGPATH}/delete_useles
 
 rm -f resamp_*.sh
 rm -f convert_gsoc.sh
-rm -f sum_pools.sh
+rm -f sum_pools*.sh
 rm -f ./delete_useless.sh
 echo " "
 

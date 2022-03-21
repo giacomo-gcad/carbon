@@ -1,0 +1,664 @@
+Tue Mar 15 09:28:31 CET 2022
+Processing WDPA_Apr2018_Public.gdb.
+
+Geometry WDPA_poly_Apr2018 contains 217835 objects.
+
+Geometry WDPA_point_Apr2018 contains 18413 objects.
+
+The final number of rows should be 236248.
+psql: warning: extra command-line argument "CREATE SCHEMA IF NOT EXISTS protected_sites AUTHORIZATION h05ibex; GRANT ALL ON SCHEMA protected_sites TO h05ibex; GRANT ALL ON SCHEMA protected_sites TO h05mandand; GRANT USAGE ON SCHEMA protected_sites TO h05ibexro;" ignored
+psql: error: could not connect to server: could not translate host name "-U" to address: No address associated with hostname
+Importing WDPA_poly_Apr2018 and WDPA_point_Apr2018 attributes in protected_sites.wdpa_atts_201804
+SELECT DISTINCT CAST(WDPAID AS integer) AS WDPAID,WDPA_PID,CAST(PA_DEF AS integer) AS PA_DEF,NAME,ORIG_NAME,DESIG,DESIG_ENG,DESIG_TYPE,IUCN_CAT,INT_CRIT,CAST(MARINE as integer) AS MARINE,REP_M_AREA,GIS_M_AREA,REP_AREA,GIS_AREA,NO_TAKE,NO_TK_AREA,STATUS,STATUS_YR,GOV_TYPE,OWN_TYPE,MANG_AUTH,MANG_PLAN,VERIF,METADATAID,SUB_LOC,PARENT_ISO3,ISO3 FROM WDPA_poly_Apr2018 UNION SELECT DISTINCT CAST(WDPAID AS integer) AS WDPAID,WDPA_PID,CAST(PA_DEF AS integer) AS PA_DEF,NAME,ORIG_NAME,DESIG,DESIG_ENG,DESIG_TYPE,IUCN_CAT,INT_CRIT,CAST(MARINE as integer) AS MARINE,REP_M_AREA,'' AS GIS_M_AREA,REP_AREA,'' AS GIS_AREA,NO_TAKE,NO_TK_AREA,STATUS,STATUS_YR,GOV_TYPE,OWN_TYPE,MANG_AUTH,MANG_PLAN,VERIF,METADATAID,SUB_LOC,PARENT_ISO3,ISO3 FROM WDPA_point_Apr2018
+---------------------------------------------------------------------------
+Warning 1: organizePolygons() received a polygon with more than 100 parts. The processing may be really slow.  You can skip the processing by setting METHOD=SKIP, or only make it analyze counter-clock wise parts by setting METHOD=ONLY_CCW if you can assume that the outline of holes is counter-clock wise defined
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Non contiguous curves
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Non contiguous curves
+ERROR 1: Non closed ring.
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Non contiguous curves
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non closed ring.
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non closed ring.
+
+Attributes of WDPA_poly_Apr2018 and WDPA_point_Apr2018 imported in final table protected_sites.wdpa_atts_201804.
+
+Final table protected_sites.wdpa_atts_201804 contains 236248 rows.
+
+
+[32mNumber of objects imported is correct.
+ 
+Warning 1: organizePolygons() received a polygon with more than 100 parts. The processing may be really slow.  You can skip the processing by setting METHOD=SKIP, or only make it analyze counter-clock wise parts by setting METHOD=ONLY_CCW if you can assume that the outline of holes is counter-clock wise defined
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Non contiguous curves
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Non contiguous curves
+ERROR 1: Non closed ring.
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Non contiguous curves
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non closed ring.
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Invalid curve: not enough points
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non contiguous curves
+ERROR 1: Non closed ring.
+
+Layer WDPA_poly_Apr2018 imported in  wolfe
+
+Layer WDPA_point_Apr2018 imported in  wolfe
+ 
+---------------------------------------------------------------------------------------------
+Tables with polygons, points and attributes imported in postgis.
+Now run exec_wdpa_preprocessing_part_1.sh
+---------------------------------------------------------------------------------------------
+Tue Mar 15 09:49:02 CET 2022
+Script exec_wdpa_import_chn.sh executed in 20 minutes

@@ -21,9 +21,9 @@ point=`ogrinfo -ro $fpath | grep point | awk '{print $2}'`
 cpoly=`ogrinfo -ro -al -so $fpath ${poly} | grep 'Feature Count' | awk '{print $3}'`
 cpoint=`ogrinfo -ro -al -so $fpath ${point} | grep 'Feature Count' | awk '{print $3}'`
 ((ctot=${cpoly}+${cpoint}))
-atts_tab=${atts_table}"_"${y1}${m1}
-polytab=${poly_table}"_"${y1}${m1}
-pointtab=${point_table}"_"${y1}${m1}
+atts_tab=${atts_table}"_"${wdpadate}
+polytab=${poly_table}"_"${wdpadate}
+pointtab=${point_table}"_"${wdpadate}
 dbpar1="host=${host} user=${user} dbname=${db}"
 dbpar2="-h ${host} -U ${user} -d ${db} -w"
 
@@ -38,7 +38,7 @@ psql ${dbpar2}	-v vSCHEMA=${wdpa_schema} \
 				-v vINNAME_POLY=${polytab} \
 				-v vINNAME_POINT=${pointtab} \
 				-v THRESHOLD=${area_threshold} \
-				-f ${SQLDIR}/wdpa_preprocessing_part_1.sql
+				-f ${SQLDIR}/wdpa_preprocessing_part_1_chn.sql
 
 
 wait 

@@ -1,14 +1,12 @@
 Starting GRASS GIS...
 Cleaning up temporary files...
 Executing <./delete_useless.sh> ...
-Removing raster <copernicus_lc_2018_rcl_100m>
-Removing raster <copernicus_lc_2018_rcl>
-Removing raster <oilpalm_rcl_100m>
-Removing raster <oilpalm_rcl>
-Removing raster <oilpalm>
-Removing raster <mangrove_2016_rcl_100m>
-WARNING: Raster map <mangrove_2016@CARBON> is a base map. Remove reclassed
-         map <mangrove_2016_rcl_100m@CARBON> first.
+WARNING: No data base element files found
+WARNING: No data base element files found
+WARNING: No data base element files found
+WARNING: No data base element files found
+WARNING: No data base element files found
+WARNING: No data base element files found
 WARNING: No data base element files found
 Execution of <./delete_useless.sh> finished.
 Cleaning up temporary files...

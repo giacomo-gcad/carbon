@@ -56,8 +56,8 @@ echo " "
 echo "Now importing csv table in Postgis..."
 echo " "
 
-psql ${dbpar2} -t -v vNAME=${FINALCSV} -v vSCHEMA=ind_carbon -f ./sql/create_table_runivar.sql
-psql ${dbpar2} -t -c "\copy ind_carbon.${FINALCSV} FROM '${RESULTSPATH}/${FINALCSV}.csv' delimiter '|' csv"
+psql ${dbpar2} -t -v vNAME=${FINALCSV} -v vSCHEMA=${V_RCEP_IN} -f ./sql/create_table_runivar.sql
+psql ${dbpar2} -t -c "\copy ${V_RCEP_IN}.${FINALCSV} FROM '${RESULTSPATH}/${FINALCSV}.csv' delimiter '|' csv"
 
 wait
 

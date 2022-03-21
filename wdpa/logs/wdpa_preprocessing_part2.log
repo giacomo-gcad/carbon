@@ -1,0 +1,12 @@
+Tue Mar 15 14:43:46 CET 2022
+Now pre-processing data...
+
+psql:sql/wdpa_preprocessing_part_2_chn.sql:6: ERROR:  column "area_geo" of relation "wdpa_geom_201804" already exists
+UPDATE 2126
+psql:sql/wdpa_preprocessing_part_2_chn.sql:13: NOTICE:  table "wdpa_chn_201804" does not exist, skipping
+DROP TABLE
+SELECT 2159
+ALTER TABLE
+CREATE INDEX
+Tue Mar 15 14:43:47 CET 2022
+Script exec_wdpa_preprocessing_part_2_chn.sh (part 2) executed in 0 minutes

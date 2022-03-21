@@ -31,7 +31,6 @@ atts_tab=${atts_table}"_"${y1}${m1}
 polytab=${poly_table}"_"${y1}${m1}
 pointtab=${point_table}"_"${y1}${m1}
 dbpar1="host=${host} user=${user} dbname=${db}"
-dbpar2="-h ${host} -U ${user} -d ${db} -w"
 
 echo "Processing ${arch}${ext2}.
 
@@ -43,6 +42,7 @@ The final number of rows should be ${ctot}."
 
 ## CREATE THE OUTPUT SCHEMA  IF NOT EXISTS.
 psql ${dbpar2} -c 'CREATE SCHEMA IF NOT EXISTS '${wdpa_schema}' AUTHORIZATION h05ibex; GRANT ALL ON SCHEMA '${wdpa_schema}' TO h05ibex; GRANT ALL ON SCHEMA '${wdpa_schema}' TO h05mandand; GRANT USAGE ON SCHEMA '${wdpa_schema}' TO h05ibexro;'
+
 
 
 # IMPORT POLY AND POINT ATTRIBUTES
@@ -58,6 +58,7 @@ FROM ${point}
 echo "Importing ${poly} and ${point} attributes in "${wdpa_schema}"."${atts_tab}
 
 echo ${sql}
+echo "---------------------------------------------------------------------------"
 
 ogr2ogr \
 -overwrite \
@@ -94,7 +95,7 @@ ogr2ogr \
 -skipfailures \
 -dialect sqlite \
 -sql "
-SELECT * FROM "${poly}" 
+SELECT * FROM "${poly}"
 " \
 -f "PostgreSQL" PG:"host=${host} user=${user} dbname=${db} active_schema=${wdpa_schema}" \
 -nln ${wdpa_schema}.${polytab} \
@@ -126,7 +127,7 @@ echo " "
 
 echo "---------------------------------------------------------------------------------------------"
 echo "Tables with polygons, points and attributes imported in postgis."
-echo "Now run exec_wdpa_preprocessing_part_1.sh"
+echo "Now run exec_wdpa_preprocessing_part_1_chn.sh"
 echo "---------------------------------------------------------------------------------------------"
 
 date

@@ -1,0 +1,16 @@
+Tue Mar 15 14:33:08 CET 2022
+Now pre-processing data...
+psql:sql/wdpa_preprocessing_part_1_chn.sql:3: NOTICE:  table "wdpa_geom_201804" does not exist, skipping
+DROP TABLE
+SELECT 2126
+CREATE INDEX
+ALTER TABLE
+psql:sql/wdpa_preprocessing_part_1_chn.sql:189: NOTICE:  Ring Self-intersection at or near point 133.89052138 46.366600108000057
+UPDATE 1
+---------------------------------------------------------------------------------------------
+Table with relevant geoms created.
+Now manually implement in pgAdmin the procedure ./fix_wdpa_geom.sql for repairing geometries.
+This has to be done STEP BY STEP with visual check of results after each step.
+---------------------------------------------------------------------------------------------
+Tue Mar 15 14:33:11 CET 2022
+Script exec_wdpa_preprocessing_part_1_chn.sh (part 1) executed in 0 minutes

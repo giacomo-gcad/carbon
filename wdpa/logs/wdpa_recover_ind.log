@@ -1,0 +1,7 @@
+Tue Mar 15 14:45:27 CET 2022
+Now pre-processing data...
+NOTICE:  table "wdpa_ind_202101" does not exist, skipping
+SELECT 593
+Tables with indian wdpa, recovered from 202101 wdpa version, created.
+Tue Mar 15 14:45:28 CET 2022
+Script exec_wdpa_recover_ind.sh (part 1) executed in 1 seconds

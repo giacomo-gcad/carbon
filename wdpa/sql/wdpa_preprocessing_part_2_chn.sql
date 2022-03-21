@@ -1,20 +1,20 @@
 -- SECOND PART: add and compute area_geo
--- Modified in order to select only Cinese protected areas (to be added later to a recent version of WDPA)
+-- Modified in order to select only Chinese protected areas (to be added later to a recent version of WDPA)
 
-ALTER TABLE :VSCHEMA.wdpa_geom_:VDATE
+ALTER TABLE :vSCHEMA.wdpa_geom_:vDATE
 --DROP COLUMN geom_was_invalid,
 ADD COLUMN area_geo double precision;
 
-UPDATE :VSCHEMA.wdpa_geom_:VDATE
+UPDATE :vSCHEMA.wdpa_geom_:vDATE
 SET area_geo = (ST_AREA(geom::geography)/1000000);
 
 -- THIRD PART: Create final tables
 
-DROP TABLE IF EXISTS :VSCHEMA.wdpa_:VDATE_chn;
-CREATE TABLE :VSCHEMA.wdpa_:VDATE_chn AS
+DROP TABLE IF EXISTS :vSCHEMA.wdpa_chn_:vDATE;
+CREATE TABLE :vSCHEMA.wdpa_chn_:vDATE AS
 WITH
-atts AS (SELECT * FROM :VSCHEMA.wdpa_atts_:VDATE WHERE iso3 ILIKE '%CHN%'),  -- modified in order to select only PAs in CHN
-geoms AS (SELECT * FROM :VSCHEMA.wdpa_geom_:VDATE RIGHT JOIN atts b USING (wdpaid)), -- modified in order to select only PAs in CHN
+atts AS (SELECT * FROM :vSCHEMA.wdpa_atts_:vDATE WHERE iso3 ILIKE '%CHN%'),  -- modified in order to select only PAs in CHN
+geoms AS (SELECT * FROM :vSCHEMA.wdpa_geom_:vDATE RIGHT JOIN atts b USING (wdpaid)), -- modified in order to select only PAs in CHN
 
 redundant_atts AS (
 SELECT
@@ -65,7 +65,7 @@ FROM relevant_atts a
 JOIN geoms b ON a.wdpaid=b.wdpaid
 ORDER BY a.wdpaid;
 
-ALTER TABLE :VSCHEMA.wdpa_:VDATE_chn
+ALTER TABLE :vSCHEMA.wdpa_chn_:vDATE
 ADD PRIMARY KEY (wdpaid),
 DROP COLUMN ogc_fid;
-CREATE INDEX wdpa_:VDATE_chn:vidx ON :VSCHEMA.wdpa_:VDATE_chn USING gist(geom);
+CREATE INDEX wdpa_chn_:vDATE:vidx ON :vSCHEMA.wdpa_chn_:vDATE USING gist(geom);

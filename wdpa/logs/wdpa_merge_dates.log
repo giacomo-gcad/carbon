@@ -1,0 +1,8 @@
+Tue Mar 15 14:46:42 CET 2022
+Now pre-processing data...
+DROP TABLE
+SELECT 264136
+CREATE INDEX
+Latest wdpa merged with chinese and indian PAs.
+Tue Mar 15 14:49:16 CET 2022
+Script exec_wdpa_merge_dates.sh executed in 154 seconds
