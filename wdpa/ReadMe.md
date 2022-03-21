@@ -24,7 +24,7 @@ The output is a PostgreSQL table containig ONLY Indian protected areas, named **
 
 3. Prepare the final wdpa table to be used for making CEP  
 Here CHN and IND PAs are removed from  the latest version of WDPA. Then, the resulting table is merged with the two tables created in previous steps to get an unique, custon wpda table named **protected_sites.wdpa_for_carbon**  
-This is done by the script [exec_wdpa_merge_dates.sh](./exec_wdpa_merga_dates.sh)  
+This is done by the script [exec_wdpa_merge_dates.sh](./exec_wdpa_merge_dates.sh)  
 
 
 
