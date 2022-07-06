@@ -1,0 +1,24 @@
+Fri Jun 24 10:42:07 CEST 2022
+./compute_total_carbon_float.sh: line 12: SET: command not found
+Starting GRASS GIS...
+Cleaning up temporary files...
+Executing <g.mapset CARBON> ...
+WARNING: <CARBON> is already the current mapset
+Execution of <g.mapset CARBON> finished.
+Cleaning up temporary files...
+AGB converted and masked
+BGC converted and masked
+DWB converted and masked
+LIT converted and masked
+GSOC converted and masked
+ 
+----------------------------------------------------
+Resampling carbon pools completed in 589 minutes
+----------------------------------------------------
+----------------------------------------------------
+Sum up of carbon pools completed in 208 minutes
+----------------------------------------------------
+ 
+----------------------------------------------------
+Total Carbon Layer computed in 798 minutes
+----------------------------------------------------

@@ -10,3 +10,6 @@ c_analysis/results
 c_analysis/dyn
 c_analysis/dyn/*.*
 c_analysis/logs
+c_analysis/sql/check_results_DELETEME.sql
+
+

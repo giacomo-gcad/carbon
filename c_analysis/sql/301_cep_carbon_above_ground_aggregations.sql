@@ -2,13 +2,13 @@
 -- SELECT THE THEME;
 DROP TABLE IF EXISTS theme; CREATE TEMPORARY TABLE theme AS SELECT * FROM :v_rcep_in.:v_theme;
 -- SELECT THE GRID;
-DROP TABLE IF EXISTS grid_index; CREATE TEMPORARY TABLE grid_index AS SELECT qid,eid FROM results_202202_cep_in.grid_vector ORDER BY qid,eid;
+DROP TABLE IF EXISTS grid_index; CREATE TEMPORARY TABLE grid_index AS SELECT qid,eid FROM  ind_carbon_cep.grid_vector ORDER BY qid,eid;
 -- SELECT THE AREA;
-DROP TABLE IF EXISTS area_index; CREATE TEMPORARY TABLE area_index AS SELECT eid,cid,area_m2 FROM results_202202_cep_in.cid_area_by_tile ORDER BY eid,cid;
+DROP TABLE IF EXISTS area_index; CREATE TEMPORARY TABLE area_index AS SELECT eid,cid,area_m2 FROM  ind_carbon_cep.cid_area_by_tile_carbon ORDER BY eid,cid;
 ------------------------------------------------------------
-DROP TABLE IF EXISTS country_index; CREATE TEMPORARY TABLE country_index AS SELECT * FROM results_202202_cep_in.index_country_cep_last JOIN grid_index USING (qid);
-DROP TABLE IF EXISTS ecoregion_index; CREATE TEMPORARY TABLE ecoregion_index AS SELECT * FROM results_202202_cep_in.index_ecoregion_cep_last JOIN grid_index USING (qid);
-DROP TABLE IF EXISTS pa_index; CREATE TEMPORARY TABLE pa_index AS SELECT * FROM results_202202_cep_in.index_pa_cep_last JOIN grid_index USING (qid);
+DROP TABLE IF EXISTS country_index; CREATE TEMPORARY TABLE country_index AS SELECT * FROM  ind_carbon_cep.index_country_cep_last JOIN grid_index USING (qid);
+DROP TABLE IF EXISTS ecoregion_index; CREATE TEMPORARY TABLE ecoregion_index AS SELECT * FROM  ind_carbon_cep.index_ecoregion_cep_last JOIN grid_index USING (qid);
+DROP TABLE IF EXISTS pa_index; CREATE TEMPORARY TABLE pa_index AS SELECT * FROM  ind_carbon_cep.index_pa_cep_last JOIN grid_index USING (qid);
 
 ------------------------------------------------------------------
 -- COUNTRY
