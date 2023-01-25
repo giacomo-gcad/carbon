@@ -9,9 +9,6 @@ source ${DIR}/total_c.conf
 
 export GRASS_COMPRESSOR=ZLIB # added on 20201008
 
-SET MAPSET
-grass ${CARBON_MAPSET_PATH} --exec g.mapset CARBON
-
 ############### RESAMPLING CARBON POOLS ###################
 
 ############### AGB
@@ -68,7 +65,7 @@ echo "DWB converted and masked"
 ############### LITTER
 echo "#!/bin/bash
 g.region raster=${LITB}
-## CONVERT lit_BIOMASS (DENSITY) IN DEAD WOOD CARBON AMOUNT. OUTPUT UNITS: Mg
+## CONVERT LIT_BIOMASS (DENSITY) IN LITTER CARBON AMOUNT. OUTPUT UNITS: Mg
 r.mapcalc --overwrite expression=\"${LITC}=float(${LITB} / 2 * area() / 10000) \"
 r.support map=${LITC} title=\"Litter Carbon map\" units=\"Mg\" description=\"Litter Carbon (amount in Mg)\"
 ## APPLY FOREST MASK
@@ -89,11 +86,11 @@ g.region raster=${GSOC1km} align=${AGC} -p
 r.resample input=${GSOC1km} output=${GSOC}_delete_me --o --q
 r.mapcalc --overwrite expression=\"${GSOC}=float(${GSOC}_delete_me * area() / 10000 )\" ## Amount of C (in Mg) within each 100m pixel
 r.null map=${GSOC} null=0
-r.support map=${GSOC} title=\"Soil Carbon map, 100m res.\" units=\"Mg\" description=\"Soil Carbon 100m res. (amount in Mg)\"
+r.support map=${GSOC} title=\"Soil Carbon map, 100m res.\" units=\"Mg\" description=\"Soil Carbon 100m res. (GSOC 1.6, amount in Mg)\"
 g.remove type=raster name=${GSOC}_delete_me -f
 ## APPLY FOREST MASK
 r.mapcalc --overwrite expression=\" ${GSOC}_fm = float(${GSOC} * ${FORESTMASK}) \"
-r.support map=${GSOC}_fm title=\"Soil Carbon map (only forest)\" units=\"Mg\" description=\"Soil Carbon (amount in Mg, only forest)\"
+r.support map=${GSOC}_fm title=\"Soil Carbon map (only forest)\" units=\"Mg\" description=\"Soil Carbon (GSOC 1.6, amount in Mg, only forest)\"
 exit
 " > ./convert_gsoc.sh
 chmod u+x convert_gsoc.sh
@@ -104,7 +101,7 @@ echo "GSOC converted and masked"
 
 echo " "
 
- end1=`date +%s`
+end1=`date +%s`
 runtime=$(((end1-start1) / 60))
 echo "----------------------------------------------------"
 echo "Resampling carbon pools completed in ${runtime} minutes"
@@ -139,24 +136,25 @@ echo "----------------------------------------------------"
 echo "Sum up of carbon pools completed in ${runtime} minutes"
 echo "----------------------------------------------------"
 
-# CLEAN UP
-echo "#!/bin/bash
-g.remove -f type=raster name=copernicus_lc_2018_rcl_100m
-g.remove -f type=raster name=copernicus_lc_2018_rcl
-g.remove -f type=raster name=oilpalm_rcl_100m
-g.remove -f type=raster name=oilpalm_rcl
-g.remove -f type=raster name=oilpalm
-g.remove -f type=raster name=mangrove_2016
-g.remove -f type=raster name=mangrove_2016_rcl_100m
-exit
-" > ./delete_useless.sh
-chmod u+x delete_useless.sh
+# # CLEAN UP
+# echo "#!/bin/bash
+# g.remove -f type=raster name=copernicus_lc_2018_rcl_100m
+# g.remove -f type=raster name=copernicus_lc_2018_rcl
+# g.remove -f type=raster name=oilpalm_rcl_100m
+# g.remove -f type=raster name=oilpalm_rcl
+# g.remove -f type=raster name=oilpalm
+# g.remove -f type=raster name=mangrove_2016
+# g.remove -f type=raster name=mangrove_2016_rcl_100m
+# exit
+# " > ./delete_useless.sh
+# chmod u+x delete_useless.sh
 # grass ${CARBON_MAPSET_PATH} --exec ./delete_useless.sh >${LOGPATH}/delete_useless.log 2>&1
+
+# rm -f ./delete_useless.sh
 
 rm -f resamp_*.sh
 rm -f convert_gsoc.sh
 rm -f sum_pools*.sh
-# rm -f ./delete_useless.sh
 echo " "
 
 finalruntime=$(((end2-start1) / 60))

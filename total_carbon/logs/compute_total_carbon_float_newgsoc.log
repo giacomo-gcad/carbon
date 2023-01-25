@@ -1,0 +1,19 @@
+Wed Jan 18 13:42:04 CET 2023
+Starting GRASS GIS...
+Cleaning up temporary files...
+Executing <g.mapset CARBON> ...
+WARNING: <CARBON> is already the current mapset
+Execution of <g.mapset CARBON> finished.
+Cleaning up temporary files...
+GSOC converted and masked
+ 
+----------------------------------------------------
+Resampling carbon pools completed in 186 minutes
+----------------------------------------------------
+----------------------------------------------------
+Sum up of carbon pools completed in 208 minutes
+----------------------------------------------------
+ 
+----------------------------------------------------
+Total Carbon Layer computed in 394 minutes
+----------------------------------------------------

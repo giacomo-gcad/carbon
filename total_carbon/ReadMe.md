@@ -8,3 +8,4 @@ Before summing up the five carbon pools, for each pool:
 
 Then, the five pools are summed up tu produce the Total Carbon dataset. The script [compute_total_carbon.sh](./compute_total_carbon.sh) performs all the above described operations. 
 
+Last Run: 18 Jan 2023 (Total Carbon recomputed using the GSOC version 1.6.1 dataset).
