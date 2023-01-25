@@ -1,8 +1,0 @@
------------------------------------------------------------------------------------
---- Script master_stats.sh started at Fri Mar 18 10:03:06 CET 2022
------------------------------------------------------------------------------------
-exec_cep_agc_stats.sh completed at Fri Mar 18 12:26:38 CET 2022
-exec_cep_bgc_stats.sh completed at Fri Mar 18 14:53:41 CET 2022
-exec_cep_dw_stats.sh completed at Fri Mar 18 17:19:24 CET 2022
-exec_cep_lit_stats.sh completed at Fri Mar 18 19:45:13 CET 2022
-exec_cep_gsoc_stats.sh completed at Fri Mar 18 22:08:26 CET 2022
