@@ -17,4 +17,3 @@ r.out.gdal --o type=Float32 input=total_carbon@CARBON output=${DIR}total_carbon.
 echo "tot done"
 
 exit
-

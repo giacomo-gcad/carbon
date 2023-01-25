@@ -29,4 +29,3 @@ Edit 2023-01-18: Total carbon has been recomputed using the GSOC 1.6.1 version.
 ## Analysis of Carbon pools in Protected Areas
 
 The [analysis of each carbon pool](/c_analysis) within protected areas, countries and ecoregions is performed using the same procedure used in DOPA workflow for the [analysis of continuous rasters](https://github.com/giacomo-gcad/dopa_workflow/tree/master/cep_analysis#CONTINUOUS_RASTERS).  
-
