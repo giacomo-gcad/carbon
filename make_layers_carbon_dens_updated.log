@@ -1,0 +1,41 @@
+-----------------------------------------------------------------------------------
+Script make_layers_carbon_dens.sh started at Thu Jan 26 09:41:25 CET 2023
+-----------------------------------------------------------------------------------
+Thu Jan 26 09:41:25 CET 2023
+Now computing maps without forest mask
+projection: 3 (Latitude-Longitude)
+zone:       0
+datum:      wgs84
+ellipsoid:  wgs84
+north:      80N
+south:      59:59:59.999995S
+west:       180W
+east:       179:59:59.999987E
+nsres:      0:00:03.2
+ewres:      0:00:03.2
+rows:       157500
+cols:       405000
+cells:      63787500000
+Now setting the NULL value to 0 ...
+Now exporting in tif maps without forest mask
+Thu Jan 26 12:56:42 CET 2023
+Now computing maps with forest mask
+projection: 3 (Latitude-Longitude)
+zone:       0
+datum:      wgs84
+ellipsoid:  wgs84
+north:      80N
+south:      59:59:59.999995S
+west:       180W
+east:       179:59:59.999987E
+nsres:      0:00:03.2
+ewres:      0:00:03.2
+rows:       157500
+cols:       405000
+cells:      63787500000
+Now exporting in tif maps with forest mask
+-----------------------------------------------------------------------------------
+Script make_layers_carbon_dens.sh ended at Thu Jan 26 15:47:47 CET 2023
+-----------------------------------------------------------------------------------
+Carbon layers exported in 366 minutes
+-----------------------------------------------------------------------------------
