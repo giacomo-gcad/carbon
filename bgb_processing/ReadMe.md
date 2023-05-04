@@ -37,7 +37,7 @@ The original dataset is imported in grass DB as external link and reclassed as f
 
 > 1  - 75 = 1  
 > 76 - 125 = 2  
-> No Data = 3  
+> >125 = 3  
 
 ### [Global Ecological Zones](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/GEZ_2010)  
 Here we used a modified version (**procedure to be described**) of Global Ecological Zones, where polygons along coastlines are 
