@@ -9,10 +9,10 @@ mkdir -p  ${DIR}"/output_data"
 
 GEZ="gez_2010_rcl"
 CON="continents_rcl"
-ESA="esalc_2018_rcl_100m"
+ESA="esalc_2020_rcl_100m"
 QUE="quercus_100m_rcl"
 PLF="tree_plantations_rcl"
-AGB="agb2018_100m_rcl"
+AGB="agb2020_100m_rcl"
 OUT="rcl_cross"
 OUT_TABLE=${DIR}"/rcl_cross/output_data/rcl_cross_stats.csv" 
 
