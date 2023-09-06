@@ -20,7 +20,7 @@ For each layer (except GSOC):
 - the biomass density (Mg/ha) is converted to biomass amount, multiplying each pixel value by the area (in ha) of that pixel: output units are Mg.  
 - Biomass is converted to carbon with a Biomass to carbon ratio of 0.5 for all pools.
 
-The GSOC dataset is first resampled to the same resolution of the other carbon pools (3.2 arcseconds, no interpolation), then is converted from carbon density to carbon amount with the same method.
+The GSOC dataset is first resampled to the same resolution of the other carbon pools (3.2 arcseconds, no interpolation), then is converted from carbon density to carbon amount with the same method. This is done in the [last step](/total_carbon), before summing the various pools.
 
 In the last step, the five carbon pools are summed up to derive the [Total Carbon](/total_carbon) layer, expressed as amount of Carbon within each pixel (in Mg).  
 
