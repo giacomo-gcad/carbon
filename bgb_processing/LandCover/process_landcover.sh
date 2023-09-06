@@ -5,8 +5,8 @@ start1=`date +%s`
 DIR="/globes/USERS/GIACOMO/c_stock/bgb_processing"
 source ${DIR}/bgb_parameters.conf
 
-LC="esalc_2018@CATRASTERS"
-LC_RCL="esalc_2018_rcl"
+LC="esalc_2020@CATRASTERS"
+LC_RCL="esalc_2020_rcl"
 LC_RCL_100=${LC_RCL}"_100m"
 
 RLZ=${WORKING_DIR}"/LandCover/reclass_lc.rcl"
