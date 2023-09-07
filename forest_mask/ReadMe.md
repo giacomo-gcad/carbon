@@ -4,7 +4,7 @@ This procedure is used to set up a Forest Mask layer, used at a later stage to m
 
 Three different datasets are used to define forest areas, using the following criteria:  
 
-1. [Copernicus Land Cover map (year 2018)](https://land.copernicus.eu/global/products/lc): only classes from 111 to 126 are kept.  
+1. [Copernicus Land Cover map (year 2019)](https://land.copernicus.eu/global/products/lc): only classes from 111 to 126 are kept.  
 
 2. [UNEP - WCMC Global Mangrove Watch (year 2020)](https://data.unep-wcmc.org/datasets/45): pixels classified as Mangroves are removed from mask.
 
@@ -20,3 +20,4 @@ The script [process_forest_mask.sh](./process_forest_mask.sh) performs the follo
 
 The mask is then applied to each individual Carbon pool in the [total carbon](https://github.com/giacomo-gcad/carbon/tree/master/total_carbon) step.
 
+EDIT 20230907: Forest Mask has been updated using the Global Mangrove 2020 dataset and the Copernicus Land Cover map (2019)
