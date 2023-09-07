@@ -8,14 +8,14 @@ DIR="/globes/USERS/GIACOMO/c_stock/forest_mask"
 source ${DIR}/forest_mask.conf
 
 ####################################################################################################
-## PART 1: IMPORT, RECLASS and RESAMPLE COPERNICUS LC 2018
-# grass ${CATRASTERS_MAPSET_PATH} --exec r.external input=${LC_TIF} output=${COPERNICUS_LC_2018}  #TO BE RUN ONLY FIRST TIME
+## PART 1: IMPORT, RECLASS and RESAMPLE COPERNICUS LC 2019
+# grass ${CATRASTERS_MAPSET_PATH} --exec r.external input=${LC_TIF} output=${COPERNICUS_LC_2019}  #TO BE RUN ONLY FIRST TIME
 
 echo "#!/bin/bash
 g.region --quiet raster=${AGB} -p 
-r.reclass input=${COPERNICUS_LC_2018} output=${COPERNICUS_LC_2018}_rcl rules=\"${RCL_LC}\"  --q --o 
-r.resample input=${COPERNICUS_LC_2018}_rcl output=${COPERNICUS_LC_2018}_rcl_100m --q --o
-r.null map=${COPERNICUS_LC_2018}_rcl_100m null=0
+r.reclass input=${COPERNICUS_LC_2019} output=${COPERNICUS_LC_2019}_rcl rules=\"${RCL_LC}\"  --q --o 
+r.resample input=${COPERNICUS_LC_2019}_rcl output=${COPERNICUS_LC_2019}_rcl_100m --q --o
+r.null map=${COPERNICUS_LC_2019}_rcl_100m null=0
 exit
 " > ./process_lc.sh
 chmod u+x process_lc.sh
@@ -80,7 +80,7 @@ echo "---------------------------------------------------"
 ## PART 4: COMBINE MASKS
 echo "#!/bin/bash
 g.region --quiet raster=${AGB} 
-r.mapcalc --overwrite expression=\"forest_mask_100m = ${COPERNICUS_LC_2018}_rcl_100m * ${OILPALM}_rcl_100m * ${MANGROVE}_rcl_100m \"
+r.mapcalc --overwrite expression=\"forest_mask_100m = ${COPERNICUS_LC_2019}_rcl_100m * ${OILPALM}_rcl_100m * ${MANGROVE}_rcl_100m \"
 r.null map=forest_mask_100m setnull=0
 exit
 " > ./prepare_mask.sh
