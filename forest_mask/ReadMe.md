@@ -6,7 +6,7 @@ Three different datasets are used to define forest areas, using the following cr
 
 1. [Copernicus Land Cover map (year 2018)](https://land.copernicus.eu/global/products/lc): only classes from 111 to 126 are kept.  
 
-2. [UNEP - WCMC Global Mangrove Watch (year 2016)](https://data.unep-wcmc.org/datasets/45): pixels classified as Mangroves are removed from mask.
+2. [UNEP - WCMC Global Mangrove Watch (year 2020)](https://data.unep-wcmc.org/datasets/45): pixels classified as Mangroves are removed from mask.
 
 3. [Oil Palm Plantations (year 2019)](https://essd.copernicus.org/articles/13/1211/2021/): pixels classified as Oil Palm Plantation are removed from mask.  
 

@@ -8,7 +8,7 @@ source ${DIR}/bgb_parameters.conf
 
 INAGB="/spatial_data/Original_Datasets/GlobBiomass/archives/v4/"
 INFILE="agb_2020.vrt"
-OUTFILE"agb2020_100m"
+OUTFILE="agb2020_100m"
 RLZ=${DIR}"/AGB/reclass_agb.rcl"
 
 # IMPORT AGB INTO GRASS

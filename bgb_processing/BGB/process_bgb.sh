@@ -5,10 +5,10 @@ start1=`date +%s`
 DIR="/globes/USERS/GIACOMO/c_stock/bgb_processing"
 source ${DIR}/bgb_parameters.conf
 	
-AGB="agb2018_100m"
+AGB="agb2020_100m"
 RCOEFF=${DIR}"/BGB/assign_r_coeffs.rcl"
 IPCC_COEFFS="ipcc2019_coeffs"
-OUTBGB="bgb2018_100m"
+OUTBGB="bgb2020_100m"
 
 grass ${CARBON_MAPSET_PATH} --exec g.region raster=${AGB}
 grass ${CARBON_MAPSET_PATH} --exec r.recode --q --o input=rcl_cross output=${IPCC_COEFFS} rules=${RCOEFF}

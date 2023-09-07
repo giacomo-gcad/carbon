@@ -1,0 +1,13 @@
+Starting GRASS GIS...
+Cleaning up temporary files...
+Executing <./compute_prec.sh> ...
+Annual precipitation computed
+Annual precipitation grown
+Removing raster <del_me3>
+Removing raster <del_me2>
+Removing raster <del_me1>
+Removing raster <grow_prec_classes_100m>
+Removing raster <grow_prec_classes>
+Removing raster <grow_prec>
+Execution of <./compute_prec.sh> finished.
+Cleaning up temporary files...

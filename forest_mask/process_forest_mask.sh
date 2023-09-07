@@ -19,7 +19,7 @@ r.null map=${COPERNICUS_LC_2018}_rcl_100m null=0
 exit
 " > ./process_lc.sh
 chmod u+x process_lc.sh
-grass ${CARBON_MAPSET_PATH} --exec ./process_lc.sh >${LOGPATH}/land_cover.log
+grass ${CARBON_MAPSET_PATH} --exec ./process_lc.sh
 
 wait
 end1=`date +%s`
@@ -32,11 +32,11 @@ echo "---------------------------------------------------"
 ## PART 2: RASTERIZE MANGROVES DATASET AND IMPORT IN GRASS
 gdal_rasterize -burn 1 -of Gtiff -co "COMPRESS=DEFLATE" -co "NUM_THREADS=16" -co "BIGTIFF=YES" -te -180 -60 180 80 -tr 0.00088888888888 0.00088888888888 -ot Byte ${MANGROVE_PATH}/${MANGROVE_SHP} ${MANGROVE_PATH}/${MANGROVE}.tif >${LOGPATH}/mangroves.log 2>&1
 
-echo "Mangroves rasterized. 0=mangroves, 1=no mangroves"  >>${LOGPATH}/mangroves.log 2>&1
+echo "Mangroves rasterized. 1=mangroves, 0=no mangroves"
 wait
 
 echo "#!/bin/bash
-g.region --quiet raster=${AGB} -p
+g.region --quiet raster=${AGB}
 r.external --o input=${MANGROVE_PATH}/${MANGROVE}.tif output=${MANGROVE}
 r.reclass input=${MANGROVE} output=delete_me rules=\"${RCLMANGR}\" --o
 r.mapcalc --overwrite expression=\" ${MANGROVE}_rcl_100m = delete_me \"
@@ -45,7 +45,7 @@ g.remove type=raster name=delete_me -f
 exit
 " > ./process_mangrove.sh
 chmod u+x process_mangrove.sh
-grass ${CARBON_MAPSET_PATH} --exec ./process_mangrove.sh  >${LOGPATH}/mangroves.log
+grass ${CARBON_MAPSET_PATH} --exec ./process_mangrove.sh
 
 wait
 end2=`date +%s`
@@ -59,14 +59,14 @@ echo "---------------------------------------------------"
 # grass ${CARBON_MAPSET_PATH} --exec r.external input=${OILPALM_PATH}/${OILPALM}.vrt output=${OILPALM} #TO BE RUN ONLY FIRST TIME
 
 echo "#!/bin/bash
-g.region --quiet raster=${AGB} -p 
+g.region --quiet raster=${AGB}
 r.reclass input=${OILPALM} output=${OILPALM}_rcl rules=\"${RCLOIL}\" --o
 r.resample input=${OILPALM}_rcl output=${OILPALM}_rcl_100m --o
 r.null map=${OILPALM}_rcl_100m null=1
 exit
 " > ./process_oilpalm.sh
 chmod u+x process_oilpalm.sh
-grass ${CARBON_MAPSET_PATH} --exec ./process_oilpalm.sh >${LOGPATH}/oilpalm.log
+grass ${CARBON_MAPSET_PATH} --exec ./process_oilpalm.sh
 
 wait
 end3=`date +%s`
@@ -79,13 +79,13 @@ echo "---------------------------------------------------"
 ####################################################################################################
 ## PART 4: COMBINE MASKS
 echo "#!/bin/bash
-g.region --quiet raster=${AGB} -p 
+g.region --quiet raster=${AGB} 
 r.mapcalc --overwrite expression=\"forest_mask_100m = ${COPERNICUS_LC_2018}_rcl_100m * ${OILPALM}_rcl_100m * ${MANGROVE}_rcl_100m \"
 r.null map=forest_mask_100m setnull=0
 exit
 " > ./prepare_mask.sh
 chmod u+x prepare_mask.sh
-grass ${CARBON_MAPSET_PATH} --exec ./prepare_mask.sh >${LOGPATH}/prepare_mask.log
+grass ${CARBON_MAPSET_PATH} --exec ./prepare_mask.sh
 
 wait
 end4=`date +%s`

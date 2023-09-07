@@ -11,7 +11,7 @@ In short, three datasets (ecozones, elevation and precipitation) are reclassed a
 
 ## Input data
 
-- [**Above ground Biomass** v. 3 (2018)](https://catalogue.ceda.ac.uk/uuid/5f331c418e9f4935b8eb1b836f8a91b8)
+- [**Above ground Biomass** v. 4 (2020)](https://catalogue.ceda.ac.uk/uuid/af60720c1e404a9e9d2c145d2b2ead4e)
 - [**FAO Global Ecological Zones** (GEZ 2010, second edition)](http://www.fao.org/geonetwork/srv/en/metadata.show?currTab=simple&id=47105)
 - [**GEBCO 2020** Digital Bathymetry  Model](https://www.gebco.net/data_and_products/gridded_bathymetry_data/#global)
 - [**Worldclim monthly rainfall** version 2](http://worldclim.org/version2)
