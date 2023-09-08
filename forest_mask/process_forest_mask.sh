@@ -1,5 +1,5 @@
 #!/bin/bash
-# Script to process AGB dataset to derive Deaad Wood Biomass and Litter stocks
+# Script to process AGB dataset to derive Deaad Wood Biomass and Litter stocks 
 # Coefficients are derived from reclassification of annual rainfall (from Worldclim), elevation (from Gebco 2020) and Ecozones (FROM FAO-GEZ 2010)
 date
 start1=`date +%s`
@@ -30,7 +30,7 @@ echo "---------------------------------------------------"
 
 ####################################################################################################
 ## PART 2: RASTERIZE MANGROVES DATASET AND IMPORT IN GRASS
-gdal_rasterize -burn 1 -of Gtiff -co "COMPRESS=DEFLATE" -co "NUM_THREADS=16" -co "BIGTIFF=YES" -te -180 -60 180 80 -tr 0.00088888888888 0.00088888888888 -ot Byte ${MANGROVE_PATH}/${MANGROVE_SHP} ${MANGROVE_PATH}/${MANGROVE}.tif >${LOGPATH}/mangroves.log 2>&1
+gdal_rasterize -burn 1 -of Gtiff -co "COMPRESS=DEFLATE" -co "NUM_THREADS=16" -co "BIGTIFF=YES" -te -180 -60 180 80 -tr 0.00088888888888 0.00088888888888 -ot Byte ${MANGROVE_PATH}/${MANGROVE_SHP} ${MANGROVE_PATH}/${MANGROVE}.tif
 
 echo "Mangroves rasterized. 1=mangroves, 0=no mangroves"
 wait
@@ -56,7 +56,7 @@ echo "---------------------------------------------------"
 
 ####################################################################################################
 ## PART 3: IMPORT IN GRASS, RECLASS AND RESAMPLE TO 100m OILPALM
-# grass ${CARBON_MAPSET_PATH} --exec r.external input=${OILPALM_PATH}/${OILPALM}.vrt output=${OILPALM} #TO BE RUN ONLY FIRST TIME
+grass ${CARBON_MAPSET_PATH} --exec r.external input=${OILPALM_PATH}/${OILPALM}.vrt output=${OILPALM} #TO BE RUN ONLY FIRST TIME
 
 echo "#!/bin/bash
 g.region --quiet raster=${AGB}
@@ -103,5 +103,8 @@ rm -f ./prepare_mask.sh
 date
 end8=`date +%s`
 runtime=$(((end8-start1) / 60))
+
+echo "-----------------------------------------------------------------------------"
 echo "PROCEDURE COMPLETED. Script $(basename "$0") executed in ${runtime} minutes"
+
 exit
