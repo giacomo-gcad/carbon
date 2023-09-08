@@ -99,6 +99,7 @@ rm -f ./process_lc.sh
 rm -f ./process_oilpalm.sh
 rm -f ./process_mangrove.sh
 rm -f ./prepare_mask.sh
+rm -f ./prepare_tutto.sh
 
 date
 end8=`date +%s`
