@@ -16,7 +16,7 @@ The script [process_forest_mask.sh](./process_forest_mask.sh) performs the follo
 1. Import, reclass and resample to Above Ground Biomass resolution the Copernicus Land Cover map;  
 2. Import, reclass and resample to Above Ground Biomass resolution the Mangroves map;
 3. Import, reclass and resample to Above Ground Biomass resolution the Oil Palm Plantations map;
-4. Overaly the three layers above to derive the final Forest Mask. 
+4. Overlay the three layers above to derive the final Forest Mask. 
 
 The mask is then applied to each individual Carbon pool in the [total carbon](https://github.com/giacomo-gcad/carbon/tree/master/total_carbon) step.
 
