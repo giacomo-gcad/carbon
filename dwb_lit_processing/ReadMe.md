@@ -82,3 +82,4 @@ For example, the combination  Temperate/Boreal (**200**), Elevation < 2000 m a.s
 
 2. The two maps with coefficients are multiplied by AGB map to get Dead Wood Biomass and Litter maps. Measurement units are the same of AGB (Mg/ha). 
 
+Last Run: 07/09/2023 (whole procedure re-run using the AGB 2020 dataset).  

@@ -182,3 +182,4 @@ The formula is provided for a total of 747 combinations (those actually existing
 The reclass file exported in the previous step provides the look up table needed to convert the unique numeric codes to IPCC R coefficients. This is done with the GRASS module `r.recode`
 The raster layer with R coefficients is then multiplied by the Above Ground Biomass layer to get the final **Below Ground Biomass layer**.  
  
+Last Run: 06/09/2023 (whole procedure re-run using the AGB 2020 dataset).  
