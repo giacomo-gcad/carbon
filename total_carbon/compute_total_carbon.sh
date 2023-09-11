@@ -136,25 +136,6 @@ echo "----------------------------------------------------"
 echo "Sum up of carbon pools completed in ${runtime} minutes"
 echo "----------------------------------------------------"
 
-# # CLEAN UP
-# echo "#!/bin/bash
-# g.remove -f type=raster name=copernicus_lc_2018_rcl_100m
-# g.remove -f type=raster name=copernicus_lc_2018_rcl
-# g.remove -f type=raster name=oilpalm_rcl_100m
-# g.remove -f type=raster name=oilpalm_rcl
-# g.remove -f type=raster name=oilpalm
-# g.remove -f type=raster name=mangrove_2016
-# g.remove -f type=raster name=mangrove_2016_rcl_100m
-# exit
-# " > ./delete_useless.sh
-# chmod u+x delete_useless.sh
-# grass ${CARBON_MAPSET_PATH} --exec ./delete_useless.sh >${LOGPATH}/delete_useless.log 2>&1
-
-# rm -f ./delete_useless.sh
-
-rm -f resamp_*.sh
-rm -f convert_gsoc.sh
-rm -f sum_pools*.sh
 echo " "
 
 finalruntime=$(((end2-start1) / 60))
