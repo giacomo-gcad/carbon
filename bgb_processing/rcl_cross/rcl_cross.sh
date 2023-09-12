@@ -5,8 +5,6 @@ start1=`date +%s`
 DIR="/globes/USERS/GIACOMO/c_stock/bgb_processing"
 source ${DIR}/bgb_parameters.conf
 
-mkdir -p  ${DIR}"/output_data"
-
 GEZ="gez_2010_rcl"
 CON="continents_rcl"
 ESA="esalc_2020_rcl_100m"

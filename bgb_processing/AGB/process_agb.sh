@@ -13,8 +13,7 @@ RLZ=${DIR}"/AGB/reclass_agb.rcl"
 
 # IMPORT AGB INTO GRASS
 grass ${PERMANENT_MAPSET} --exec g.mapset -c ${CARBON_MAPSET}
-# agb2020_100m already imported, no need to run r.external
-#grass ${CARBON_MAPSET_PATH} --exec r.external  input=${INAGB}/${INFILE} output=${OUTFILE}
+grass ${CARBON_MAPSET_PATH} --exec r.external  input=${INAGB}/${INFILE} output=${OUTFILE}
 grass ${CARBON_MAPSET_PATH} --exec g.region raster=${OUTFILE}
 
 echo  ${INFILE}" imported"

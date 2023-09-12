@@ -9,13 +9,13 @@ source ${DIR}/total_c.conf
 
 
 # CLEAN UP
-grass ${CARBON_MAPSET_PATH} --exec g.remove -f type=raster name=copernicus_lc_2018_rcl_100m
-grass ${CARBON_MAPSET_PATH} --exec g.remove -f type=raster name=copernicus_lc_2018_rcl
+grass ${CARBON_MAPSET_PATH} --exec g.remove -f type=raster name=copernicus_lc_2019_rcl_100m
+grass ${CARBON_MAPSET_PATH} --exec g.remove -f type=raster name=copernicus_lc_2019_rcl
 grass ${CARBON_MAPSET_PATH} --exec g.remove -f type=raster name=oilpalm_rcl_100m
 grass ${CARBON_MAPSET_PATH} --exec g.remove -f type=raster name=oilpalm_rcl
 grass ${CARBON_MAPSET_PATH} --exec g.remove -f type=raster name=oilpalm
-grass ${CARBON_MAPSET_PATH} --exec g.remove -f type=raster name=mangrove_2016
-grass ${CARBON_MAPSET_PATH} --exec g.remove -f type=raster name=mangrove_2016_rcl_100m
+grass ${CARBON_MAPSET_PATH} --exec g.remove -f type=raster name=mangrove_2020
+grass ${CARBON_MAPSET_PATH} --exec g.remove -f type=raster name=mangrove_2020_rcl_100m
 
 rm -f resamp_*.sh
 rm -f convert_gsoc.sh
