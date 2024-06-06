@@ -10,7 +10,7 @@ Total Carbon Stock is composed by 5 different 'pools'. Two of them (AGB and GSOC
 
 
 1. [FAO Global Soil Carbon (GSOC), v. 1.6](http://54.229.242.119/GSOCmap/)
-2. [ESA Biomass CCI Above Ground Carbon (AGB), v.3 (2018)](https://catalogue.ceda.ac.uk/uuid/5f331c418e9f4935b8eb1b836f8a91b8)
+2. [ESA Biomass CCI Above Ground Carbon (AGB), v.4 (2020)](https://catalogue.ceda.ac.uk/uuid/af60720c1e404a9e9d2c145d2b2ead4e)
 3. [Below Ground Carbon (BGB)](/bgb_processing)
 4. [Dead Wood Carbon (DWB)](/dwb_lit_processing)
 5. [Litter Carbon (LIT)](/dwb_lit_processing)
@@ -25,8 +25,6 @@ The GSOC dataset is first resampled to the same resolution of the other carbon p
 In the last step, the five carbon pools are summed up to derive the [Total Carbon](/total_carbon) layer, expressed as amount of Carbon within each pixel (in Mg).  
 A [forest mask](/forest_mask) is applied to each final layer in order to limit the results to forest areas.
 
-Edit 2023-01-18: Total carbon has been recomputed using the GSOC 1.6.1 version.  
-Edit 2023-09-11: The whole procedure has been re-run using the AGB 2020 version.  
 
 ## Analysis of Carbon pools in Protected Areas
 
