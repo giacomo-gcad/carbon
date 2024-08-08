@@ -22,7 +22,7 @@ For each layer (except GSOC):
 
 The GSOC dataset is first resampled to the same resolution of the other carbon pools (3.2 arcseconds, no interpolation), then is converted from carbon density to carbon amount with the same method. This is done in the [last step](/total_carbon), before summing the various pools.
 
-Before summing up the five carbon pools, a [forest mask](/forest_mask), based on aggregation relevant classes from [Copernicus Land Cover 100m (2019)](https://land.copernicus.eu/en/products/global-dynamic-land-cover/copernicus-global-land-service-land-cover-100m-collection-3-epoch-2019-globe), is prepared.  
+Before summing up the five carbon pools, a [forest mask](/forest_mask), based on aggregation of relevant classes from [Copernicus Land Cover 100m (2019)](https://land.copernicus.eu/en/products/global-dynamic-land-cover/copernicus-global-land-service-land-cover-100m-collection-3-epoch-2019-globe), is prepared.  
 
 In the last step, the five carbon pools are summed up to derive the [Total Carbon](/total_carbon) layer, expressed as amount of Carbon within each pixel (in Mg).  
 The [forest mask](/forest_mask) is then applied to each final layer in order to limit the results to forest areas.
