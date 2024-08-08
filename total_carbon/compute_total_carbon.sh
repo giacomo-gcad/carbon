@@ -113,7 +113,7 @@ echo "----------------------------------------------------"
 echo "#!/bin/bash
 g.region raster=${AGC}
 r.mapcalc --overwrite expression=\"${CARBONTOT} = float(${GSOC} + ${AGC} + ${BGC} + ${DWC} + ${LITC}) \"
-r.support map=${CARBONTOT}_fm title=\"Total Carbon map \" units=\"Mg\" description=\"Sum of 5 Carbon pools (in Mg)\"
+r.support map=${CARBONTOT} title=\"Total Carbon map \" units=\"Mg\" description=\"Sum of 5 Carbon pools (in Mg)\"
 exit
 " > ./sum_pools.sh
 chmod u+x sum_pools.sh
