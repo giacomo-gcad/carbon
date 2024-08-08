@@ -1,0 +1,15 @@
+Thu Aug  1 03:42:33 PM CEST 2024
+Mapset switched.
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+Reading band 1 of 1...
+Link to raster map <agb2021_100m> created.
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+Thu Aug  1 03:47:53 PM CEST 2024
+agb_2021.vrt imported
+Thu Aug  1 03:47:54 PM CEST 2024
+agb2021_100m reclassed
+PROCEDURE COMPLETED. Script process_agb.sh executed in 5 minutes

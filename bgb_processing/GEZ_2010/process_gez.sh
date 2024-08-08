@@ -2,10 +2,15 @@
 date
 start1=`date +%s`
 
+echo " "
+echo "Script $(basename "$0") started at $(date)                                        "
+echo "----------------------------------------------------------------------------------"
+echo " "
+
 DIR="/globes/USERS/GIACOMO/c_stock/bgb_processing"
 source ${DIR}/bgb_parameters.conf
 
-INGEZ="/globesUSERS?GIACOMO?c_stock/bgb_processing/GEZX_2010/output_data/gez_2010.vrt"
+INGEZ="/globes/USERS/GIACOMO/c_stock/bgb_processing/GEZ_2010/output_data/gez_2010.vrt"
 OUTGEZ="gez_2010@CATRASTERS"
 GEZ_RCL="gez_2010_rcl"
 RLZ=${WORKING_DIR}"/GEZ_2010/reclass_gez.rcl"

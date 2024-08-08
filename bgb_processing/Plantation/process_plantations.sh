@@ -2,6 +2,11 @@
 date
 start1=`date +%s`
 
+echo " "
+echo "Script $(basename "$0") started at $(date)                                        "
+echo "----------------------------------------------------------------------------------"
+echo " "
+
 DIR="/globes/USERS/GIACOMO/c_stock/bgb_processing"
 source ${DIR}/bgb_parameters.conf
 

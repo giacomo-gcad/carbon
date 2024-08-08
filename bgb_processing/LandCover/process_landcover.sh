@@ -2,11 +2,16 @@
 date
 start1=`date +%s`
 
+echo " "
+echo "Script $(basename "$0") started at $(date)                                        "
+echo "----------------------------------------------------------------------------------"
+echo " "
+
 DIR="/globes/USERS/GIACOMO/c_stock/bgb_processing"
 source ${DIR}/bgb_parameters.conf
 
-LC="esalc_2020@CATRASTERS"
-LC_RCL="esalc_2020_rcl"
+LC="esalc_2021@CATRASTERS"
+LC_RCL="esalc_2021_rcl"
 LC_RCL_100=${LC_RCL}"_100m"
 
 RLZ=${WORKING_DIR}"/LandCover/reclass_lc.rcl"

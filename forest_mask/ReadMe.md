@@ -4,7 +4,7 @@ This procedure is used to set up a Forest Mask layer, used at a later stage to m
 
 Three different datasets are used to define forest areas, using the following criteria:  
 
-1. [Copernicus Land Cover map (year 2019)](https://land.copernicus.eu/global/products/lc): only classes from 111 to 126 are kept.  
+1. [Copernicus Land Cover map (year 2019)](https://land.copernicus.eu/en/products/global-dynamic-land-cover/copernicus-global-land-service-land-cover-100m-collection-3-epoch-2019-globe): only classes from 111 to 126 are kept.  
 
 2. [UNEP - WCMC Global Mangrove Watch (year 2020)](https://data.unep-wcmc.org/datasets/45): pixels classified as Mangroves are removed from mask.
 

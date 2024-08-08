@@ -4,6 +4,11 @@
 date
 start1=`date +%s`
 
+echo " "
+echo "Script $(basename "$0") started at $(date)                                        "
+echo "----------------------------------------------------------------------------------"
+echo " "
+
 DIR="/globes/USERS/GIACOMO/c_stock/forest_mask"
 source ${DIR}/forest_mask.conf
 

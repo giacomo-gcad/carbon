@@ -19,3 +19,20 @@ Cleaning up temporary files...
 Executing <r.support map=lit_biomass_100m title=Litter Biomass map units=Mg/ha description=Derived from AGB map> ...
 Execution of <r.support map=lit_biomass_100m title=Litter Biomass map units=Mg/ha description=Derived from AGB map> finished.
 Cleaning up temporary files...
+syntax error
+Parse error
+ERROR: parse error
+syntax error
+Parse error
+ERROR: parse error
+ERROR: Raster map <dw_biomass_100m> not found in current mapset
+ERROR: Raster map <lit_biomass_100m> not found in current mapset
+syntax error
+Parse error
+ERROR: parse error
+syntax error
+Parse error
+ERROR: parse error
+ERROR: Raster map <dw_biomass_100m> not found in current mapset
+ERROR: Raster map <lit_biomass_100m> not found in current mapset
+ERROR: Raster map <dw_biomass_100m> not found in current mapset

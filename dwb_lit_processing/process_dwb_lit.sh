@@ -6,13 +6,14 @@
 date
 start1=`date +%s`
 
+echo " "
+echo "Script $(basename "$0") started at $(date)                                        "
+echo "----------------------------------------------------------------------------------"
+echo " "
+
+# CONFIGURATION FILE (check/edit it before running the script)
 DIR="/globes/USERS/GIACOMO/c_stock/dwb_lit_processing"
 source ${DIR}/dwb_lit.conf
-
-AGB="agb2020_100m"
-AGB_RCL="agb2020_100m_rcl"
-RCOEFF_DWB=${RCL_DIR}/deadwood_coeffs.rcl
-RCOEFF_LIT=${RCL_DIR}/litter_coeffs.rcl
 
 ## PROVIDE ACCFES TO RELEVANT MAPSETS
 grass ${CARBON_MAPSET_PATH} --exec g.mapsets operation=add mapset=CONRASTERS,CATRASTERS
