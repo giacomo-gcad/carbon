@@ -1,13 +1,13 @@
 #!/bin/bash
 ## EXPORT CARBON LAYERS
 
-DIR="/spatial_data/Derived_Datasets/RASTER/Carbon/v3_2018/amount/with_forest_mask/"
+DIR="/spatial_data/Derived_Datasets/RASTER/Carbon/v5_2021/amount/with_fm/"
 
-g.region raster=agc2018_100m_fm@CARBON
+g.region --q raster=agc2021_100m_fm@CARBON
 
-r.out.gdal --o type=Float32 input=agc2018_100m_fm@CARBON output=${DIR}agc2018_100m_fm.tif createopt="COMPRESS=DEFLATE,BIGTIFF=YES,TILED=YES" -f -c
+r.out.gdal --o type=Float32 input=agc2021_100m_fm@CARBON output=${DIR}agc2021_100m_fm.tif createopt="COMPRESS=DEFLATE,BIGTIFF=YES,TILED=YES" -f -c
 echo "agc done"
-r.out.gdal --o type=Float32 input=bgc2018_100m_fm@CARBON output=${DIR}bgc2018_100m_fm.tif createopt="COMPRESS=DEFLATE,BIGTIFF=YES,TILED=YES" -f -c
+r.out.gdal --o type=Float32 input=bgc2021_100m_fm@CARBON output=${DIR}bgc2021_100m_fm.tif createopt="COMPRESS=DEFLATE,BIGTIFF=YES,TILED=YES" -f -c
 echo "bgc done"
 r.out.gdal --o type=Float32 input=dw_carbon_100m_fm@CARBON output=${DIR}dw_carbon_100m_fm.tif createopt="COMPRESS=DEFLATE,BIGTIFF=YES,TILED=YES" -f -c
 echo "dwc done"
