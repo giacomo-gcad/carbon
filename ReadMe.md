@@ -9,7 +9,7 @@ This repository provides workflows for
 Total Carbon Stock is composed by 5 different 'pools'. Two of them (AGB and GSOC) are public global spatial datasets, while the three remaining pools are derived *in house* as fractions of Above Ground Carbon:  
 
 
-1. [FAO Global Soil Carbon (GSOC), v. 1.6](http://54.229.242.119/GSOCmap/)
+1. <a href="http://54.229.242.119/GSOCmap/" target="_blank">FAO Global Soil Carbon (GSOC), v. 1.6</a>
 2. [ESA Biomass CCI Above Ground Carbon (AGB), v.5 (2021)](https://catalogue.ceda.ac.uk/uuid/02e1b18071ad45a19b4d3e8adafa2817/)
 3. [Below Ground Carbon (BGB)](/bgb_processing)
 4. [Dead Wood Carbon (DWB)](/dwb_lit_processing)
