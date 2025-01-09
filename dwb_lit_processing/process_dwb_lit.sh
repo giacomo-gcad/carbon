@@ -66,11 +66,11 @@ echo "compute_prec.sh executed in ${runtime} seconds"
 echo "---------------------------------------------------"
 
 ##################################################
-## PART 2: PROCESS ELEVATION (GEBCO 2023)
+## PART 2: PROCESS ELEVATION (GEBCO)
 echo "#!/bin/bash
 ## RECLASSIFIY AND RESAMPLE GEBCO
-g.region --quiet raster=gebco2023
-r.reclass input=gebco2023 output=elev_classes rules=\"${RCL_DIR}/gebco_reclass.rcl\"  --q --o
+g.region --quiet raster=${GEBCO}
+r.reclass input={GEBCO} output=elev_classes rules=\"${RCL_DIR}/gebco_reclass.rcl\"  --q --o
 g.region --quiet raster=${AGB}
 r.resamp.interp input=elev_classes output=elev_classes_100m method=nearest  --q --o
 r.category elev_classes_100m separator=":" rules=- << EOF
@@ -92,7 +92,7 @@ echo "---------------------------------------------------"
 
 ##################################################
 ## PART 3: PROCESS Ecological Zones (FAO - GEZ 2010)
-## N.B. HERE THE RECLASSIFIED GEZ RASTER PRODUCED BY EDUARDO IS IMPORTED. IT IS THE SAME DATASET USED TO DERI BELOW GROUND BIOMASS)
+## N.B. HERE THE RECLASSIFIED GEZ RASTER PRODUCED BY EDUARDO IS IMPORTED. IT IS THE SAME DATASET USED TO DERIVE BELOW GROUND BIOMASS)
 echo "#!/bin/bash
 ## IMPORT GEZ RASTER
 # g.mapset CATRASTERS

@@ -11,9 +11,9 @@ In short, three datasets (ecozones, elevation and precipitation) are reclassed a
 
 ## Input data
 
-- [**Above ground Biomass** v. 4 (2020)](https://catalogue.ceda.ac.uk/uuid/af60720c1e404a9e9d2c145d2b2ead4e)
+- [ESA Biomass CCI Above Ground Carbon (AGB), v.5 (2021)](https://catalogue.ceda.ac.uk/uuid/02e1b18071ad45a19b4d3e8adafa2817/)
 - [**FAO Global Ecological Zones** (GEZ 2010, second edition)](https://data.apps.fao.org/map/catalog/srv/eng/catalog.search?currTab=simple&id=47105#/metadata/2fb209d0-fd34-4e5e-a3d8-a13c241eb61b)
-- [**GEBCO 2023** Digital Bathymetry  Model](https://www.gebco.net/data_and_products/gridded_bathymetry_data/#global)
+- [**GEBCO** Digital Bathymetry Model](https://www.gebco.net/data_and_products/gridded_bathymetry_data/#global)
 - [**Worldclim monthly rainfall** version 2](http://worldclim.org/version2)
 
 The script [process_dwb_lit.sh](./process_dwb_lit.sh) is entirely based on GRASS routines.
