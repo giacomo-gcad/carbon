@@ -64,13 +64,13 @@ echo "DWB converted and masked"
 
 ############### LITTER
 echo "#!/bin/bash
-g.region raster=${LITB}
+g.region raster=${LTB}
 ## CONVERT LIT_BIOMASS (DENSITY) IN LITTER CARBON AMOUNT. OUTPUT UNITS: Mg
-r.mapcalc --overwrite expression=\"${LITC}=float(${LITB} / 2 * area() / 10000) \"
-r.support map=${LITC} title=\"Litter Carbon map\" units=\"Mg\" description=\"Litter Carbon (amount in Mg)\"
+r.mapcalc --overwrite expression=\"${LTC}=float(${LTB} / 2 * area() / 10000) \"
+r.support map=${LTC} title=\"Litter Carbon map\" units=\"Mg\" description=\"Litter Carbon (amount in Mg)\"
 ## APPLY FOREST MASK
-r.mapcalc --overwrite expression=\" ${LITC}_fm = float(${LITC} * ${FORESTMASK}) \"
-r.support map=${LITC}_fm title=\"Litter Carbon map (only forest)\" units=\"Mg\" description=\"Litter Carbon (amount in Mg, only forest)\"
+r.mapcalc --overwrite expression=\" ${LTC}_fm = float(${LTC} * ${FORESTMASK}) \"
+r.support map=${LTC}_fm title=\"Litter Carbon map (only forest)\" units=\"Mg\" description=\"Litter Carbon (amount in Mg, only forest)\"
 exit
 " > ./resamp_lit.sh
 chmod u+x resamp_lit.sh
@@ -112,7 +112,7 @@ echo "----------------------------------------------------"
 ###   AGC + BGC + GSOC + DEADWOOD_CARBON + LITTER_CARBON ###
 echo "#!/bin/bash
 g.region raster=${AGC}
-r.mapcalc --overwrite expression=\"${CARBONTOT} = float(${GSOC} + ${AGC} + ${BGC} + ${DWC} + ${LITC}) \"
+r.mapcalc --overwrite expression=\"${CARBONTOT} = float(${GSOC} + ${AGC} + ${BGC} + ${DWC} + ${LTC}) \"
 r.support map=${CARBONTOT} title=\"Total Carbon map \" units=\"Mg\" description=\"Sum of 5 Carbon pools (in Mg)\"
 exit
 " > ./sum_pools.sh
@@ -122,7 +122,7 @@ grass ${CARBON_MAPSET_PATH} --exec ./sum_pools.sh >${LOGPATH}/sum_pools.log 2>&1
 ###   AGC + BGC + GSOC + DEADWOOD_CARBON + LITTER_CARBON (only forest)  ###
 echo "#!/bin/bash
 g.region raster=${AGC}
-r.mapcalc --overwrite expression=\"${CARBONTOT}_fm = float(${GSOC}_fm + ${AGC}_fm + ${BGC}_fm + ${DWC}_fm + ${LITC}_fm )\"
+r.mapcalc --overwrite expression=\"${CARBONTOT}_fm = float(${GSOC}_fm + ${AGC}_fm + ${BGC}_fm + ${DWC}_fm + ${LTC}_fm )\"
 r.support map=${CARBONTOT}_fm title=\"Total Carbon map (only forest)\" units=\"Mg\" description=\"Sum of 5 Carbon pools (in Mg, only forest)\"
 exit
 " > ./sum_pools_fm.sh

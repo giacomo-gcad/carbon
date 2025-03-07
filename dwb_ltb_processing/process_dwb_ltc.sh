@@ -12,8 +12,8 @@ echo "--------------------------------------------------------------------------
 echo " "
 
 # CONFIGURATION FILE (check/edit it before running the script)
-DIR="/globes/USERS/GIACOMO/c_stock/dwb_lit_processing"
-source ${DIR}/dwb_lit.conf
+DIR="/globes/USERS/GIACOMO/c_stock/dwb_ltc_processing"
+source ${DIR}/dwb_ltc.conf
 
 ## PROVIDE ACCFES TO RELEVANT MAPSETS
 grass ${CARBON_MAPSET_PATH} --exec g.mapsets operation=add mapset=CONRASTERS,CATRASTERS
@@ -140,33 +140,33 @@ echo "#!/bin/bash
 ## PREPARE COEFFICIENTS LAYERS
 g.region --quiet raster=${AGB}
 r.recode --q --o input=gep_classes_100m output=dwb_coeffs rules=${RCOEFF_DWB}
-r.recode --q --o input=gep_classes_100m output=lit_coeffs rules=${RCOEFF_LIT}
+r.recode --q --o input=gep_classes_100m output=ltc_coeffs rules=${RCOEFF_LTC}
 exit
 " > ./compute_coeffs_layer.sh
 chmod u+x compute_coeffs_layer.sh
-grass ${CARBON_MAPSET_PATH} --exec ./compute_coeffs_layer.sh >${LOGPATH}/compute_dwb_lit.log 2>&1
+grass ${CARBON_MAPSET_PATH} --exec ./compute_coeffs_layer.sh >${LOGPATH}/compute_dwb_ltc.log 2>&1
 
 
 ####################################################################################################
 #### THIS IS THE ONLY PART THAT NEED TO BE RE-RUN WHEN AGB VERSION CHANGES
 ## APPLY COEFFICIENTS TO AGB TO DERIVE DEAD WOOD BIOMASS AND LITTER
 echo "#!/bin/bash
-## COMPUTE DWB AND LIT
-r.mapcalc --overwrite expression=\"dw_biomass_100m = if(isnull(${AGB_RCL}), null(), ${AGB} * dwb_coeffs )\" &					              
-r.mapcalc --overwrite expression=\"lit_biomass_100m = if(isnull(${AGB_RCL}), null(), ${AGB} * lit_coeffs )\"
+## COMPUTE DWB AND LTC
+r.mapcalc --overwrite expression=\"dwb2021_100m = if(isnull(${AGB_RCL}), null(), ${AGB} * dwb_coeffs )\" &					              
+r.mapcalc --overwrite expression=\"ltb2021_100m = if(isnull(${AGB_RCL}), null(), ${AGB} * ltc_coeffs )\"
 exit
-" > ./compute_dwb_lit.sh
-chmod u+x compute_dwb_lit.sh
-grass ${CARBON_MAPSET_PATH} --exec ./compute_dwb_lit.sh >>${LOGPATH}/compute_dwb_lit.log 2>&1
+" > ./compute_dwb_ltc.sh
+chmod u+x compute_dwb_ltc.sh
+grass ${CARBON_MAPSET_PATH} --exec ./compute_dwb_ltc.sh >>${LOGPATH}/compute_dwb_ltc.log 2>&1
 
 wait
-grass ${CARBON_MAPSET_PATH} --exec r.support map=dw_biomass_100m title="Dead Wood Biomass map" units="Mg/ha" description="Derived from AGB map" >>${LOGPATH}/compute_dwb_lit.log 2>&1
-grass ${CARBON_MAPSET_PATH} --exec r.support map=lit_biomass_100m title="Litter Biomass map" units="Mg/ha" description="Derived from AGB map" >>${LOGPATH}/compute_dwb_lit.log 2>&1
+grass ${CARBON_MAPSET_PATH} --exec r.support map=dwb2021_100m title="Dead Wood Biomass map" units="Mg/ha" description="Derived from AGB map" >>${LOGPATH}/compute_dwb_ltc.log 2>&1
+grass ${CARBON_MAPSET_PATH} --exec r.support map=ltb2021_100m title="Litter Biomass map" units="Mg/ha" description="Derived from AGB map" >>${LOGPATH}/compute_dwb_ltc.log 2>&1
 
 end5=`date +%s`
 runtime=$(((end5-end4)))
 echo "---------------------------------------------------"
-echo "compute_dwb_lit.sh executed in ${runtime} seconds"
+echo "compute_dwb_ltc.sh executed in ${runtime} seconds"
 echo "---------------------------------------------------"
 
 # FINAL CLEAN UP
@@ -175,7 +175,7 @@ rm -f ./compute_elev.sh
 rm -f ./compute_gez.sh
 rm -f ./compute_cross_gep.sh
 rm -f ./compute_coeffs_layer.sh
-rm -f ./compute_dwb_lit.sh
+rm -f ./compute_dwb_ltc.sh
 
 date
 end6=`date +%s`

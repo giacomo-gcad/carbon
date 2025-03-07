@@ -1,6 +1,6 @@
 #!/bin/bash
-# Script to process AGB dataset to derive Deaad Wood Biomass and Litter stocks 
-# Coefficients are derived from reclassification of annual rainfall (from Worldclim), elevation (from Gebco 2020) and Ecozones (FROM FAO-GEZ 2010)
+# Script to derive a forest mask to be applied to each Carbon pool
+
 date
 start1=`date +%s`
 
@@ -104,7 +104,6 @@ rm -f ./process_lc.sh
 rm -f ./process_oilpalm.sh
 rm -f ./process_mangrove.sh
 rm -f ./prepare_mask.sh
-rm -f ./prepare_tutto.sh
 
 date
 end8=`date +%s`
