@@ -36,3 +36,4 @@ ERROR: parse error
 ERROR: Raster map <dw_biomass_100m> not found in current mapset
 ERROR: Raster map <lit_biomass_100m> not found in current mapset
 ERROR: Raster map <dw_biomass_100m> not found in current mapset
+ERROR: Raster map <dwb2022_100m> not found in current mapset

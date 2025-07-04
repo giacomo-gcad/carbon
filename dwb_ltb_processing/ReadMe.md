@@ -11,9 +11,9 @@ In short, three datasets (ecozones, elevation and precipitation) are reclassed a
 
 ## Input data
 
-- [ESA Biomass CCI Above Ground Carbon (AGB), v.5 (2021)](https://catalogue.ceda.ac.uk/uuid/02e1b18071ad45a19b4d3e8adafa2817/)
+- [ESA Biomass CCI Above Ground Carbon (AGB), v.6 (2022)](https://catalogue.ceda.ac.uk/uuid/95913ffb6467447ca72c4e9d8cf30501/)
 - [**FAO Global Ecological Zones** (GEZ 2010, second edition)](https://data.apps.fao.org/map/catalog/srv/eng/catalog.search?currTab=simple&id=47105#/metadata/2fb209d0-fd34-4e5e-a3d8-a13c241eb61b)
-- [**GEBCO** Digital Bathymetry Model](https://www.gebco.net/data_and_products/gridded_bathymetry_data/#global)
+- [**GEBCO 2024** Digital Bathymetry Model](https://www.gebco.net/data_and_products/gridded_bathymetry_data/#global)
 - [**Worldclim monthly rainfall** version 2](http://worldclim.org/version2)
 
 The script [process_dwb_lit.sh](./process_dwb_lit.sh) is entirely based on GRASS routines.
@@ -38,7 +38,7 @@ Here below each step of the procedure is shortly described.
 4. Reclassed map is resampled to AGB resolution (3.2 arcseconds, approximately 100m at the equator) using Nearest Neighbor algorithm.
 
 ### Processing Elevation
-1. GEBCO 2023 map is reclassed as follows:
+1. GEBCO 2024 map is reclassed as follows:
 > < 2000 m. a.s.l. = 10  
 > \> 2000 m. a.s.l. = 20  
 2. Reclassed map is resampled to AGB resolution (3.2 arcseconds, approximately 100m at the equator) using Nearest Neighbor algorithm.
@@ -82,4 +82,4 @@ For example, the combination  Temperate/Boreal (**200**), Elevation < 2000 m a.s
 
 2. The two maps with coefficients are multiplied by AGB map to get Dead Wood Biomass and Litter maps. Measurement units are the same of AGB (Mg/ha). 
 
-Last Run: 02/08/2024 (whole procedure re-run using the AGB 2021 dataset).  
+Last Run: 033/07/2025 (whole procedure re-run using the AGB 2022 v.6 dataset).  

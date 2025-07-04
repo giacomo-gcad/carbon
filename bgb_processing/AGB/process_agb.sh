@@ -11,8 +11,8 @@ echo " "
 DIR="/globes/USERS/GIACOMO/c_stock/bgb_processing"
 source ${DIR}/bgb_parameters.conf
 
-INAGB="/spatial_data/Original_Datasets/GlobBiomass/archives/v5"
-INFILE="agb_2021.vrt"
+INAGB="/spatial_data/Original_Datasets/GlobBiomass/archives/v6"
+INFILE="agb_2022.vrt"
 RLZ=${DIR}"/AGB/reclass_agb.rcl"
 
 # IMPORT AGB INTO GRASS

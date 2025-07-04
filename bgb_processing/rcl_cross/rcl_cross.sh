@@ -10,12 +10,12 @@ echo " "
 DIR="/globes/USERS/GIACOMO/c_stock/bgb_processing"
 source ${DIR}/bgb_parameters.conf
 
+AGB="agb2022_100m_rcl"
+ESA="esalc_2022_rcl_100m"
 GEZ="gez_2010_rcl"
 CON="continents_rcl"
-ESA="esalc_2021_rcl_100m"
 QUE="quercus_100m_rcl"
 PLF="tree_plantations_rcl"
-AGB="agb2021_100m_rcl"
 OUT="rcl_cross"
 OUT_TABLE=${DIR}"/rcl_cross/output_data/rcl_cross_stats.csv" 
 

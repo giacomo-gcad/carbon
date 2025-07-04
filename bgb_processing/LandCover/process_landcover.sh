@@ -10,11 +10,15 @@ echo " "
 DIR="/globes/USERS/GIACOMO/c_stock/bgb_processing"
 source ${DIR}/bgb_parameters.conf
 
-LC="esalc_2021@CATRASTERS"
-LC_RCL="esalc_2021_rcl"
+LC="esalc_2022@CATRASTERS"
+LC_RCL="esalc_2022_rcl"
 LC_RCL_100=${LC_RCL}"_100m"
 
 RLZ=${WORKING_DIR}"/LandCover/reclass_lc.rcl"
+
+echo "Input land cover dataset: "${LC}
+echo "Output land cover: "${LC_RCL_100}
+
 
 ## RECLASS LC
 grass ${CARBON_MAPSET_PATH} --exec r.reclass input=${LC} output=${LC_RCL} rules=${RLZ}  --q --o

@@ -12,26 +12,26 @@ echo " "
 DIR="/globes/USERS/GIACOMO/c_stock/forest_mask"
 source ${DIR}/forest_mask.conf
 
-####################################################################################################
-## PART 1: IMPORT, RECLASS and RESAMPLE COPERNICUS LC 2019
-# grass ${CATRASTERS_MAPSET_PATH} --exec r.external input=${LC_TIF} output=${COPERNICUS_LC_2019}  #TO BE RUN ONLY FIRST TIME
+# ####################################################################################################
+# ## PART 1: IMPORT, RECLASS and RESAMPLE COPERNICUS LC 2019
+# # grass ${CATRASTERS_MAPSET_PATH} --exec r.external input=${LC_TIF} output=${COPERNICUS_LC_2019}  #TO BE RUN ONLY FIRST TIME
 
-echo "#!/bin/bash
-g.region --quiet raster=${AGB} -p 
-r.reclass input=${COPERNICUS_LC_2019} output=${COPERNICUS_LC_2019}_rcl rules=\"${RCL_LC}\"  --q --o 
-r.resample input=${COPERNICUS_LC_2019}_rcl output=${COPERNICUS_LC_2019}_rcl_100m --q --o
-r.null map=${COPERNICUS_LC_2019}_rcl_100m null=0
-exit
-" > ./process_lc.sh
-chmod u+x process_lc.sh
-grass ${CARBON_MAPSET_PATH} --exec ./process_lc.sh
+# echo "#!/bin/bash
+# g.region --quiet raster=${AGB} -p 
+# r.reclass input=${COPERNICUS_LC_2019} output=${COPERNICUS_LC_2019}_rcl rules=\"${RCL_LC}\"  --q --o 
+# r.resample input=${COPERNICUS_LC_2019}_rcl output=${COPERNICUS_LC_2019}_rcl_100m --q --o
+# r.null --q map=${COPERNICUS_LC_2019}_rcl_100m null=0
+# exit
+# " > ./process_lc.sh
+# chmod u+x process_lc.sh
+# grass ${CARBON_MAPSET_PATH} --exec ./process_lc.sh
 
-wait
-end1=`date +%s`
-runtime=$(((end1-start1)))
-echo "---------------------------------------------------"
-echo "copernicus_lc processed in ${runtime} seconds"
-echo "---------------------------------------------------"
+# wait
+# end1=`date +%s`
+# runtime=$(((end1-start1)))
+# echo "---------------------------------------------------"
+# echo "copernicus_lc processed in ${runtime} seconds"
+# echo "---------------------------------------------------"
 
 ####################################################################################################
 ## PART 2: RASTERIZE MANGROVES DATASET AND IMPORT IN GRASS
@@ -43,9 +43,9 @@ wait
 echo "#!/bin/bash
 g.region --quiet raster=${AGB}
 r.external --o input=${MANGROVE_PATH}/${MANGROVE}.tif output=${MANGROVE}
-r.reclass input=${MANGROVE} output=delete_me rules=\"${RCLMANGR}\" --o
-r.mapcalc --overwrite expression=\" ${MANGROVE}_rcl_100m = delete_me \"
-r.null map=${MANGROVE}_rcl_100m null=0
+r.reclass input=${MANGROVE} output=delete_me rules=\"${RCLMANGR}\" --o --q
+r.mapcalc --q --overwrite expression=\" ${MANGROVE}_rcl_100m = delete_me \"
+r.null --q map=${MANGROVE}_rcl_100m null=0
 g.remove type=raster name=delete_me -f
 exit
 " > ./process_mangrove.sh
@@ -59,34 +59,34 @@ echo "---------------------------------------------------"
 echo "mangroves processed in ${runtime} seconds"
 echo "---------------------------------------------------"
 
-####################################################################################################
-## PART 3: IMPORT IN GRASS, RECLASS AND RESAMPLE TO 100m OILPALM
-grass ${CARBON_MAPSET_PATH} --exec r.external input=${OILPALM_PATH}/${OILPALM}.vrt output=${OILPALM} #TO BE RUN ONLY FIRST TIME
+# ####################################################################################################
+# ## PART 3: IMPORT IN GRASS, RECLASS AND RESAMPLE TO 100m OILPALM
+# grass ${CARBON_MAPSET_PATH} --exec r.external input=${OILPALM_PATH}/${OILPALM}.vrt output=${OILPALM} #TO BE RUN ONLY FIRST TIME
 
-echo "#!/bin/bash
-g.region --quiet raster=${AGB}
-r.reclass input=${OILPALM} output=${OILPALM}_rcl rules=\"${RCLOIL}\" --o
-r.resample input=${OILPALM}_rcl output=${OILPALM}_rcl_100m --o
-r.null map=${OILPALM}_rcl_100m null=1
-exit
-" > ./process_oilpalm.sh
-chmod u+x process_oilpalm.sh
-grass ${CARBON_MAPSET_PATH} --exec ./process_oilpalm.sh
+# echo "#!/bin/bash
+# g.region --quiet raster=${AGB}
+# r.reclass input=${OILPALM} output=${OILPALM}_rcl rules=\"${RCLOIL}\" --o --q
+# r.resample input=${OILPALM}_rcl output=${OILPALM}_rcl_100m --o --q
+# r.null --q map=${OILPALM}_rcl_100m null=1
+# exit
+# " > ./process_oilpalm.sh
+# chmod u+x process_oilpalm.sh
+# grass ${CARBON_MAPSET_PATH} --exec ./process_oilpalm.sh
 
-wait
-end3=`date +%s`
-runtime=$(((end3-end2)))
-echo "---------------------------------------------------"
-echo "oilpalm processed in ${runtime} seconds"
-echo "---------------------------------------------------"
+# wait
+# end3=`date +%s`
+# runtime=$(((end3-end2)))
+# echo "---------------------------------------------------"
+# echo "oilpalm processed in ${runtime} seconds"
+# echo "---------------------------------------------------"
 
 
 ####################################################################################################
 ## PART 4: COMBINE MASKS
 echo "#!/bin/bash
-g.region --quiet raster=${AGB} 
-r.mapcalc --overwrite expression=\"forest_mask_100m = ${COPERNICUS_LC_2019}_rcl_100m * ${OILPALM}_rcl_100m * ${MANGROVE}_rcl_100m \"
-r.null map=forest_mask_100m setnull=0
+g.region --q raster=${AGB} 
+r.mapcalc --q --o expression=\"forest_mask_100m = ${COPERNICUS_LC_2019}_rcl_100m * ${OILPALM}_rcl_100m * ${MANGROVE}_rcl_100m \"
+r.null --q map=forest_mask_100m setnull=0
 exit
 " > ./prepare_mask.sh
 chmod u+x prepare_mask.sh
@@ -99,11 +99,11 @@ echo "---------------------------------------------------"
 echo "final forest mask computed in ${runtime} seconds"
 echo "---------------------------------------------------"
 
-## FINAL CLEAN UP
-rm -f ./process_lc.sh
-rm -f ./process_oilpalm.sh
-rm -f ./process_mangrove.sh
-rm -f ./prepare_mask.sh
+# ## FINAL CLEAN UP
+# rm -f ./process_lc.sh
+# rm -f ./process_oilpalm.sh
+# rm -f ./process_mangrove.sh
+# rm -f ./prepare_mask.sh
 
 date
 end8=`date +%s`

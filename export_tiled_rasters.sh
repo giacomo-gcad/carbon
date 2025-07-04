@@ -1,5 +1,5 @@
 #!/bin/bash
-## EXPORT TILED CARBON REASTER, USING CEP GRID
+## EXPORT TILED CARBON RASTER, USING CEP GRID
 
 echo "-----------------------------------------------------------------------------------"
 echo "--- Script $(basename "$0") started at $(date)"
@@ -21,7 +21,7 @@ do
 	mkdir -p ${OUTDIR1}
 	mkdir -p ${OUTDIR2}
 	
-	for obj in $(cat ${CARBONDIR}/carbon_tiles_index.csv)
+	for obj in $(cat ${CARBONDIR}/carbon_v6_tiles_index.csv)
 	do
 		eid=$(echo ${obj} | while IFS="|" read a b c d e f; do echo ${a}; done)
 		eid_v=${eid:4}

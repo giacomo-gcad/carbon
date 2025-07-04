@@ -1,0 +1,9 @@
+Wed Jul  2 01:43:29 PM CEST 2025
+ 
+Script process_landcover.sh started at Wed Jul  2 01:43:29 PM CEST 2025                                        
+----------------------------------------------------------------------------------
+ 
+Input land cover dataset: esalc_2022@CATRASTERS
+Output land cover: esalc_2022_rcl_100m
+Wed Jul  2 02:10:15 PM CEST 2025
+PROCEDURE COMPLETED. Script process_landcover.sh executed in 26 minutes

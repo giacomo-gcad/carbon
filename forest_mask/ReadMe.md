@@ -8,7 +8,7 @@ Three different datasets are used to define forest areas, using the following cr
 
 2. [UNEP - WCMC Global Mangrove Watch (year 2020)](https://data.unep-wcmc.org/datasets/45): pixels classified as Mangroves are removed from mask.
 
-3. [Oil Palm Plantations (year 2019)](https://essd.copernicus.org/articles/13/1211/2021/): pixels classified as Oil Palm Plantation are removed from mask.  
+3. [Oil Palm Plantations (year 2021)](https://essd.copernicus.org/articles/16/5111/2024/essd-16-5111-2024-discussion.html): pixels classified as Oil Palm Plantation are removed from mask.  
 
 
 The script [process_forest_mask.sh](./process_forest_mask.sh) performs the following operations:  
