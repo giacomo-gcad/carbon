@@ -17,12 +17,12 @@ Here below the list of IPCC parameters and corresponding spatial datasets used:
 
 | Parameter                      | Dataset                                                                                                                            |
 |--------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| Above Ground Biomass           | [Above Ground Biomass  v. 3 (2018)](https://catalogue.ceda.ac.uk/uuid/5f331c418e9f4935b8eb1b836f8a91b8)                            |
+| Above Ground Biomass           | [Above Ground Biomass  v. 6 (2022)](https://catalogue.ceda.ac.uk/uuid/95913ffb6467447ca72c4e9d8cf30501/)                            |
 | Ecological Zones               | [FAO Global Ecological Zoning](http://www.fao.org/geonetwork/srv/en/main.home)                                                     |
 | Continents (terrestrial)       | [ESRI World Continents dataset](https://www.arcgis.com/home/item.html?id=a3cb207855b348a297ab85261743351d) and [Global Administrative Unit Layers (GAUL), rev. 2015](http://www.fao.org/geonetwork/srv/en/metadata.show?id=12691)                 |
 | Continents (marine)            | [Exclusive Economic Zones (EEZ) v9](http://www.marineregions.org/downloads.php)                                                    |
 | Origin (Natural/Planted)       | [Spatial Database of Planted Trees v. 1, 2019](http://data.globalforestwatch.org/datasets/224e00192f6d408fa5147bbfc13b62dd)        |
-| Land Cover (Broadleaf/Conifer) | [Land Cover CCI, 2020](http://maps.elie.ucl.ac.be/CCI/viewer/index.html)                                                           |
+| Land Cover (Broadleaf/Conifer) | [Land Cover CCI, 2022](https://cds.climate.copernicus.eu/datasets/satellite-land-cover?tab=overview)                                                           |
 | Quercus (*)                    | [Statistical mapping of tree species over Europe (Brus et al.,2011)](http://dataservices.efi.int/tree-species-map/register.php)    |  
 
 (*) data for Quercus are available only for Europe.
@@ -88,7 +88,7 @@ The reclassed layer is then resampled at the extent and resolution of AGB datase
 
 ### [Land cover](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/LandCover)  
 Presently, the 300m resolution ESA-CCI Land Cover is used to classify land cover in three classes: broadleaf, needleleaf and mosaic.  
-The ESA-CCI land cover layer for 2020 is reclassed as follows:  
+The ESA-CCI land cover layer is reclassed as follows:  
 
 > No data = mosaic (1000)  
 > Cropland, rainfed = mosaic (1000)  
