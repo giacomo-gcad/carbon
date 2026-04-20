@@ -21,7 +21,7 @@ Here below the list of IPCC parameters and corresponding spatial datasets used:
 | Ecological Zones               | [FAO Global Ecological Zoning](http://www.fao.org/geonetwork/srv/en/main.home)                                                     |
 | Continents (terrestrial)       | [ESRI World Continents dataset](https://www.arcgis.com/home/item.html?id=a3cb207855b348a297ab85261743351d) and [Global Administrative Unit Layers (GAUL), rev. 2015](http://www.fao.org/geonetwork/srv/en/metadata.show?id=12691)                 |
 | Continents (marine)            | [Exclusive Economic Zones (EEZ) v9](http://www.marineregions.org/downloads.php)                                                    |
-| Origin (Natural/Planted)       | [Spatial Database of Planted Trees v. 1, 2019](http://data.globalforestwatch.org/datasets/224e00192f6d408fa5147bbfc13b62dd)        |
+| Origin (Natural/Planted)       | [Spatial Database of Planted Trees (SDPT Version 2.0, Feb 2024)](https://gfw2-data.s3.amazonaws.com/plantations/sdpt/sdpt_v2.zip)        |
 | Land Cover (Broadleaf/Conifer) | [Land Cover CCI, 2022](https://cds.climate.copernicus.eu/datasets/satellite-land-cover?tab=overview)                                                           |
 | Quercus (*)                    | [Statistical mapping of tree species over Europe (Brus et al.,2011)](http://dataservices.efi.int/tree-species-map/register.php)    |  
 
@@ -132,18 +132,17 @@ The ESA-CCI land cover layer is reclassed as follows:
 The reclassed layer is then resampled at the extent and resolution of AGB dataset (3.2 arcseconds, approximately 100m at the equator) using Nearest Neighbor algorithm.  
 
 ### [Origin](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/Plantation)  
-This dataset is distributed as ESRI File Geodatabase. Processing includes the followings:
+This SDPT v.2 dataset is distributed as Geopackage, with one layer for each country except EU (115 countries + EU, for a total of 116 vector layers).  
+102 layers are provided in latlong, while 13 layers are in Pseud Mercator projectionsa and one (ecu_plant_v2) is in UTM zone 17S.  
+Processing includes the followings:  
 
-- All feature classes included in the GDB are imported and merged into a single Geopackage layer using GDAL libraries (ogr2ogr)  
-- The resulting layer is rasterized at the AGB resolution using GDAL libraries (gdal_rasterize)  
-- THe raster layer is imported as external link in GRASS and reclassed as follows:
+- The 14 layers in different projections are reprojected in latlong using gdalwarp.  
+- All the 116 layers are are imported in grass and rasterized at the AGB resolution.   
+- The 116 raster datasets are then merged with r.patch in a single global raster dataset, with the same extent and resolution of AGB.  
+- The raster global dataset is reclassed as follows:  
 
-> Natural (1) = 100  
-> Planted (2) = 200  
-
-The reclassed layer is then resampled at the extent and resolution of AGB dataset (3.2 arcseconds, approximately 100m at the equator) using Nearest Neighbor algorithm.  
-  
-**TBD**: remove input data from within bgb_processing folder and replace gdal functions with grass functions  
+> Background = 100  
+> Plantations = 200  
 
 
 ### [Quercus](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/Quercus)  
@@ -170,6 +169,9 @@ For example, value **1123102** can be decoded as:
 Tropical rainforest (**1100000**), Americas (**20000**), Needleleaf (**3000**), Natural (**100**), without Quercus (**0**), with AGB values in range 75-125 (**2**).  
 
 The sum of the six layers is performed by the script [rcl_cross.sh](https://github.com/giacomo-gcad/carbon/blob/master/bgb_processing/rcl_cross/rcl_cross.sh).  
+The script provides two outputs:   
+- a raster layer resulting from the sum of the six maps above listed.  
+- the statistics (code and area in m2) computed on the output raster layer.  
 
 [Statistics](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/rcl_cross/output_data/rcl_cross_stats.csv) on the resulting output are calculated with r.stats in order to get the full list of effectively existing combinations of classes.  
 The csv  file with statistics is written in output and used as input in the template spreadsheet **[lut_rcoeffs.ods](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/rcl_cross)**. The following steps have to be manually done:  
@@ -184,7 +186,7 @@ The formula is provided for a total of 747 combinations (those actually existing
 The reclass file exported in the previous step provides the look up table needed to convert the unique numeric codes to IPCC R coefficients. This is done with the GRASS module `r.recode`
 The raster layer with R coefficients is then multiplied by the Above Ground Biomass layer to get the final **Below Ground Biomass layer**.  
 
-The above described steps are performed by the script [process_bgb.sh](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/BGB/process_bgb.sh) 
+The above described steps are performed by the script [process_bgb.sh](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/BGB/process_bgb.sh).  
  
-Last Run: 03/07/2025 (whole procedure re-run using the AGB 2022 (V. 6)  and Copernicus Land Cover 2022 datasets).  
+Last Run: 16/04/2026 (whole procedure re-run using the AGB 2022 (V. 6), Copernicus Land Cover 2022 and Spatial Database of Planted Trees v.2 datasets).  
   

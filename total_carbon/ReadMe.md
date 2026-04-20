@@ -12,5 +12,5 @@ Then, the five pools are summed up tu produce the Total Carbon dataset. The scri
 
 After checking final outputs, and ONLY if evertything is fine, it's worth to run [clean_up.sh](./clean_up.sh) to remove the useless, intermediate layers and scripts.
 
-Last Run: 04/07/2025 (whole procedure re-run using the AGB 2022 v.6 dataset).  
+Last Run: 17/04/2026 (whole procedure re-run using the AGB 2022 v.6 and Spatial Database of Planted Trees v.2 datasets). 
 

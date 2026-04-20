@@ -143,3 +143,4 @@ echo "----------------------------------------------------"
 echo "Total Carbon Layer computed in ${finalruntime} minutes"
 echo "----------------------------------------------------"
 
+exit

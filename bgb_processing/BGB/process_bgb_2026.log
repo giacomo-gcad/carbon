@@ -1,0 +1,16 @@
+Thu Apr 16 12:06:37 PM CEST 2026
+ 
+Script process_bgb.sh started at Thu Apr 16 12:06:37 PM CEST 2026                                        
+----------------------------------------------------------------------------------
+ 
+Input AGB : agb2022_100m
+Recode file : /globes/USERS/GIACOMO/c_stock/bgb_processing/BGB/assign_r_coeffs.rcl
+Output BGB : bgb2022_100m
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+Thu Apr 16 02:59:24 PM CEST 2026
+rcl_cross recoded with R coeffs
+Below Ground Biomass computed.
+Thu Apr 16 03:40:38 PM CEST 2026
+PROCEDURE COMPLETED. Script process_bgb.sh executed in 214 minutes

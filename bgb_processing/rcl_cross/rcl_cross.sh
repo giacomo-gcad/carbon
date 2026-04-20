@@ -15,7 +15,7 @@ ESA="esalc_2022_rcl_100m"
 GEZ="gez_2010_rcl"
 CON="continents_rcl"
 QUE="quercus_100m_rcl"
-PLF="tree_plantations_rcl"
+PLF="tree_plantations_v2_rcl"
 OUT="rcl_cross"
 OUT_TABLE=${DIR}"/rcl_cross/output_data/rcl_cross_stats.csv" 
 

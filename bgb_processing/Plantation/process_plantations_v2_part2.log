@@ -1,0 +1,24 @@
+Wed Apr 15 09:35:15 AM CEST 2026
+ 
+Script process_plantations_v2_newdraft.sh started at Wed Apr 15 09:35:15 AM CEST 2026                                        
+----------------------------------------------------------------------------------
+ 
+Wed Apr 15 09:35:15 AM CEST 2026
+Global grid created
+Wed Apr 15 09:35:15 AM CEST 2026
+Plantations v.2 layers in latlong rasterized
+ 
+Wed Apr 15 09:35:15 AM CEST 2026
+Plantations v.2 projected layers reprojected and rasterized
+ 
+-----------------------------------------------------------------------------
+The final list of layers that will be patched is: cri_plant_v2,gab_plant_v2,ken_plant_v2,mmr_plant_v2,mwi_plant_v2,npl_plant_v2,khm_plant_v2,lbr_plant_v2,hnd_plant_v2,per_plant_v2,phl_plant_v2,rwa_plant_v2,nzl_plant_v2,tto_plant_v2,bgd_plant_v2,lka_plant_v2,nic_plant_v2,slb_plant_v2,ven_plant_v2,gha_plant_v2,civ_plant_v2,arg_plant_v2,cod_plant_v2,pan_plant_v2,aus_plant_v2,bra_plant_v2,mex_plant_v2,cpv_plant_v2,gin_plant_v2,gnb_plant_v2,gmb_plant_v2,sen_plant_v2,sle_plant_v2,tgo_plant_v2,blz_plant_v2,chl_plant_v2,cub_plant_v2,col_plant_v2,eu_plant_v2,aze_plant_v2,bol_plant_v2,btn_plant_v2,cyp_plant_v2,fji_plant_v2,glp_plant_v2,guf_plant_v2,hti_plant_v2,isr_plant_v2,jam_plant_v2,jor_plant_v2,kgz_plant_v2,lbn_plant_v2,lso_plant_v2,mdg_plant_v2,mng_plant_v2,moz_plant_v2,ncl_plant_v2,pry_plant_v2,som_plant_v2,sur_plant_v2,swz_plant_v2,syr_plant_v2,tun_plant_v2,can_plant_v2,ind_plant_v2,jpn_plant_v2,mys_plant_v2,usa_plant_v2,vnm_plant_v2,idn_plant_v2,gtm_plant_v2,kor_plant_v2,ury_plant_v2,zaf_plant_v2,rus_plant_v2,arm_plant_v2,bfa_plant_v2,cmr_plant_v2,egy_plant_v2,eri_plant_v2,eth_plant_v2,irn_plant_v2,irq_plant_v2,kaz_plant_v2,lby_plant_v2,mli_plant_v2,mar_plant_v2,mrt_plant_v2,nga_plant_v2,omn_plant_v2,pak_plant_v2,ssd_plant_v2,tjk_plant_v2,tur_plant_v2,uzb_plant_v2,zmb_plant_v2,zwe_plant_v2,dza_plant_v2,tha_plant_v2,lao_plant_v2,chn_plant_v2,prk_plant_v2,brn_plant_v2_ll,bdi_plant_v2_ll,cog_plant_v2_ll,slv_plant_v2_ll,gnq_plant_v2_ll,dom_plant_v2_ll,stp_plant_v2_ll,tza_plant_v2_ll,uga_plant_v2_ll,vut_plant_v2_ll,ecu_plant_v2_ll,ago_plant_v2_ll,ben_plant_v2_ll,caf_plant_v2_ll,fill_grid
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+Now patching all layers...
+Wed Apr 15 10:15:50 AM CEST 2026
+Plantations v.2 layers mosaicked
+ 
+Plantation dataset (v.2) reclassed
+PROCEDURE COMPLETED. Script process_plantations_v2_newdraft.sh executed in 60 minutes

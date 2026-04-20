@@ -1,0 +1,976 @@
+Wed Apr  8 03:50:49 PM CEST 2026
+ 
+Script process_plantations_v2.sh started at Wed Apr  8 03:50:49 PM CEST 2026                                        
+----------------------------------------------------------------------------------
+ 
+Wed Apr  8 03:50:49 PM CEST 2026
+Global grid created
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+cri_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+gab_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+ken_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+mmr_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+mwi_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+npl_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+khm_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+lbr_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+hnd_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+per_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+phl_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+rwa_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+nzl_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+tto_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+bgd_plant_v2 rasterized
+WARNING: Updating spatial reference with embedded proj4 definition
+ERROR: Coordinate reference system of dataset does not appear to match
+       current project.
+
+       Project PROJ_INFO is:
+       name: WGS 84
+       datum: wgs84
+       ellps: wgs84
+       proj: ll
+       no_defs: defined
+       init: EPSG:4326
+
+       Dataset PROJ_INFO is:
+       name: WGS 84 / Pseudo-Mercator
+       a: 6378137
+       es: 0
+       proj: merc
+       lat_ts: 0
+       lon_0: 0
+       x_0: 0
+       y_0: 0
+       k: 1
+       nadgrids: @null
+       wktext: defined
+       no_defs: defined
+
+       Difference in: proj
+
+       In case of no significant differences in the coordinate reference
+       system definitions, use the -o flag to ignore them and use current
+       project definition.
+       Consider generating a new project from the input dataset using the
+       'project' parameter.
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+ERROR: Vector map <brn_plant_v2> not found
+ERROR: Vector map <brn_plant_v2> not found
+brn_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+lka_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+nic_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+slb_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+ven_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+gha_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+civ_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+arg_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+cod_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+pan_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+aus_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+bra_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+mex_plant_v2 rasterized
+WARNING: Updating spatial reference with embedded proj4 definition
+ERROR: Coordinate reference system of dataset does not appear to match
+       current project.
+
+       Project PROJ_INFO is:
+       name: WGS 84
+       datum: wgs84
+       ellps: wgs84
+       proj: ll
+       no_defs: defined
+       init: EPSG:4326
+
+       Dataset PROJ_INFO is:
+       name: WGS 84 / Pseudo-Mercator
+       a: 6378137
+       es: 0
+       proj: merc
+       lat_ts: 0
+       lon_0: 0
+       x_0: 0
+       y_0: 0
+       k: 1
+       nadgrids: @null
+       wktext: defined
+       no_defs: defined
+
+       Difference in: proj
+
+       In case of no significant differences in the coordinate reference
+       system definitions, use the -o flag to ignore them and use current
+       project definition.
+       Consider generating a new project from the input dataset using the
+       'project' parameter.
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+ERROR: Vector map <bdi_plant_v2> not found
+ERROR: Vector map <bdi_plant_v2> not found
+bdi_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+cpv_plant_v2 rasterized
+WARNING: Updating spatial reference with embedded proj4 definition
+ERROR: Coordinate reference system of dataset does not appear to match
+       current project.
+
+       Project PROJ_INFO is:
+       name: WGS 84
+       datum: wgs84
+       ellps: wgs84
+       proj: ll
+       no_defs: defined
+       init: EPSG:4326
+
+       Dataset PROJ_INFO is:
+       name: WGS 84 / Pseudo-Mercator
+       a: 6378137
+       es: 0
+       proj: merc
+       lat_ts: 0
+       lon_0: 0
+       x_0: 0
+       y_0: 0
+       k: 1
+       nadgrids: @null
+       wktext: defined
+       no_defs: defined
+
+       Difference in: proj
+
+       In case of no significant differences in the coordinate reference
+       system definitions, use the -o flag to ignore them and use current
+       project definition.
+       Consider generating a new project from the input dataset using the
+       'project' parameter.
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+ERROR: Vector map <cog_plant_v2> not found
+ERROR: Vector map <cog_plant_v2> not found
+cog_plant_v2 rasterized
+WARNING: Updating spatial reference with embedded proj4 definition
+ERROR: Coordinate reference system of dataset does not appear to match
+       current project.
+
+       Project PROJ_INFO is:
+       name: WGS 84
+       datum: wgs84
+       ellps: wgs84
+       proj: ll
+       no_defs: defined
+       init: EPSG:4326
+
+       Dataset PROJ_INFO is:
+       name: WGS 84 / Pseudo-Mercator
+       a: 6378137
+       es: 0
+       proj: merc
+       lat_ts: 0
+       lon_0: 0
+       x_0: 0
+       y_0: 0
+       k: 1
+       nadgrids: @null
+       wktext: defined
+       no_defs: defined
+
+       Difference in: proj
+
+       In case of no significant differences in the coordinate reference
+       system definitions, use the -o flag to ignore them and use current
+       project definition.
+       Consider generating a new project from the input dataset using the
+       'project' parameter.
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+ERROR: Vector map <slv_plant_v2> not found
+ERROR: Vector map <slv_plant_v2> not found
+slv_plant_v2 rasterized
+WARNING: Updating spatial reference with embedded proj4 definition
+ERROR: Coordinate reference system of dataset does not appear to match
+       current project.
+
+       Project PROJ_INFO is:
+       name: WGS 84
+       datum: wgs84
+       ellps: wgs84
+       proj: ll
+       no_defs: defined
+       init: EPSG:4326
+
+       Dataset PROJ_INFO is:
+       name: WGS 84 / Pseudo-Mercator
+       a: 6378137
+       es: 0
+       proj: merc
+       lat_ts: 0
+       lon_0: 0
+       x_0: 0
+       y_0: 0
+       k: 1
+       nadgrids: @null
+       wktext: defined
+       no_defs: defined
+
+       Difference in: proj
+
+       In case of no significant differences in the coordinate reference
+       system definitions, use the -o flag to ignore them and use current
+       project definition.
+       Consider generating a new project from the input dataset using the
+       'project' parameter.
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+ERROR: Vector map <gnq_plant_v2> not found
+ERROR: Vector map <gnq_plant_v2> not found
+gnq_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+gin_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+gnb_plant_v2 rasterized
+WARNING: Updating spatial reference with embedded proj4 definition
+ERROR: Coordinate reference system of dataset does not appear to match
+       current project.
+
+       Project PROJ_INFO is:
+       name: WGS 84
+       datum: wgs84
+       ellps: wgs84
+       proj: ll
+       no_defs: defined
+       init: EPSG:4326
+
+       Dataset PROJ_INFO is:
+       name: WGS 84 / Pseudo-Mercator
+       a: 6378137
+       es: 0
+       proj: merc
+       lat_ts: 0
+       lon_0: 0
+       x_0: 0
+       y_0: 0
+       k: 1
+       nadgrids: @null
+       wktext: defined
+       no_defs: defined
+
+       Difference in: proj
+
+       In case of no significant differences in the coordinate reference
+       system definitions, use the -o flag to ignore them and use current
+       project definition.
+       Consider generating a new project from the input dataset using the
+       'project' parameter.
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+ERROR: Vector map <dom_plant_v2> not found
+ERROR: Vector map <dom_plant_v2> not found
+dom_plant_v2 rasterized
+WARNING: Updating spatial reference with embedded proj4 definition
+ERROR: Coordinate reference system of dataset does not appear to match
+       current project.
+
+       Project PROJ_INFO is:
+       name: WGS 84
+       datum: wgs84
+       ellps: wgs84
+       proj: ll
+       no_defs: defined
+       init: EPSG:4326
+
+       Dataset PROJ_INFO is:
+       name: WGS 84 / Pseudo-Mercator
+       a: 6378137
+       es: 0
+       proj: merc
+       lat_ts: 0
+       lon_0: 0
+       x_0: 0
+       y_0: 0
+       k: 1
+       nadgrids: @null
+       wktext: defined
+       no_defs: defined
+
+       Difference in: proj
+
+       In case of no significant differences in the coordinate reference
+       system definitions, use the -o flag to ignore them and use current
+       project definition.
+       Consider generating a new project from the input dataset using the
+       'project' parameter.
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+ERROR: Vector map <stp_plant_v2> not found
+ERROR: Vector map <stp_plant_v2> not found
+stp_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+gmb_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+sen_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+sle_plant_v2 rasterized
+WARNING: Updating spatial reference with embedded proj4 definition
+ERROR: Coordinate reference system of dataset does not appear to match
+       current project.
+
+       Project PROJ_INFO is:
+       name: WGS 84
+       datum: wgs84
+       ellps: wgs84
+       proj: ll
+       no_defs: defined
+       init: EPSG:4326
+
+       Dataset PROJ_INFO is:
+       name: WGS 84 / Pseudo-Mercator
+       a: 6378137
+       es: 0
+       proj: merc
+       lat_ts: 0
+       lon_0: 0
+       x_0: 0
+       y_0: 0
+       k: 1
+       nadgrids: @null
+       wktext: defined
+       no_defs: defined
+
+       Difference in: proj
+
+       In case of no significant differences in the coordinate reference
+       system definitions, use the -o flag to ignore them and use current
+       project definition.
+       Consider generating a new project from the input dataset using the
+       'project' parameter.
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+ERROR: Vector map <tza_plant_v2> not found
+ERROR: Vector map <tza_plant_v2> not found
+tza_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+tgo_plant_v2 rasterized
+WARNING: Updating spatial reference with embedded proj4 definition
+ERROR: Coordinate reference system of dataset does not appear to match
+       current project.
+
+       Project PROJ_INFO is:
+       name: WGS 84
+       datum: wgs84
+       ellps: wgs84
+       proj: ll
+       no_defs: defined
+       init: EPSG:4326
+
+       Dataset PROJ_INFO is:
+       name: WGS 84 / Pseudo-Mercator
+       a: 6378137
+       es: 0
+       proj: merc
+       lat_ts: 0
+       lon_0: 0
+       x_0: 0
+       y_0: 0
+       k: 1
+       nadgrids: @null
+       wktext: defined
+       no_defs: defined
+
+       Difference in: proj
+
+       In case of no significant differences in the coordinate reference
+       system definitions, use the -o flag to ignore them and use current
+       project definition.
+       Consider generating a new project from the input dataset using the
+       'project' parameter.
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+ERROR: Vector map <uga_plant_v2> not found
+ERROR: Vector map <uga_plant_v2> not found
+uga_plant_v2 rasterized
+WARNING: Updating spatial reference with embedded proj4 definition
+ERROR: Coordinate reference system of dataset does not appear to match
+       current project.
+
+       Project PROJ_INFO is:
+       name: WGS 84
+       datum: wgs84
+       ellps: wgs84
+       proj: ll
+       no_defs: defined
+       init: EPSG:4326
+
+       Dataset PROJ_INFO is:
+       name: WGS 84 / Pseudo-Mercator
+       a: 6378137
+       es: 0
+       proj: merc
+       lat_ts: 0
+       lon_0: 0
+       x_0: 0
+       y_0: 0
+       k: 1
+       nadgrids: @null
+       wktext: defined
+       no_defs: defined
+
+       Difference in: proj
+
+       In case of no significant differences in the coordinate reference
+       system definitions, use the -o flag to ignore them and use current
+       project definition.
+       Consider generating a new project from the input dataset using the
+       'project' parameter.
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+ERROR: Vector map <vut_plant_v2> not found
+ERROR: Vector map <vut_plant_v2> not found
+vut_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+blz_plant_v2 rasterized
+ERROR: Coordinate reference system of dataset does not appear to match
+       current project.
+
+       Project PROJ_INFO is:
+       name: WGS 84
+       datum: wgs84
+       ellps: wgs84
+       proj: ll
+       no_defs: defined
+       init: EPSG:4326
+
+       Dataset PROJ_INFO is:
+       name: WGS 84 / UTM zone 17S
+       datum: wgs84
+       ellps: wgs84
+       proj: utm
+       zone: 17
+       south: defined
+       no_defs: defined
+
+       Difference in: proj
+
+       In case of no significant differences in the coordinate reference
+       system definitions, use the -o flag to ignore them and use current
+       project definition.
+       Consider generating a new project from the input dataset using the
+       'project' parameter.
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+ERROR: Vector map <ecu_plant_v2> not found
+ERROR: Vector map <ecu_plant_v2> not found
+ecu_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+chl_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+cub_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+col_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+eu_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+aze_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+bol_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+btn_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+cyp_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+fji_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+glp_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+guf_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+hti_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+isr_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+jam_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+jor_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+kgz_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+lbn_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+lso_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+mdg_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+mng_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+moz_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+ncl_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+pry_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+som_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+sur_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+swz_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+syr_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+tun_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+can_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+ind_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+jpn_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+mys_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+usa_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+vnm_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+idn_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+gtm_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+kor_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+ury_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+zaf_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+rus_plant_v2 rasterized
+WARNING: Updating spatial reference with embedded proj4 definition
+ERROR: Coordinate reference system of dataset does not appear to match
+       current project.
+
+       Project PROJ_INFO is:
+       name: WGS 84
+       datum: wgs84
+       ellps: wgs84
+       proj: ll
+       no_defs: defined
+       init: EPSG:4326
+
+       Dataset PROJ_INFO is:
+       name: WGS 84 / Pseudo-Mercator
+       a: 6378137
+       es: 0
+       proj: merc
+       lat_ts: 0
+       lon_0: 0
+       x_0: 0
+       y_0: 0
+       k: 1
+       nadgrids: @null
+       wktext: defined
+       no_defs: defined
+
+       Difference in: proj
+
+       In case of no significant differences in the coordinate reference
+       system definitions, use the -o flag to ignore them and use current
+       project definition.
+       Consider generating a new project from the input dataset using the
+       'project' parameter.
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+ERROR: Vector map <ago_plant_v2> not found
+ERROR: Vector map <ago_plant_v2> not found
+ago_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+arm_plant_v2 rasterized
+WARNING: Updating spatial reference with embedded proj4 definition
+ERROR: Coordinate reference system of dataset does not appear to match
+       current project.
+
+       Project PROJ_INFO is:
+       name: WGS 84
+       datum: wgs84
+       ellps: wgs84
+       proj: ll
+       no_defs: defined
+       init: EPSG:4326
+
+       Dataset PROJ_INFO is:
+       name: WGS 84 / Pseudo-Mercator
+       a: 6378137
+       es: 0
+       proj: merc
+       lat_ts: 0
+       lon_0: 0
+       x_0: 0
+       y_0: 0
+       k: 1
+       nadgrids: @null
+       wktext: defined
+       no_defs: defined
+
+       Difference in: proj
+
+       In case of no significant differences in the coordinate reference
+       system definitions, use the -o flag to ignore them and use current
+       project definition.
+       Consider generating a new project from the input dataset using the
+       'project' parameter.
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+ERROR: Vector map <ben_plant_v2> not found
+ERROR: Vector map <ben_plant_v2> not found
+ben_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+bfa_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+cmr_plant_v2 rasterized
+WARNING: Updating spatial reference with embedded proj4 definition
+ERROR: Coordinate reference system of dataset does not appear to match
+       current project.
+
+       Project PROJ_INFO is:
+       name: WGS 84
+       datum: wgs84
+       ellps: wgs84
+       proj: ll
+       no_defs: defined
+       init: EPSG:4326
+
+       Dataset PROJ_INFO is:
+       name: WGS 84 / Pseudo-Mercator
+       a: 6378137
+       es: 0
+       proj: merc
+       lat_ts: 0
+       lon_0: 0
+       x_0: 0
+       y_0: 0
+       k: 1
+       nadgrids: @null
+       wktext: defined
+       no_defs: defined
+
+       Difference in: proj
+
+       In case of no significant differences in the coordinate reference
+       system definitions, use the -o flag to ignore them and use current
+       project definition.
+       Consider generating a new project from the input dataset using the
+       'project' parameter.
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+ERROR: Vector map <caf_plant_v2> not found
+ERROR: Vector map <caf_plant_v2> not found
+caf_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+egy_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+eri_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+eth_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+irn_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+irq_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+kaz_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+lby_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+mli_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+mar_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+mrt_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+nga_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+omn_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+pak_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+ssd_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+tjk_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+tur_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+uzb_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+zmb_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+zwe_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+dza_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+tha_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+lao_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+chn_plant_v2 rasterized
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+prk_plant_v2 rasterized
+Mon Apr 13 03:02:25 PM CEST 2026
+Plantations v.2 layers rasterized
+ 
+cri_plant_v2,gab_plant_v2,ken_plant_v2,mmr_plant_v2,mwi_plant_v2,npl_plant_v2,khm_plant_v2,lbr_plant_v2,hnd_plant_v2,per_plant_v2,phl_plant_v2,rwa_plant_v2,nzl_plant_v2,tto_plant_v2,bgd_plant_v2,brn_plant_v2,lka_plant_v2,nic_plant_v2,slb_plant_v2,ven_plant_v2,gha_plant_v2,civ_plant_v2,arg_plant_v2,cod_plant_v2,pan_plant_v2,aus_plant_v2,bra_plant_v2,mex_plant_v2,bdi_plant_v2,cpv_plant_v2,cog_plant_v2,slv_plant_v2,gnq_plant_v2,gin_plant_v2,gnb_plant_v2,dom_plant_v2,stp_plant_v2,gmb_plant_v2,sen_plant_v2,sle_plant_v2,tza_plant_v2,tgo_plant_v2,uga_plant_v2,vut_plant_v2,blz_plant_v2,ecu_plant_v2,chl_plant_v2,cub_plant_v2,col_plant_v2,eu_plant_v2,aze_plant_v2,bol_plant_v2,btn_plant_v2,cyp_plant_v2,fji_plant_v2,glp_plant_v2,guf_plant_v2,hti_plant_v2,isr_plant_v2,jam_plant_v2,jor_plant_v2,kgz_plant_v2,lbn_plant_v2,lso_plant_v2,mdg_plant_v2,mng_plant_v2,moz_plant_v2,ncl_plant_v2,pry_plant_v2,som_plant_v2,sur_plant_v2,swz_plant_v2,syr_plant_v2,tun_plant_v2,can_plant_v2,ind_plant_v2,jpn_plant_v2,mys_plant_v2,usa_plant_v2,vnm_plant_v2,idn_plant_v2,gtm_plant_v2,kor_plant_v2,ury_plant_v2,zaf_plant_v2,rus_plant_v2,ago_plant_v2,arm_plant_v2,ben_plant_v2,bfa_plant_v2,cmr_plant_v2,caf_plant_v2,egy_plant_v2,eri_plant_v2,eth_plant_v2,irn_plant_v2,irq_plant_v2,kaz_plant_v2,lby_plant_v2,mli_plant_v2,mar_plant_v2,mrt_plant_v2,nga_plant_v2,omn_plant_v2,pak_plant_v2,ssd_plant_v2,tjk_plant_v2,tur_plant_v2,uzb_plant_v2,zmb_plant_v2,zwe_plant_v2,dza_plant_v2,tha_plant_v2,lao_plant_v2,chn_plant_v2,prk_plant_v2,fill_grid
+----------------------------------------
+The final list of layers that will be patched is: cri_plant_v2,gab_plant_v2,ken_plant_v2,mmr_plant_v2,mwi_plant_v2,npl_plant_v2,khm_plant_v2,lbr_plant_v2,hnd_plant_v2,per_plant_v2,phl_plant_v2,rwa_plant_v2,nzl_plant_v2,tto_plant_v2,bgd_plant_v2,brn_plant_v2,lka_plant_v2,nic_plant_v2,slb_plant_v2,ven_plant_v2,gha_plant_v2,civ_plant_v2,arg_plant_v2,cod_plant_v2,pan_plant_v2,aus_plant_v2,bra_plant_v2,mex_plant_v2,bdi_plant_v2,cpv_plant_v2,cog_plant_v2,slv_plant_v2,gnq_plant_v2,gin_plant_v2,gnb_plant_v2,dom_plant_v2,stp_plant_v2,gmb_plant_v2,sen_plant_v2,sle_plant_v2,tza_plant_v2,tgo_plant_v2,uga_plant_v2,vut_plant_v2,blz_plant_v2,ecu_plant_v2,chl_plant_v2,cub_plant_v2,col_plant_v2,eu_plant_v2,aze_plant_v2,bol_plant_v2,btn_plant_v2,cyp_plant_v2,fji_plant_v2,glp_plant_v2,guf_plant_v2,hti_plant_v2,isr_plant_v2,jam_plant_v2,jor_plant_v2,kgz_plant_v2,lbn_plant_v2,lso_plant_v2,mdg_plant_v2,mng_plant_v2,moz_plant_v2,ncl_plant_v2,pry_plant_v2,som_plant_v2,sur_plant_v2,swz_plant_v2,syr_plant_v2,tun_plant_v2,can_plant_v2,ind_plant_v2,jpn_plant_v2,mys_plant_v2,usa_plant_v2,vnm_plant_v2,idn_plant_v2,gtm_plant_v2,kor_plant_v2,ury_plant_v2,zaf_plant_v2,rus_plant_v2,ago_plant_v2,arm_plant_v2,ben_plant_v2,bfa_plant_v2,cmr_plant_v2,caf_plant_v2,egy_plant_v2,eri_plant_v2,eth_plant_v2,irn_plant_v2,irq_plant_v2,kaz_plant_v2,lby_plant_v2,mli_plant_v2,mar_plant_v2,mrt_plant_v2,nga_plant_v2,omn_plant_v2,pak_plant_v2,ssd_plant_v2,tjk_plant_v2,tur_plant_v2,uzb_plant_v2,zmb_plant_v2,zwe_plant_v2,dza_plant_v2,tha_plant_v2,lao_plant_v2,chn_plant_v2,prk_plant_v2,fill_grid
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+WARNING: G__open_misc(read): Unable to open
+         '/globes/USERS/GIACOMO/GRASSDATA/WGS84LL/CARBON/cell_misc/phl_plant_v2/nullcmpr':
+         Too many open files
+WARNING: G__open(read): Unable to open
+         '/globes/USERS/GIACOMO/GRASSDATA/WGS84LL/CARBON/cellhd/phl_plant_v2':
+         Too many open files
+ERROR: Error reading reclass file for raster map <phl_plant_v2>
+Mon Apr 13 03:02:34 PM CEST 2026
+Plantations v.2 layers mosaicked
+ 
+Plantation dataset (v.2) reclassed
+PROCEDURE COMPLETED. Script process_plantations_v2.sh executed in 7170 minutes
