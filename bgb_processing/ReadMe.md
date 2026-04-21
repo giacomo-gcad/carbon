@@ -133,7 +133,7 @@ The reclassed layer is then resampled at the extent and resolution of AGB datase
 
 ### [Origin](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/Plantation)  
 This SDPT v.2 dataset is distributed as Geopackage, with one layer for each country except EU (115 countries + EU, for a total of 116 vector layers).  
-102 layers are provided in latlong, while 13 layers are in Pseud Mercator projectionsa and one (ecu_plant_v2) is in UTM zone 17S.  
+102 layers are provided in latlong, while 13 layers are in Pseudo Mercator projection and one (ecu_plant_v2) is in UTM zone 17S.  
 Processing includes the followings:  
 
 - The 14 layers in different projections are reprojected in latlong using gdalwarp.  
