@@ -1,0 +1,16 @@
+Fri Sep 25 03:50:56 PM CEST 2026
+ 
+Script process_dwb_ltb.sh started at Fri Sep 25 03:50:57 PM CEST 2026                                        
+----------------------------------------------------------------------------------
+ 
+---------------------------------------------------
+compute_elev.sh executed in 1790345757 seconds
+---------------------------------------------------
+---------------------------------------------------
+compute_cross_gep.sh executed in 1790349279 seconds
+---------------------------------------------------
+---------------------------------------------------
+compute_dwb_ltc.sh executed in 7659 seconds
+---------------------------------------------------
+Fri Sep 25 07:22:18 PM CEST 2026
+PROCEDURE COMPLETED. Script process_dwb_ltb.sh executed in 211 minutes

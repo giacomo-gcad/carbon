@@ -10,7 +10,7 @@ Total Carbon Stock is composed by 5 different 'pools'. Two of them (AGB and GSOC
 
 
 1. [FAO Global Soil Carbon (GSOC), v. 1.6](http://54.229.242.119/GSOCmap/)
-2. [ESA Biomass CCI Above Ground Carbon (AGB), v.6 (2022)](https://catalogue.ceda.ac.uk/uuid/95913ffb6467447ca72c4e9d8cf30501/)
+2. [ESA Biomass CCI Above Ground Carbon (AGB), v.7 (2024)](https://data.ceda.ac.uk/neodc/esacci/biomass/data/agb/maps/v7.0/geotiff/2024)
 3. [Below Ground Carbon (BGB)](/bgb_processing)
 4. [Dead Wood Carbon (DWB)](/dwb_lit_processing)
 5. [Litter Carbon (LIT)](/dwb_lit_processing)

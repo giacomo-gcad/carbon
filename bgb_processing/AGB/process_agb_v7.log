@@ -1,0 +1,19 @@
+Tue Sep 22 10:49:05 AM CEST 2026
+ 
+Script process_agb.sh started at Tue Sep 22 10:49:05 AM CEST 2026                                        
+----------------------------------------------------------------------------------
+ 
+Mapset switched.
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+Reading band 1 of 1...
+Link to raster map <agb2024_100m> created.
+90 degree north is exceeded by 0.494022 cells
+90 degree south is exceeded by 0.505978 cells
+360 degree EW extent is exceeded by 2 cells (East: 180.001, West: -180.001)
+Tue Sep 22 10:52:44 AM CEST 2026
+agb_2024.vrt imported
+Tue Sep 22 10:52:45 AM CEST 2026
+agb2024_100m reclassed
+PROCEDURE COMPLETED. Script process_agb.sh executed in 3 minutes

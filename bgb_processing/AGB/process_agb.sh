@@ -11,13 +11,13 @@ echo " "
 DIR="/globes/USERS/GIACOMO/c_stock/bgb_processing"
 source ${DIR}/bgb_parameters.conf
 
-INAGB="/spatial_data/Original_Datasets/GlobBiomass/archives/v6"
-INFILE="agb_2022.vrt"
+INAGB="/spatial_data/Original_Datasets/GlobBiomass/archives/v7"
+INFILE="agb_2024.vrt"
 RLZ=${DIR}"/AGB/reclass_agb.rcl"
 
 # IMPORT AGB INTO GRASS
 grass ${PERMANENT_MAPSET} --exec g.mapset -c ${CARBON_MAPSET}
-grass ${CARBON_MAPSET_PATH} --exec r.external --overwrite input=${INAGB}/${INFILE} output=${AGB}
+grass ${CARBON_MAPSET_PATH} --exec r.external --overwrite input=${INAGB}/${INFILE} output=${AGB}  title="Above Ground Biomass v.7 2024"
 grass ${CARBON_MAPSET_PATH} --exec g.region raster=${AGB}
 
 date

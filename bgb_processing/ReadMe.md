@@ -17,7 +17,7 @@ Here below the list of IPCC parameters and corresponding spatial datasets used:
 
 | Parameter                      | Dataset                                                                                                                            |
 |--------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| Above Ground Biomass           | [Above Ground Biomass  v. 6 (2022)](https://catalogue.ceda.ac.uk/uuid/95913ffb6467447ca72c4e9d8cf30501/)                            |
+| Above Ground Biomass           | [Above Ground Biomass  v. 7 (2026)](https://data.ceda.ac.uk/neodc/esacci/biomass/data/agb/maps/v7.0/geotiff/2024)                            |
 | Ecological Zones               | [FAO Global Ecological Zoning](http://www.fao.org/geonetwork/srv/en/main.home)                                                     |
 | Continents (terrestrial)       | [ESRI World Continents dataset](https://www.arcgis.com/home/item.html?id=a3cb207855b348a297ab85261743351d) and [Global Administrative Unit Layers (GAUL), rev. 2015](http://www.fao.org/geonetwork/srv/en/metadata.show?id=12691)                 |
 | Continents (marine)            | [Exclusive Economic Zones (EEZ) v9](http://www.marineregions.org/downloads.php)                                                    |
@@ -178,7 +178,7 @@ The csv  file with statistics is written in output and used as input in the temp
 
 - Paste data from [Statistics](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/rcl_cross/output_data/rcl_cross_stats.csv) file into sheet rcl_cross_stats (columns A and B) of the template spreadsheet
 - The VLOOKUP formula in column C assigns the R coefficient to each code, using as source the full list of 820 combinations in sheet 'r_coefficients'. Manually check this column to verify the absence of errors or missing data.   
-The formula is provided for a total of 747 combinations (those actually existing when run on AGB v.4, 2020 dataset). It could be necessary to copy the formula in missing cells if more combinations are obtained.  
+The formula is provided for a total of 776 combinations (those actually existing when run on AGB v.7, 2024 dataset). It could be necessary to copy the formula in missing cells if more combinations are obtained.  
 - Export as text file the content of column A in sheet 'recode_file'. It will be used as [reclass file](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/BGB/assign_r_coeffs.rcl)  in the successive step.  
 
 
@@ -188,5 +188,5 @@ The raster layer with R coefficients is then multiplied by the Above Ground Biom
 
 The above described steps are performed by the script [process_bgb.sh](https://github.com/giacomo-gcad/carbon/tree/master/bgb_processing/BGB/process_bgb.sh).  
  
-Last Run: 16/04/2026 (whole procedure re-run using the AGB 2022 (V. 6), Copernicus Land Cover 2022 and Spatial Database of Planted Trees v.2 datasets).  
+Last Run: 23/09/2026 (whole procedure re-run using the AGB 2024 (V. 7), Copernicus Land Cover 2022 and Spatial Database of Planted Trees v.2 datasets).  
   

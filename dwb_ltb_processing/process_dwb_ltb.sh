@@ -13,11 +13,11 @@ echo " "
 
 # CONFIGURATION FILE (check/edit it before running the script)
 DIR="/globes/USERS/GIACOMO/c_stock/dwb_ltb_processing"
-source ${DIR}/dwb_ltc.conf
+source ${DIR}/dwb_ltb.conf
 
 
 # ##################################################
-# ## PROVIDE ACCFES TO RELEVANT MAPSETS
+# ## PROVIDE ACCESS TO RELEVANT MAPSETS
 # grass ${CARBON_MAPSET_PATH} --exec g.mapsets operation=add mapset=CONRASTERS,CATRASTERS
 
 # ##################################################
@@ -67,30 +67,30 @@ source ${DIR}/dwb_ltc.conf
 # echo "compute_prec.sh executed in ${runtime} seconds"
 # echo "---------------------------------------------------"
 
-# ##################################################
-# ## PART 2: PROCESS ELEVATION (GEBCO)
-# echo "#!/bin/bash
-# ## RECLASSIFIY AND RESAMPLE GEBCO
-# g.region --quiet raster=${GEBCO}
-# r.reclass input={GEBCO} output=elev_classes rules=\"${RCL_DIR}/gebco_reclass.rcl\"  --q --o
-# g.region --quiet raster=${AGB}
-# r.resamp.interp input=elev_classes output=elev_classes_100m method=nearest  --q --o
-# r.category elev_classes_100m separator=":" rules=- << EOF
-# 10:<= 2000 m
-# 20:> 2000 m
-# EOF
-# g.remove type=raster name=elev_classes -f
-# exit
-# " > ./compute_elev.sh
-# chmod u+x compute_elev.sh
-# grass ${CARBON_MAPSET_PATH} --exec ./compute_elev.sh  >${LOGPATH}/compute_elev.log 2>&1
+##################################################
+## PART 2: PROCESS ELEVATION (GEBCO)
+echo "#!/bin/bash
+## RECLASSIFIY AND RESAMPLE GEBCO
+g.region --quiet raster=${GEBCO}
+r.reclass input=${GEBCO} output=elev_classes rules=\"${RCL_DIR}/gebco_reclass.rcl\" --o
+g.region --quiet raster=${AGB}
+r.resamp.interp input=elev_classes output=elev_classes_100m method=nearest --o
+r.category elev_classes_100m separator=":" rules=- << EOF
+10:<= 2000 m
+20:> 2000 m
+EOF
+g.remove type=raster name=elev_classes -f
+exit
+" > ./compute_elev.sh
+chmod u+x compute_elev.sh
+grass ${CARBON_MAPSET_PATH} --exec ./compute_elev.sh  >${LOGPATH}/compute_elev.log 2>&1
 
-# wait
-# end2=`date +%s`
-# runtime=$(((end2-end1)))
-# echo "---------------------------------------------------"
-# echo "compute_elev.sh executed in ${runtime} seconds"
-# echo "---------------------------------------------------"
+wait
+end2=`date +%s`
+runtime=$(((end2-end1)))
+echo "---------------------------------------------------"
+echo "compute_elev.sh executed in ${runtime} seconds"
+echo "---------------------------------------------------"
 
 # ##################################################
 # ## PART 3: PROCESS Ecological Zones (FAO - GEZ 2010)
@@ -118,34 +118,34 @@ source ${DIR}/dwb_ltc.conf
 # echo "compute_gez.sh executed in ${runtime} seconds"
 # echo "---------------------------------------------------"
 
-# ##################################################
-# ## PART 4: SUM UP THE THREE RECLASSED LAYERS TO GET UNIQUE COMBINATIONS OF CLASSES (ALTERNATIVE TO R.CROSS)
-# echo "#!/bin/bash
-# g.region --quiet raster=${AGB}
-# r.mapcalc \"gep_classes_100m = round( gez_classes_100m + elev_classes_100m + prec_classes_100m )\" --q --o
-# r.stats -a input=gep_classes_100m output=\"${DIR}/gep_classes_stats.csv\" separator=pipe --q --o
-# exit
-# " > ./compute_cross_gep.sh
-# chmod u+x compute_cross_gep.sh
-# grass ${CARBON_MAPSET_PATH} --exec ./compute_cross_gep.sh >${LOGPATH}/compute_cross_gep.log 2>&1
+##################################################
+## PART 4: SUM UP THE THREE RECLASSED LAYERS TO GET UNIQUE COMBINATIONS OF CLASSES (ALTERNATIVE TO R.CROSS)
+echo "#!/bin/bash
+g.region --quiet raster=${AGB}
+r.mapcalc \"gep_classes_100m = round( gez_classes_100m + elev_classes_100m + prec_classes_100m )\" --q --o
+r.stats -a input=gep_classes_100m output=\"${DIR}/gep_classes_stats.csv\" separator=pipe --q --o
+exit
+" > ./compute_cross_gep.sh
+chmod u+x compute_cross_gep.sh
+grass ${CARBON_MAPSET_PATH} --exec ./compute_cross_gep.sh >${LOGPATH}/compute_cross_gep.log 2>&1
 
-# wait
-# end4=`date +%s`
-# runtime=$(((end4-end3)))
-# echo "---------------------------------------------------"
-# echo "compute_cross_gep.sh executed in ${runtime} seconds"
-# echo "---------------------------------------------------"
+wait
+end4=`date +%s`
+runtime=$(((end4-end3)))
+echo "---------------------------------------------------"
+echo "compute_cross_gep.sh executed in ${runtime} seconds"
+echo "---------------------------------------------------"
 
-# ## PART 5: PREPARE LAYER WITH COEFFICIENTS 
-# echo "#!/bin/bash
-# ## PREPARE COEFFICIENTS LAYERS
-# g.region --quiet raster=${AGB}
-# r.recode --q --o input=gep_classes_100m output=dwb_coeffs rules=${RCOEFF_DWB}
-# r.recode --q --o input=gep_classes_100m output=ltc_coeffs rules=${RCOEFF_LTC}
-# exit
-# " > ./compute_coeffs_layer.sh
-# chmod u+x compute_coeffs_layer.sh
-# grass ${CARBON_MAPSET_PATH} --exec ./compute_coeffs_layer.sh >${LOGPATH}/compute_dwb_ltc.log 2>&1
+## PART 5: PREPARE LAYER WITH COEFFICIENTS 
+echo "#!/bin/bash
+## PREPARE COEFFICIENTS LAYERS
+g.region --quiet raster=${AGB}
+r.recode --q --o input=gep_classes_100m output=dwb_coeffs rules=${RCOEFF_DWB}
+r.recode --q --o input=gep_classes_100m output=ltb_coeffs rules=${RCOEFF_LTC}
+exit
+" > ./compute_coeffs_layer.sh
+chmod u+x compute_coeffs_layer.sh
+grass ${CARBON_MAPSET_PATH} --exec ./compute_coeffs_layer.sh >${LOGPATH}/compute_dwb_ltb.log 2>&1
 
 
 ####################################################################################################
@@ -153,16 +153,16 @@ source ${DIR}/dwb_ltc.conf
 ## APPLY COEFFICIENTS TO AGB TO DERIVE DEAD WOOD BIOMASS AND LITTER
 echo "#!/bin/bash
 ## COMPUTE DWB AND LTC
-r.mapcalc --overwrite expression=\"dwb2022_100m = if(isnull(${AGB_RCL}), null(), ${AGB} * dwb_coeffs )\" &					              
-r.mapcalc --overwrite expression=\"ltb2022_100m = if(isnull(${AGB_RCL}), null(), ${AGB} * ltc_coeffs )\"
+r.mapcalc --overwrite expression=\"${DWB_OUT} = if(isnull(${AGB_RCL}), null(), ${AGB} * dwb_coeffs )\" &					              
+r.mapcalc --overwrite expression=\"${LTB_OUT} = if(isnull(${AGB_RCL}), null(), ${AGB} * ltb_coeffs )\"
 exit
 " > ./compute_dwb_ltc.sh
 chmod u+x compute_dwb_ltc.sh
 grass ${CARBON_MAPSET_PATH} --exec ./compute_dwb_ltc.sh >>${LOGPATH}/compute_dwb_ltc.log 2>&1
 
 wait
-grass ${CARBON_MAPSET_PATH} --exec r.support map=dwb2022_100m title="Dead Wood Biomass map" units="Mg/ha" description="Derived from AGB 2022 map" >>${LOGPATH}/compute_dwb_ltc.log 2>&1
-grass ${CARBON_MAPSET_PATH} --exec r.support map=ltb2022_100m title="Litter Biomass map" units="Mg/ha" description="Derived from AGB 2022 map" >>${LOGPATH}/compute_dwb_ltc.log 2>&1
+grass ${CARBON_MAPSET_PATH} --exec r.support map=${DWB_OUT} title="Dead Wood Biomass map" units="Mg/ha" description="Dead Wood Biomass derived from AGB 2024 map" >>${LOGPATH}/compute_dwb_ltb.log 2>&1
+grass ${CARBON_MAPSET_PATH} --exec r.support map=${LTB_OUT} title="Litter Biomass map" units="Mg/ha" description="Litter Biomass derived from AGB 2024 map" >>${LOGPATH}/compute_dwb_ltb.log 2>&1
 
 end5=`date +%s`
 runtime=$(((end5-end4)))

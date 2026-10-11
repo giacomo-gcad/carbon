@@ -12,5 +12,13 @@ Then, the five pools are summed up tu produce the Total Carbon dataset. The scri
 
 After checking final outputs, and ONLY if evertything is fine, it's worth to run [clean_up.sh](./clean_up.sh) to remove the useless, intermediate layers and scripts.
 
-Last Run: 17/04/2026 (whole procedure re-run using the AGB 2022 v.6 and Spatial Database of Planted Trees v.2 datasets). 
+Last Run: 28/09/2026
+Procedure re-run using 
+	- AGB 2024 v.7  
+	- Spatial Database of Planted Trees v.2 dataset  
+	- GEBCO 2026 version  
+
+N.b. The 'only forest' layer was not produced (relevant sections of the script are commented).  
+
+
 

@@ -10,10 +10,10 @@ echo " "
 DIR="/globes/USERS/GIACOMO/c_stock/bgb_processing"
 source ${DIR}/bgb_parameters.conf
 	
-AGB="agb2022_100m"
+AGB="agb2024_100m"
 RCOEFF=${DIR}"/BGB/assign_r_coeffs.rcl"
 IPCC_COEFFS="ipcc2019_coeffs"
-OUTBGB="bgb2022_100m"
+OUTBGB="bgb2024_100m"
 
 echo "Input AGB : "${AGB}
 echo "Recode file : "${RCOEFF}
